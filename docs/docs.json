@@ -1,0 +1,149 @@
+{
+	"schemaVersion": "2.0",
+	"id": 0,
+	"name": "@wtasnorg/node-lib",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 1,
+			"name": "hello",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "hello.ts",
+					"line": 6,
+					"character": 9
+				}
+			],
+			"signatures": [
+				{
+					"id": 2,
+					"name": "hello",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "A sample function that should work to test if lib is installed correctly."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "hello message"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "hello.ts",
+							"line": 6,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Functions",
+			"children": [
+				1
+			]
+		}
+	],
+	"packageName": "@wtasnorg/node-lib",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "# @wtasnorg/node-lib\n\nA library project for nodejs.\n\n#typescript #library\n\n- [npm org](https://www.npmjs.com/org/wtasnorg)\n- [github repo](https://github.com/wtasg/node-lib)\n\n## Develop\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```bash\ngit clone git@github.com:wtasg/node-lib.git\nnpm run build\nnpm run test\n# make changes...\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\nWe are using "
+		},
+		{
+			"kind": "code",
+			"text": "`node --test`"
+		},
+		{
+			"kind": "text",
+			"text": " for testing.\n\n## Install and Usage\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```bash\nnpm install @wtasnorg/node-lib\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```typescript\n# check if you can run code\nimport {hello} from \"@wtasnorg/node-lib\";\n\nhello(); \n// \"hello from @wtasnorg/node-lib\"\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## License: MIT\n\n[MIT License file]("
+		},
+		{
+			"kind": "relative-link",
+			"text": "LICENSE",
+			"target": 2
+		},
+		{
+			"kind": "text",
+			"text": ")"
+		}
+	],
+	"symbolIdMap": {
+		"0": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/index.ts",
+			"qualifiedName": ""
+		},
+		"1": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/hello.ts",
+			"qualifiedName": "hello"
+		},
+		"2": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/hello.ts",
+			"qualifiedName": "hello"
+		}
+	},
+	"files": {
+		"entries": {
+			"1": "src/index.ts",
+			"2": "LICENSE",
+			"3": "README.md",
+			"4": ""
+		},
+		"reflections": {
+			"1": 0,
+			"3": 0,
+			"4": 0
+		}
+	}
+}

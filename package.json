@@ -1,0 +1,34 @@
+{
+  "name": "@wtasnorg/node-lib",
+  "version": "0.0.1",
+  "description": "node library",
+  "scripts": {
+    "build": "./node_modules/.bin/tsc --project tsconfig.json",
+    "docs": "./node_modules/.bin/typedoc",
+    "docs:json": "./node_modules/.bin/typedoc --json docs/docs.json",
+    "docs:watch": "./node_modules/.bin/typedoc --watch",
+    "test": "node --test"
+  },
+  "keywords": [
+    "library"
+  ],
+  "author": "wtasn <5f87le8sh@mozmail.com> (https://github.com/wtasg)",
+  "license": "MIT",
+  "type": "module",
+  "os": [
+    "!win32"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wtasg/node-lib.git"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "typedoc": "^0.28.14",
+    "typedoc-plugin-markdown": "^4.9.0",
+    "typescript": "^5.9.3"
+  }
+}
