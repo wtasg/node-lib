@@ -16,7 +16,8 @@
 				{
 					"fileName": "hello.ts",
 					"line": 6,
-					"character": 9
+					"character": 15,
+					"url": "https://github.com/wtasg/node-lib/blob/86f4be29eea55d6d20fb66f9ee5aa8472db8610d/src/hello.ts#L6"
 				}
 			],
 			"signatures": [
@@ -49,12 +50,25 @@
 						{
 							"fileName": "hello.ts",
 							"line": 6,
-							"character": 9
+							"character": 15,
+							"url": "https://github.com/wtasg/node-lib/blob/86f4be29eea55d6d20fb66f9ee5aa8472db8610d/src/hello.ts#L6"
 						}
 					],
 					"type": {
-						"type": "intrinsic",
-						"name": "string"
+						"type": "reference",
+						"target": {
+							"packageName": "typescript",
+							"packagePath": "lib/lib.es5.d.ts",
+							"qualifiedName": "Promise"
+						},
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						],
+						"name": "Promise",
+						"package": "typescript"
 					}
 				}
 			]
@@ -72,7 +86,7 @@
 	"readme": [
 		{
 			"kind": "text",
-			"text": "# @wtasnorg/node-lib\n\nA library project for nodejs.\n\n#typescript #library\n\n- [npm org](https://www.npmjs.com/org/wtasnorg)\n- [github repo](https://github.com/wtasg/node-lib)\n\n## Develop\n\n"
+			"text": "# @wtasnorg/node-lib\n\nA library project for nodejs. #nodejs #typescript #library\n\n- [npm org](https://www.npmjs.com/org/wtasnorg)\n- [github repo](https://github.com/wtasg/node-lib)\n\n## Develop\n\n"
 		},
 		{
 			"kind": "code",
@@ -100,7 +114,7 @@
 		},
 		{
 			"kind": "code",
-			"text": "```typescript\n# check if you can run code\nimport {hello} from \"@wtasnorg/node-lib\";\n\nhello(); \n// \"hello from @wtasnorg/node-lib\"\n```"
+			"text": "```typescript\n# check if you can run code\nimport {hello} from \"@wtasnorg/node-lib\";\n\nawait hello(); \n// \"hello from @wtasnorg/node-lib\"\n```"
 		},
 		{
 			"kind": "text",

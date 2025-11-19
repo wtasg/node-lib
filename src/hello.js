@@ -3,7 +3,7 @@
  *
  * @returns hello message
  */
-function hello() {
+async function hello() {
     const message = "hello from @wtasnorg/node-lib";
     if (console?.log) {
         console.log(message);

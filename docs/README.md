@@ -4,9 +4,7 @@
 
 # @wtasnorg/node-lib
 
-A library project for nodejs.
-
-#typescript #library
+A library project for nodejs. #nodejs #typescript #library
 
 - [npm org](https://www.npmjs.com/org/wtasnorg)
 - [github repo](https://github.com/wtasg/node-lib)
@@ -32,7 +30,7 @@ npm install @wtasnorg/node-lib
 # check if you can run code
 import {hello} from "@wtasnorg/node-lib";
 
-hello(); 
+await hello(); 
 // "hello from @wtasnorg/node-lib"
 ```
 

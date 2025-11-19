@@ -3,6 +3,6 @@
  *
  * @returns hello message
  */
-declare function hello(): string;
+declare function hello(): Promise<string>;
 export { hello };
 //# sourceMappingURL=hello.d.ts.map
