@@ -17,7 +17,7 @@
 					"fileName": "hello.ts",
 					"line": 6,
 					"character": 15,
-					"url": "https://github.com/wtasg/node-lib/blob/86f4be29eea55d6d20fb66f9ee5aa8472db8610d/src/hello.ts#L6"
+					"url": "https://github.com/wtasg/node-lib/blob/8c33d6e85b13c11164c0ab9dca01c58d3cd86813/src/hello.ts#L6"
 				}
 			],
 			"signatures": [
@@ -51,7 +51,7 @@
 							"fileName": "hello.ts",
 							"line": 6,
 							"character": 15,
-							"url": "https://github.com/wtasg/node-lib/blob/86f4be29eea55d6d20fb66f9ee5aa8472db8610d/src/hello.ts#L6"
+							"url": "https://github.com/wtasg/node-lib/blob/8c33d6e85b13c11164c0ab9dca01c58d3cd86813/src/hello.ts#L6"
 						}
 					],
 					"type": {
