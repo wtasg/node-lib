@@ -7,3 +7,4 @@
 ## Functions
 
 - [hello](functions/hello.md)
+- [pojo](functions/pojo.md)

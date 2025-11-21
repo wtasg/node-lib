@@ -17,7 +17,7 @@
 					"fileName": "hello.ts",
 					"line": 6,
 					"character": 15,
-					"url": "https://github.com/wtasg/node-lib/blob/be4189222f32cc9b2fdf81c380cde5c51f69046c/src/hello.ts#L6"
+					"url": "https://github.com/wtasg/node-lib/blob/890fd5e866d9096470d56594a5788bf55e34bf7c/src/hello.ts#L6"
 				}
 			],
 			"signatures": [
@@ -51,7 +51,7 @@
 							"fileName": "hello.ts",
 							"line": 6,
 							"character": 15,
-							"url": "https://github.com/wtasg/node-lib/blob/be4189222f32cc9b2fdf81c380cde5c51f69046c/src/hello.ts#L6"
+							"url": "https://github.com/wtasg/node-lib/blob/890fd5e866d9096470d56594a5788bf55e34bf7c/src/hello.ts#L6"
 						}
 					],
 					"type": {
@@ -72,13 +72,122 @@
 					}
 				}
 			]
+		},
+		{
+			"id": 3,
+			"name": "pojo",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "pojo.ts",
+					"line": 10,
+					"character": 9,
+					"url": "https://github.com/wtasg/node-lib/blob/890fd5e866d9096470d56594a5788bf55e34bf7c/src/pojo.ts#L10"
+				}
+			],
+			"signatures": [
+				{
+					"id": 4,
+					"name": "pojo",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Convert a class instance into a plain JavaScript object.\nCopies only the instance's own enumerable data properties\nand excludes methods or prototype values."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "A plain JavaScript object containing only data fields."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "pojo.ts",
+							"line": 10,
+							"character": 9,
+							"url": "https://github.com/wtasg/node-lib/blob/890fd5e866d9096470d56594a5788bf55e34bf7c/src/pojo.ts#L10"
+						}
+					],
+					"typeParameters": [
+						{
+							"id": 5,
+							"name": "T",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "object"
+							}
+						}
+					],
+					"parameters": [
+						{
+							"id": 6,
+							"name": "instance",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "A class instance to convert."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": 5,
+								"name": "T",
+								"package": "@wtasnorg/node-lib",
+								"refersToTypeParameter": true
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"packageName": "typescript",
+							"packagePath": "lib/lib.es5.d.ts",
+							"qualifiedName": "Record"
+						},
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "string"
+							},
+							{
+								"type": "intrinsic",
+								"name": "any"
+							}
+						],
+						"name": "Record",
+						"package": "typescript"
+					}
+				}
+			]
 		}
 	],
 	"groups": [
 		{
 			"title": "Functions",
 			"children": [
-				1
+				1,
+				3
 			]
 		}
 	],
@@ -153,6 +262,26 @@
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/hello.ts",
 			"qualifiedName": "hello"
+		},
+		"3": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/pojo.ts",
+			"qualifiedName": "pojo"
+		},
+		"4": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/pojo.ts",
+			"qualifiedName": "pojo"
+		},
+		"5": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/pojo.ts",
+			"qualifiedName": "T"
+		},
+		"6": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/pojo.ts",
+			"qualifiedName": "instance"
 		}
 	},
 	"files": {
