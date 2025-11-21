@@ -1,3 +1,4 @@
 import { hello } from "./hello.js";
-export { hello };
+import { pojo } from "./pojo.js";
+export { hello, pojo };
 //# sourceMappingURL=index.js.map
