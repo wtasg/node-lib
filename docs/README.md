@@ -9,6 +9,11 @@ A library project for nodejs. #nodejs #typescript #library
 - [npm org](https://www.npmjs.com/org/wtasnorg)
 - [github repo](https://github.com/wtasg/node-lib)
 
+## Functions
+
+1. hello (for debugging)
+2. `pojo` for converting class objects to Plain Old Javascript Objects.
+
 ## Develop
 
 ```bash
