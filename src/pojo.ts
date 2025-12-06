@@ -5,9 +5,9 @@
  *
  * @template T
  * @param {T} instance - A class instance to convert.
- * @returns {Object<string, any>} A plain JavaScript object containing only data fields.
+ * @returns {Object<string, unknown>} A plain JavaScript object containing only data fields.
  */
-function pojo<T extends object>(instance: T): Record<string, any> {
+function pojo<T extends object>(instance: T): Record<string, unknown> {
     return Object.fromEntries(
         Object.entries(instance).filter(([_, value]) => typeof value !== "function")
     );

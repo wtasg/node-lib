@@ -7,6 +7,782 @@
 	"flags": {},
 	"children": [
 		{
+			"id": 27,
+			"name": "FileSystemDependencies",
+			"variant": "declaration",
+			"kind": 256,
+			"flags": {},
+			"children": [
+				{
+					"id": 28,
+					"name": "readdir",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "find.ts",
+							"line": 4,
+							"character": 4,
+							"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L4"
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 29,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "find.ts",
+									"line": 4,
+									"character": 13,
+									"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L4"
+								}
+							],
+							"signatures": [
+								{
+									"id": 30,
+									"name": "__type",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "find.ts",
+											"line": 4,
+											"character": 13,
+											"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L4"
+										}
+									],
+									"parameters": [
+										{
+											"id": 31,
+											"name": "path",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 32,
+											"name": "opts",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 33,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"children": [
+														{
+															"id": 34,
+															"name": "withFileTypes",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "find.ts",
+																	"line": 4,
+																	"character": 36,
+																	"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L4"
+																}
+															],
+															"type": {
+																"type": "literal",
+																"value": true
+															}
+														}
+													],
+													"groups": [
+														{
+															"title": "Properties",
+															"children": [
+																34
+															]
+														}
+													],
+													"sources": [
+														{
+															"fileName": "find.ts",
+															"line": 4,
+															"character": 34,
+															"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L4"
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"packageName": "typescript",
+											"packagePath": "lib/lib.es5.d.ts",
+											"qualifiedName": "Promise"
+										},
+										"typeArguments": [
+											{
+												"type": "array",
+												"elementType": {
+													"type": "reflection",
+													"declaration": {
+														"id": 35,
+														"name": "__type",
+														"variant": "declaration",
+														"kind": 65536,
+														"flags": {},
+														"children": [
+															{
+																"id": 36,
+																"name": "name",
+																"variant": "declaration",
+																"kind": 1024,
+																"flags": {},
+																"sources": [
+																	{
+																		"fileName": "find.ts",
+																		"line": 4,
+																		"character": 72,
+																		"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L4"
+																	}
+																],
+																"type": {
+																	"type": "intrinsic",
+																	"name": "string"
+																}
+															},
+															{
+																"id": 37,
+																"name": "isDirectory",
+																"variant": "declaration",
+																"kind": 2048,
+																"flags": {},
+																"sources": [
+																	{
+																		"fileName": "find.ts",
+																		"line": 4,
+																		"character": 86,
+																		"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L4"
+																	}
+																],
+																"signatures": [
+																	{
+																		"id": 38,
+																		"name": "isDirectory",
+																		"variant": "signature",
+																		"kind": 4096,
+																		"flags": {},
+																		"sources": [
+																			{
+																				"fileName": "find.ts",
+																				"line": 4,
+																				"character": 86,
+																				"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L4"
+																			}
+																		],
+																		"type": {
+																			"type": "intrinsic",
+																			"name": "boolean"
+																		}
+																	}
+																]
+															}
+														],
+														"groups": [
+															{
+																"title": "Properties",
+																"children": [
+																	36
+																]
+															},
+															{
+																"title": "Methods",
+																"children": [
+																	37
+																]
+															}
+														],
+														"sources": [
+															{
+																"fileName": "find.ts",
+																"line": 4,
+																"character": 70,
+																"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L4"
+															}
+														]
+													}
+												}
+											}
+										],
+										"name": "Promise",
+										"package": "typescript"
+									}
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 39,
+					"name": "stat",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "find.ts",
+							"line": 5,
+							"character": 4,
+							"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L5"
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 40,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "find.ts",
+									"line": 5,
+									"character": 10,
+									"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L5"
+								}
+							],
+							"signatures": [
+								{
+									"id": 41,
+									"name": "__type",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "find.ts",
+											"line": 5,
+											"character": 10,
+											"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L5"
+										}
+									],
+									"parameters": [
+										{
+											"id": 42,
+											"name": "path",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"packageName": "typescript",
+											"packagePath": "lib/lib.es5.d.ts",
+											"qualifiedName": "Promise"
+										},
+										"typeArguments": [
+											{
+												"type": "reflection",
+												"declaration": {
+													"id": 43,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"children": [
+														{
+															"id": 44,
+															"name": "isDirectory",
+															"variant": "declaration",
+															"kind": 2048,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "find.ts",
+																	"line": 5,
+																	"character": 38,
+																	"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L5"
+																}
+															],
+															"signatures": [
+																{
+																	"id": 45,
+																	"name": "isDirectory",
+																	"variant": "signature",
+																	"kind": 4096,
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "find.ts",
+																			"line": 5,
+																			"character": 38,
+																			"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L5"
+																		}
+																	],
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "boolean"
+																	}
+																}
+															]
+														}
+													],
+													"groups": [
+														{
+															"title": "Methods",
+															"children": [
+																44
+															]
+														}
+													],
+													"sources": [
+														{
+															"fileName": "find.ts",
+															"line": 5,
+															"character": 36,
+															"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L5"
+														}
+													]
+												}
+											}
+										],
+										"name": "Promise",
+										"package": "typescript"
+									}
+								}
+							]
+						}
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						28,
+						39
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "find.ts",
+					"line": 3,
+					"character": 10,
+					"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L3"
+				}
+			]
+		},
+		{
+			"id": 14,
+			"name": "FindDirectoriesOptions",
+			"variant": "declaration",
+			"kind": 256,
+			"flags": {},
+			"children": [
+				{
+					"id": 17,
+					"name": "allowlist",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "find.ts",
+							"line": 11,
+							"character": 4,
+							"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L11"
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "string"
+								}
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 18,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "find.ts",
+											"line": 11,
+											"character": 28,
+											"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L11"
+										}
+									],
+									"signatures": [
+										{
+											"id": 19,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "find.ts",
+													"line": 11,
+													"character": 28,
+													"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L11"
+												}
+											],
+											"parameters": [
+												{
+													"id": 20,
+													"name": "absPath",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 21,
+													"name": "name",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										}
+									]
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": 22,
+					"name": "blocklist",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "find.ts",
+							"line": 12,
+							"character": 4,
+							"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L12"
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "string"
+								}
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 23,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "find.ts",
+											"line": 12,
+											"character": 28,
+											"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L12"
+										}
+									],
+									"signatures": [
+										{
+											"id": 24,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "find.ts",
+													"line": 12,
+													"character": 28,
+													"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L12"
+												}
+											],
+											"parameters": [
+												{
+													"id": 25,
+													"name": "absPath",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 26,
+													"name": "name",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										}
+									]
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": 16,
+					"name": "followSymlinks",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "find.ts",
+							"line": 10,
+							"character": 4,
+							"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L10"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 15,
+					"name": "maxDepth",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "find.ts",
+							"line": 9,
+							"character": 4,
+							"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L9"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						17,
+						22,
+						16,
+						15
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "find.ts",
+					"line": 8,
+					"character": 10,
+					"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L8"
+				}
+			]
+		},
+		{
+			"id": 7,
+			"name": "createFindDirectories",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "find.ts",
+					"line": 19,
+					"character": 9,
+					"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L19"
+				}
+			],
+			"signatures": [
+				{
+					"id": 8,
+					"name": "createFindDirectories",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Factory that produces an async findDirectories function with\ninjected filesystem dependencies for full testability."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "find.ts",
+							"line": 19,
+							"character": 9,
+							"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L19"
+						}
+					],
+					"parameters": [
+						{
+							"id": 9,
+							"name": "deps",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": 27,
+								"name": "FileSystemDependencies",
+								"package": "@wtasnorg/node-lib"
+							}
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 10,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "find.ts",
+									"line": 23,
+									"character": 26,
+									"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L23"
+								}
+							],
+							"signatures": [
+								{
+									"id": 11,
+									"name": "__type",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "find.ts",
+											"line": 23,
+											"character": 26,
+											"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L23"
+										}
+									],
+									"parameters": [
+										{
+											"id": 12,
+											"name": "root",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 13,
+											"name": "options",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"target": 14,
+												"name": "FindDirectoriesOptions",
+												"package": "@wtasnorg/node-lib"
+											},
+											"defaultValue": "{}"
+										}
+									],
+									"type": {
+										"type": "reference",
+										"target": {
+											"packageName": "typescript",
+											"packagePath": "lib/lib.es5.d.ts",
+											"qualifiedName": "Promise"
+										},
+										"typeArguments": [
+											{
+												"type": "array",
+												"elementType": {
+													"type": "intrinsic",
+													"name": "string"
+												}
+											}
+										],
+										"name": "Promise",
+										"package": "typescript"
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
 			"id": 1,
 			"name": "hello",
 			"variant": "declaration",
@@ -17,7 +793,7 @@
 					"fileName": "hello.ts",
 					"line": 6,
 					"character": 15,
-					"url": "https://github.com/wtasg/node-lib/blob/890fd5e866d9096470d56594a5788bf55e34bf7c/src/hello.ts#L6"
+					"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/hello.ts#L6"
 				}
 			],
 			"signatures": [
@@ -51,7 +827,7 @@
 							"fileName": "hello.ts",
 							"line": 6,
 							"character": 15,
-							"url": "https://github.com/wtasg/node-lib/blob/890fd5e866d9096470d56594a5788bf55e34bf7c/src/hello.ts#L6"
+							"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/hello.ts#L6"
 						}
 					],
 					"type": {
@@ -84,7 +860,7 @@
 					"fileName": "pojo.ts",
 					"line": 10,
 					"character": 9,
-					"url": "https://github.com/wtasg/node-lib/blob/890fd5e866d9096470d56594a5788bf55e34bf7c/src/pojo.ts#L10"
+					"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/pojo.ts#L10"
 				}
 			],
 			"signatures": [
@@ -118,7 +894,7 @@
 							"fileName": "pojo.ts",
 							"line": 10,
 							"character": 9,
-							"url": "https://github.com/wtasg/node-lib/blob/890fd5e866d9096470d56594a5788bf55e34bf7c/src/pojo.ts#L10"
+							"url": "https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/pojo.ts#L10"
 						}
 					],
 					"typeParameters": [
@@ -172,7 +948,7 @@
 							},
 							{
 								"type": "intrinsic",
-								"name": "any"
+								"name": "unknown"
 							}
 						],
 						"name": "Record",
@@ -184,8 +960,16 @@
 	],
 	"groups": [
 		{
+			"title": "Interfaces",
+			"children": [
+				27,
+				14
+			]
+		},
+		{
 			"title": "Functions",
 			"children": [
+				7,
 				1,
 				3
 			]
@@ -203,7 +987,23 @@
 		},
 		{
 			"kind": "text",
-			"text": " for converting class objects to Plain Old Javascript Objects.\n\n## Develop\n\n"
+			"text": " for converting class objects to Plain Old Javascript Objects.\n3. "
+		},
+		{
+			"kind": "code",
+			"text": "`createFindDirectories`"
+		},
+		{
+			"kind": "text",
+			"text": " as a factory for finding directories; think "
+		},
+		{
+			"kind": "code",
+			"text": "`find path -type d`"
+		},
+		{
+			"kind": "text",
+			"text": ".\n\n## Develop\n\n"
 		},
 		{
 			"kind": "code",
@@ -282,6 +1082,201 @@
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/pojo.ts",
 			"qualifiedName": "instance"
+		},
+		"7": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "createFindDirectories"
+		},
+		"8": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "createFindDirectories"
+		},
+		"9": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "deps"
+		},
+		"10": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "findDirectories"
+		},
+		"11": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "findDirectories"
+		},
+		"12": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "root"
+		},
+		"13": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "options"
+		},
+		"14": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "FindDirectoriesOptions"
+		},
+		"15": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "FindDirectoriesOptions.maxDepth"
+		},
+		"16": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "FindDirectoriesOptions.followSymlinks"
+		},
+		"17": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "FindDirectoriesOptions.allowlist"
+		},
+		"18": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type"
+		},
+		"19": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type"
+		},
+		"20": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "absPath"
+		},
+		"21": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "name"
+		},
+		"22": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "FindDirectoriesOptions.blocklist"
+		},
+		"23": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type"
+		},
+		"24": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type"
+		},
+		"25": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "absPath"
+		},
+		"26": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "name"
+		},
+		"27": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "FileSystemDependencies"
+		},
+		"28": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "FileSystemDependencies.readdir"
+		},
+		"29": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type"
+		},
+		"30": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type"
+		},
+		"31": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "path"
+		},
+		"32": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "opts"
+		},
+		"33": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type"
+		},
+		"34": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type.withFileTypes"
+		},
+		"35": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type"
+		},
+		"36": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type.name"
+		},
+		"37": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type.isDirectory"
+		},
+		"38": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type.isDirectory"
+		},
+		"39": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "FileSystemDependencies.stat"
+		},
+		"40": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type"
+		},
+		"41": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type"
+		},
+		"42": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "path"
+		},
+		"43": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type"
+		},
+		"44": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type.isDirectory"
+		},
+		"45": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type.isDirectory"
 		}
 	},
 	"files": {

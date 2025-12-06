@@ -5,8 +5,8 @@
  *
  * @template T
  * @param {T} instance - A class instance to convert.
- * @returns {Object<string, any>} A plain JavaScript object containing only data fields.
+ * @returns {Object<string, unknown>} A plain JavaScript object containing only data fields.
  */
-declare function pojo<T extends object>(instance: T): Record<string, any>;
+declare function pojo<T extends object>(instance: T): Record<string, unknown>;
 export { pojo };
 //# sourceMappingURL=pojo.d.ts.map

@@ -1,11 +1,15 @@
 {
   "$schema": "https://typedoc.org/schema.json",
-  "entryPoints": ["./src/index.ts"],
+  "entryPoints": [
+    "./src/index.ts"
+  ],
   "excludePrivate": true,
   "excludeProtected": true,
   "name": "@wtasnorg/node-lib",
   "out": "docs",
-  "plugin": ["typedoc-plugin-markdown"],
+  "plugin": [
+    "typedoc-plugin-markdown"
+  ],
   "theme": "default",
   "tsconfig": "./tsconfig.json",
 }
