@@ -24,7 +24,7 @@
 							"fileName": "find.ts",
 							"line": 4,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L4"
+							"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/find.ts#L4"
 						}
 					],
 					"type": {
@@ -40,7 +40,7 @@
 									"fileName": "find.ts",
 									"line": 4,
 									"character": 13,
-									"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L4"
+									"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/find.ts#L4"
 								}
 							],
 							"signatures": [
@@ -55,7 +55,7 @@
 											"fileName": "find.ts",
 											"line": 4,
 											"character": 13,
-											"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L4"
+											"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/find.ts#L4"
 										}
 									],
 									"parameters": [
@@ -96,7 +96,7 @@
 																	"fileName": "find.ts",
 																	"line": 4,
 																	"character": 36,
-																	"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L4"
+																	"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/find.ts#L4"
 																}
 															],
 															"type": {
@@ -118,7 +118,7 @@
 															"fileName": "find.ts",
 															"line": 4,
 															"character": 34,
-															"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L4"
+															"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/find.ts#L4"
 														}
 													]
 												}
@@ -155,7 +155,7 @@
 																		"fileName": "find.ts",
 																		"line": 4,
 																		"character": 72,
-																		"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L4"
+																		"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/find.ts#L4"
 																	}
 																],
 																"type": {
@@ -174,7 +174,7 @@
 																		"fileName": "find.ts",
 																		"line": 4,
 																		"character": 86,
-																		"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L4"
+																		"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/find.ts#L4"
 																	}
 																],
 																"signatures": [
@@ -189,7 +189,7 @@
 																				"fileName": "find.ts",
 																				"line": 4,
 																				"character": 86,
-																				"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L4"
+																				"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/find.ts#L4"
 																			}
 																		],
 																		"type": {
@@ -219,7 +219,7 @@
 																"fileName": "find.ts",
 																"line": 4,
 																"character": 70,
-																"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L4"
+																"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/find.ts#L4"
 															}
 														]
 													}
@@ -245,7 +245,7 @@
 							"fileName": "find.ts",
 							"line": 5,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L5"
+							"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/find.ts#L5"
 						}
 					],
 					"type": {
@@ -261,7 +261,7 @@
 									"fileName": "find.ts",
 									"line": 5,
 									"character": 10,
-									"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L5"
+									"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/find.ts#L5"
 								}
 							],
 							"signatures": [
@@ -276,7 +276,7 @@
 											"fileName": "find.ts",
 											"line": 5,
 											"character": 10,
-											"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L5"
+											"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/find.ts#L5"
 										}
 									],
 									"parameters": [
@@ -320,7 +320,7 @@
 																	"fileName": "find.ts",
 																	"line": 5,
 																	"character": 38,
-																	"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L5"
+																	"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/find.ts#L5"
 																}
 															],
 															"signatures": [
@@ -335,7 +335,7 @@
 																			"fileName": "find.ts",
 																			"line": 5,
 																			"character": 38,
-																			"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L5"
+																			"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/find.ts#L5"
 																		}
 																	],
 																	"type": {
@@ -359,7 +359,7 @@
 															"fileName": "find.ts",
 															"line": 5,
 															"character": 36,
-															"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L5"
+															"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/find.ts#L5"
 														}
 													]
 												}
@@ -388,7 +388,7 @@
 					"fileName": "find.ts",
 					"line": 3,
 					"character": 10,
-					"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L3"
+					"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/find.ts#L3"
 				}
 			]
 		},
@@ -412,7 +412,7 @@
 							"fileName": "find.ts",
 							"line": 11,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L11"
+							"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/find.ts#L11"
 						}
 					],
 					"type": {
@@ -438,7 +438,7 @@
 											"fileName": "find.ts",
 											"line": 11,
 											"character": 28,
-											"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L11"
+											"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/find.ts#L11"
 										}
 									],
 									"signatures": [
@@ -453,7 +453,7 @@
 													"fileName": "find.ts",
 													"line": 11,
 													"character": 28,
-													"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L11"
+													"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/find.ts#L11"
 												}
 											],
 											"parameters": [
@@ -504,7 +504,7 @@
 							"fileName": "find.ts",
 							"line": 12,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L12"
+							"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/find.ts#L12"
 						}
 					],
 					"type": {
@@ -530,7 +530,7 @@
 											"fileName": "find.ts",
 											"line": 12,
 											"character": 28,
-											"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L12"
+											"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/find.ts#L12"
 										}
 									],
 									"signatures": [
@@ -545,7 +545,7 @@
 													"fileName": "find.ts",
 													"line": 12,
 													"character": 28,
-													"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L12"
+													"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/find.ts#L12"
 												}
 											],
 											"parameters": [
@@ -596,7 +596,7 @@
 							"fileName": "find.ts",
 							"line": 10,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L10"
+							"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/find.ts#L10"
 						}
 					],
 					"type": {
@@ -617,7 +617,7 @@
 							"fileName": "find.ts",
 							"line": 9,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L9"
+							"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/find.ts#L9"
 						}
 					],
 					"type": {
@@ -642,7 +642,7 @@
 					"fileName": "find.ts",
 					"line": 8,
 					"character": 10,
-					"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L8"
+					"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/find.ts#L8"
 				}
 			]
 		},
@@ -657,7 +657,7 @@
 					"fileName": "find.ts",
 					"line": 19,
 					"character": 9,
-					"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L19"
+					"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/find.ts#L19"
 				}
 			],
 			"signatures": [
@@ -680,7 +680,7 @@
 							"fileName": "find.ts",
 							"line": 19,
 							"character": 9,
-							"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L19"
+							"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/find.ts#L19"
 						}
 					],
 					"parameters": [
@@ -711,7 +711,7 @@
 									"fileName": "find.ts",
 									"line": 23,
 									"character": 26,
-									"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L23"
+									"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/find.ts#L23"
 								}
 							],
 							"signatures": [
@@ -726,7 +726,7 @@
 											"fileName": "find.ts",
 											"line": 23,
 											"character": 26,
-											"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L23"
+											"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/find.ts#L23"
 										}
 									],
 									"parameters": [
@@ -793,7 +793,7 @@
 					"fileName": "hello.ts",
 					"line": 6,
 					"character": 15,
-					"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/hello.ts#L6"
+					"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/hello.ts#L6"
 				}
 			],
 			"signatures": [
@@ -827,7 +827,7 @@
 							"fileName": "hello.ts",
 							"line": 6,
 							"character": 15,
-							"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/hello.ts#L6"
+							"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/hello.ts#L6"
 						}
 					],
 					"type": {
@@ -860,7 +860,7 @@
 					"fileName": "pojo.ts",
 					"line": 10,
 					"character": 9,
-					"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/pojo.ts#L10"
+					"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/pojo.ts#L10"
 				}
 			],
 			"signatures": [
@@ -894,7 +894,7 @@
 							"fileName": "pojo.ts",
 							"line": 10,
 							"character": 9,
-							"url": "https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/pojo.ts#L10"
+							"url": "https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/pojo.ts#L10"
 						}
 					],
 					"typeParameters": [

@@ -8,7 +8,7 @@
 
 > **pojo**\<`T`\>(`instance`): `Record`\<`string`, `unknown`\>
 
-Defined in: [pojo.ts:10](https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/pojo.ts#L10)
+Defined in: [pojo.ts:10](https://github.com/wtasg/node-lib/blob/cf7bf2c52d7290455ef5117574965703bedcc8a9/src/pojo.ts#L10)
 
 Convert a class instance into a plain JavaScript object.
 Copies only the instance's own enumerable data properties
