@@ -6,7 +6,7 @@
 
 # Interface: FindDirectoriesOptions
 
-Defined in: [find.ts:8](https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L8)
+Defined in: [find.ts:8](https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L8)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [find.ts:8](https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d8
 
 > `optional` **allowlist**: `string`[] \| (`absPath`, `name`) => `boolean`
 
-Defined in: [find.ts:11](https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L11)
+Defined in: [find.ts:11](https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L11)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [find.ts:11](https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d
 
 > `optional` **blocklist**: `string`[] \| (`absPath`, `name`) => `boolean`
 
-Defined in: [find.ts:12](https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L12)
+Defined in: [find.ts:12](https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L12)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [find.ts:12](https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d
 
 > `optional` **followSymlinks**: `boolean`
 
-Defined in: [find.ts:10](https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L10)
+Defined in: [find.ts:10](https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L10)
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: [find.ts:10](https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d
 
 > `optional` **maxDepth**: `number`
 
-Defined in: [find.ts:9](https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L9)
+Defined in: [find.ts:9](https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L9)

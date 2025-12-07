@@ -12,4 +12,4 @@ export {
 export type {
     FindDirectoriesOptions,
     FileSystemDependencies,
-}
+};

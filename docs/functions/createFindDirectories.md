@@ -8,7 +8,7 @@
 
 > **createFindDirectories**(`deps`): (`root`, `options`) => `Promise`\<`string`[]\>
 
-Defined in: [find.ts:19](https://github.com/wtasg/node-lib/blob/5ef6c801dee6a05d879c445d672ee6c2f8da4ba4/src/find.ts#L19)
+Defined in: [find.ts:19](https://github.com/wtasg/node-lib/blob/c65c61bdf1a5d3419385060466112dd5db87b253/src/find.ts#L19)
 
 Factory that produces an async findDirectories function with
 injected filesystem dependencies for full testability.

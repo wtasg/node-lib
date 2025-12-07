@@ -91,9 +91,9 @@ function createFindDirectories(deps: FileSystemDependencies) {
 
 export {
     createFindDirectories,
-}
+};
 
 export type {
     FileSystemDependencies,
     FindDirectoriesOptions,
-}
+};
