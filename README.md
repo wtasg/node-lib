@@ -9,6 +9,7 @@ A library project for nodejs. #nodejs #typescript #library
 
 1. hello (for debugging)
 2. `pojo` for converting class objects to Plain Old Javascript Objects.
+3. `createFindDirectories` as a factory for finding directories; think `find path -type d`.
 
 ## Develop
 

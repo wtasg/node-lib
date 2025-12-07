@@ -1,4 +1,7 @@
 import { hello } from "./hello.js";
 import { pojo } from "./pojo.js";
-export { hello, pojo };
+import type { FindDirectoriesOptions, FileSystemDependencies } from "./find.js";
+import { createFindDirectories } from "./find.js";
+export { hello, pojo, createFindDirectories };
+export type { FindDirectoriesOptions, FileSystemDependencies, };
 //# sourceMappingURL=index.d.ts.map

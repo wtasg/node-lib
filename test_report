@@ -1,0 +1,26 @@
+
+> @wtasnorg/node-lib@0.0.6 test
+> bash -c 'node --test src/**/*.test.js'
+
+[32m✔ find: findDirectories success [90m(1.136601ms)[39m[39m
+[32m✔ find: findDirectories symlink is NOT treated as a directory [90m(0.189308ms)[39m[39m
+[32m✔ find: findDirectories at depth=2 [90m(0.274118ms)[39m[39m
+[32m✔ find: findDirectories at depth=3 [90m(0.250638ms)[39m[39m
+hello from @wtasnorg/node-lib
+hello from @wtasnorg/node-lib
+▶ hello
+  [32m✔ returns a string that has the word 'hello' in it [90m(0.938832ms)[39m[39m
+  [32m✔ returns exact string [90m(0.133668ms)[39m[39m
+[32m✔ hello [90m(1.739206ms)[39m[39m
+[32m✔ pojo() should return only enumerable data fields [90m(1.058661ms)[39m[39m
+[32m✔ pojo() should exclude methods [90m(0.165029ms)[39m[39m
+[32m✔ pojo() should exclude prototype properties [90m(0.143849ms)[39m[39m
+[32m✔ pojo() should ignore non-enumerable own properties [90m(0.693624ms)[39m[39m
+[34mℹ tests 10[39m
+[34mℹ suites 1[39m
+[34mℹ pass 10[39m
+[34mℹ fail 0[39m
+[34mℹ cancelled 0[39m
+[34mℹ skipped 0[39m
+[34mℹ todo 0[39m
+[34mℹ duration_ms 47.072307[39m

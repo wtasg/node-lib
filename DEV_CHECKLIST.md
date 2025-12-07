@@ -8,7 +8,6 @@
 - [ ] Have you used the code locally?
 - [ ] Check your email and username. Protect PII. `git log -n1`
 
-
 ```bash
 npm run build
 npm run test
