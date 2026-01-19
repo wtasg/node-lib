@@ -8,3 +8,7 @@
 - `parseUserAgent` function to extract browser, OS, device, and engine info.
 - `npm run lint` script to `package.json`.
 - ESLint and EditorConfig compliance for new files.
+
+### Fixed
+- Exported `parseUserAgent` function and `UserAgentInfo` type from `index.ts`.
+- Fixed `detectEngine` logic: "Blink" was never returned because "AppleWebKit" check ran first. Reordered checks so Chrome-based browsers correctly return "Blink".
