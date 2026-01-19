@@ -11,6 +11,7 @@ A library project for nodejs. #nodejs #typescript #library
 2. `pojo` for converting class objects to Plain Old Javascript Objects.
 3. `createFindDirectories` as a factory for finding directories; think `find path -type d`.
 4. `parseUserAgent` for extracting information from user-agent strings.
+5. `encode` / `decode` for Base64 encoding/decoding with charset variants (`standard`, `urlsafe`, `imap`, `radix64`).
 
 ## Develop
 

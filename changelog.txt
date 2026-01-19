@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.0.9] - 2026-01-19
+
+### Added
+- Base64 encoding/decoding in `src/base64.ts` with four charset variants:
+  - `standard`: RFC 4648 standard alphabet (A-Z, a-z, 0-9, +, /)
+  - `urlsafe`: URL and filename safe (A-Z, a-z, 0-9, -, _)
+  - `imap`: Modified Base64 for IMAP mailbox names (A-Z, a-z, 0-9, +, ,)
+  - `radix64`: Base64 variant used in OpenPGP (A-Z, a-z, 0-9, +, /)
+- Exported `encode`, `decode`, `Base64Charset`, and `Base64CharsetType` from `index.ts`.
+- Comprehensive unit tests in `src/base64.test.ts` with round-trip tests for all charsets.
+
 ## [0.0.8] - 2026-01-19
 
 ### Added
@@ -12,3 +23,4 @@
 ### Fixed
 - Exported `parseUserAgent` function and `UserAgentInfo` type from `index.ts`.
 - Fixed `detectEngine` logic: "Blink" was never returned because "AppleWebKit" check ran first. Reordered checks so Chrome-based browsers correctly return "Blink".
+
