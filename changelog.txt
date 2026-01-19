@@ -1,0 +1,10 @@
+# Changelog
+
+## [0.0.8] - 2026-01-19
+
+### Added
+- User-agent parsing functionality in `src/user-agent.ts`.
+- Comprehensive unit tests for user-agent parsing in `src/user-agent.test.ts`.
+- `parseUserAgent` function to extract browser, OS, device, and engine info.
+- `npm run lint` script to `package.json`.
+- ESLint and EditorConfig compliance for new files.

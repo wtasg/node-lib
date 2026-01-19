@@ -7,14 +7,14 @@
 	"flags": {},
 	"children": [
 		{
-			"id": 27,
+			"id": 30,
 			"name": "FileSystemDependencies",
 			"variant": "declaration",
 			"kind": 256,
 			"flags": {},
 			"children": [
 				{
-					"id": 28,
+					"id": 31,
 					"name": "readdir",
 					"variant": "declaration",
 					"kind": 1024,
@@ -24,13 +24,13 @@
 							"fileName": "find.ts",
 							"line": 4,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L4"
+							"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L4"
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 29,
+							"id": 32,
 							"name": "__type",
 							"variant": "declaration",
 							"kind": 65536,
@@ -40,12 +40,12 @@
 									"fileName": "find.ts",
 									"line": 4,
 									"character": 13,
-									"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L4"
+									"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L4"
 								}
 							],
 							"signatures": [
 								{
-									"id": 30,
+									"id": 33,
 									"name": "__type",
 									"variant": "signature",
 									"kind": 4096,
@@ -55,13 +55,13 @@
 											"fileName": "find.ts",
 											"line": 4,
 											"character": 13,
-											"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L4"
+											"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L4"
 										}
 									],
 									"parameters": [
 										{
-											"id": 31,
-											"name": "path",
+											"id": 34,
+											"name": "_path",
 											"variant": "param",
 											"kind": 32768,
 											"flags": {},
@@ -71,22 +71,22 @@
 											}
 										},
 										{
-											"id": 32,
-											"name": "opts",
+											"id": 35,
+											"name": "_opts",
 											"variant": "param",
 											"kind": 32768,
 											"flags": {},
 											"type": {
 												"type": "reflection",
 												"declaration": {
-													"id": 33,
+													"id": 36,
 													"name": "__type",
 													"variant": "declaration",
 													"kind": 65536,
 													"flags": {},
 													"children": [
 														{
-															"id": 34,
+															"id": 37,
 															"name": "withFileTypes",
 															"variant": "declaration",
 															"kind": 1024,
@@ -95,8 +95,8 @@
 																{
 																	"fileName": "find.ts",
 																	"line": 4,
-																	"character": 36,
-																	"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L4"
+																	"character": 38,
+																	"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L4"
 																}
 															],
 															"type": {
@@ -109,7 +109,7 @@
 														{
 															"title": "Properties",
 															"children": [
-																34
+																37
 															]
 														}
 													],
@@ -117,8 +117,8 @@
 														{
 															"fileName": "find.ts",
 															"line": 4,
-															"character": 34,
-															"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L4"
+															"character": 36,
+															"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L4"
 														}
 													]
 												}
@@ -138,14 +138,14 @@
 												"elementType": {
 													"type": "reflection",
 													"declaration": {
-														"id": 35,
+														"id": 38,
 														"name": "__type",
 														"variant": "declaration",
 														"kind": 65536,
 														"flags": {},
 														"children": [
 															{
-																"id": 36,
+																"id": 39,
 																"name": "name",
 																"variant": "declaration",
 																"kind": 1024,
@@ -154,8 +154,8 @@
 																	{
 																		"fileName": "find.ts",
 																		"line": 4,
-																		"character": 72,
-																		"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L4"
+																		"character": 74,
+																		"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L4"
 																	}
 																],
 																"type": {
@@ -164,7 +164,7 @@
 																}
 															},
 															{
-																"id": 37,
+																"id": 40,
 																"name": "isDirectory",
 																"variant": "declaration",
 																"kind": 2048,
@@ -173,13 +173,13 @@
 																	{
 																		"fileName": "find.ts",
 																		"line": 4,
-																		"character": 86,
-																		"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L4"
+																		"character": 88,
+																		"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L4"
 																	}
 																],
 																"signatures": [
 																	{
-																		"id": 38,
+																		"id": 41,
 																		"name": "isDirectory",
 																		"variant": "signature",
 																		"kind": 4096,
@@ -188,8 +188,8 @@
 																			{
 																				"fileName": "find.ts",
 																				"line": 4,
-																				"character": 86,
-																				"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L4"
+																				"character": 88,
+																				"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L4"
 																			}
 																		],
 																		"type": {
@@ -204,13 +204,13 @@
 															{
 																"title": "Properties",
 																"children": [
-																	36
+																	39
 																]
 															},
 															{
 																"title": "Methods",
 																"children": [
-																	37
+																	40
 																]
 															}
 														],
@@ -218,8 +218,8 @@
 															{
 																"fileName": "find.ts",
 																"line": 4,
-																"character": 70,
-																"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L4"
+																"character": 72,
+																"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L4"
 															}
 														]
 													}
@@ -235,7 +235,7 @@
 					}
 				},
 				{
-					"id": 39,
+					"id": 42,
 					"name": "stat",
 					"variant": "declaration",
 					"kind": 1024,
@@ -245,13 +245,13 @@
 							"fileName": "find.ts",
 							"line": 5,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L5"
+							"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L5"
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 40,
+							"id": 43,
 							"name": "__type",
 							"variant": "declaration",
 							"kind": 65536,
@@ -261,12 +261,12 @@
 									"fileName": "find.ts",
 									"line": 5,
 									"character": 10,
-									"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L5"
+									"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L5"
 								}
 							],
 							"signatures": [
 								{
-									"id": 41,
+									"id": 44,
 									"name": "__type",
 									"variant": "signature",
 									"kind": 4096,
@@ -276,13 +276,13 @@
 											"fileName": "find.ts",
 											"line": 5,
 											"character": 10,
-											"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L5"
+											"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L5"
 										}
 									],
 									"parameters": [
 										{
-											"id": 42,
-											"name": "path",
+											"id": 45,
+											"name": "_path",
 											"variant": "param",
 											"kind": 32768,
 											"flags": {},
@@ -303,14 +303,14 @@
 											{
 												"type": "reflection",
 												"declaration": {
-													"id": 43,
+													"id": 46,
 													"name": "__type",
 													"variant": "declaration",
 													"kind": 65536,
 													"flags": {},
 													"children": [
 														{
-															"id": 44,
+															"id": 47,
 															"name": "isDirectory",
 															"variant": "declaration",
 															"kind": 2048,
@@ -319,13 +319,13 @@
 																{
 																	"fileName": "find.ts",
 																	"line": 5,
-																	"character": 38,
-																	"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L5"
+																	"character": 39,
+																	"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L5"
 																}
 															],
 															"signatures": [
 																{
-																	"id": 45,
+																	"id": 48,
 																	"name": "isDirectory",
 																	"variant": "signature",
 																	"kind": 4096,
@@ -334,8 +334,8 @@
 																		{
 																			"fileName": "find.ts",
 																			"line": 5,
-																			"character": 38,
-																			"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L5"
+																			"character": 39,
+																			"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L5"
 																		}
 																	],
 																	"type": {
@@ -350,7 +350,7 @@
 														{
 															"title": "Methods",
 															"children": [
-																44
+																47
 															]
 														}
 													],
@@ -358,8 +358,8 @@
 														{
 															"fileName": "find.ts",
 															"line": 5,
-															"character": 36,
-															"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L5"
+															"character": 37,
+															"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L5"
 														}
 													]
 												}
@@ -378,8 +378,8 @@
 				{
 					"title": "Properties",
 					"children": [
-						28,
-						39
+						31,
+						42
 					]
 				}
 			],
@@ -388,19 +388,19 @@
 					"fileName": "find.ts",
 					"line": 3,
 					"character": 10,
-					"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L3"
+					"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L3"
 				}
 			]
 		},
 		{
-			"id": 14,
+			"id": 17,
 			"name": "FindDirectoriesOptions",
 			"variant": "declaration",
 			"kind": 256,
 			"flags": {},
 			"children": [
 				{
-					"id": 17,
+					"id": 20,
 					"name": "allowlist",
 					"variant": "declaration",
 					"kind": 1024,
@@ -412,7 +412,7 @@
 							"fileName": "find.ts",
 							"line": 11,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L11"
+							"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L11"
 						}
 					],
 					"type": {
@@ -428,7 +428,7 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 18,
+									"id": 21,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
@@ -438,12 +438,12 @@
 											"fileName": "find.ts",
 											"line": 11,
 											"character": 28,
-											"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L11"
+											"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L11"
 										}
 									],
 									"signatures": [
 										{
-											"id": 19,
+											"id": 22,
 											"name": "__type",
 											"variant": "signature",
 											"kind": 4096,
@@ -453,13 +453,13 @@
 													"fileName": "find.ts",
 													"line": 11,
 													"character": 28,
-													"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L11"
+													"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L11"
 												}
 											],
 											"parameters": [
 												{
-													"id": 20,
-													"name": "absPath",
+													"id": 23,
+													"name": "_absPath",
 													"variant": "param",
 													"kind": 32768,
 													"flags": {},
@@ -469,8 +469,8 @@
 													}
 												},
 												{
-													"id": 21,
-													"name": "name",
+													"id": 24,
+													"name": "_name",
 													"variant": "param",
 													"kind": 32768,
 													"flags": {},
@@ -492,7 +492,7 @@
 					}
 				},
 				{
-					"id": 22,
+					"id": 25,
 					"name": "blocklist",
 					"variant": "declaration",
 					"kind": 1024,
@@ -504,7 +504,7 @@
 							"fileName": "find.ts",
 							"line": 12,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L12"
+							"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L12"
 						}
 					],
 					"type": {
@@ -520,7 +520,7 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 23,
+									"id": 26,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
@@ -530,12 +530,12 @@
 											"fileName": "find.ts",
 											"line": 12,
 											"character": 28,
-											"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L12"
+											"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L12"
 										}
 									],
 									"signatures": [
 										{
-											"id": 24,
+											"id": 27,
 											"name": "__type",
 											"variant": "signature",
 											"kind": 4096,
@@ -545,13 +545,13 @@
 													"fileName": "find.ts",
 													"line": 12,
 													"character": 28,
-													"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L12"
+													"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L12"
 												}
 											],
 											"parameters": [
 												{
-													"id": 25,
-													"name": "absPath",
+													"id": 28,
+													"name": "_absPath",
 													"variant": "param",
 													"kind": 32768,
 													"flags": {},
@@ -561,8 +561,8 @@
 													}
 												},
 												{
-													"id": 26,
-													"name": "name",
+													"id": 29,
+													"name": "_name",
 													"variant": "param",
 													"kind": 32768,
 													"flags": {},
@@ -584,7 +584,7 @@
 					}
 				},
 				{
-					"id": 16,
+					"id": 19,
 					"name": "followSymlinks",
 					"variant": "declaration",
 					"kind": 1024,
@@ -596,7 +596,7 @@
 							"fileName": "find.ts",
 							"line": 10,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L10"
+							"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L10"
 						}
 					],
 					"type": {
@@ -605,7 +605,7 @@
 					}
 				},
 				{
-					"id": 15,
+					"id": 18,
 					"name": "maxDepth",
 					"variant": "declaration",
 					"kind": 1024,
@@ -617,7 +617,7 @@
 							"fileName": "find.ts",
 							"line": 9,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L9"
+							"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L9"
 						}
 					],
 					"type": {
@@ -630,10 +630,10 @@
 				{
 					"title": "Properties",
 					"children": [
-						17,
-						22,
-						16,
-						15
+						20,
+						25,
+						19,
+						18
 					]
 				}
 			],
@@ -642,7 +642,179 @@
 					"fileName": "find.ts",
 					"line": 8,
 					"character": 10,
-					"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L8"
+					"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L8"
+				}
+			]
+		},
+		{
+			"id": 49,
+			"name": "UserAgentInfo",
+			"variant": "declaration",
+			"kind": 256,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Information extracted from a user-agent string."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 50,
+					"name": "browser",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Browser name (e.g., Chrome, Firefox, Safari, Edge, Opera, Other)."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "user-agent.ts",
+							"line": 8,
+							"character": 4,
+							"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/user-agent.ts#L8"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 53,
+					"name": "device",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Device type (e.g., Mobile, Tablet, Desktop, Other)."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "user-agent.ts",
+							"line": 20,
+							"character": 4,
+							"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/user-agent.ts#L20"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 54,
+					"name": "engine",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Rendering engine (e.g., Blink, WebKit, Gecko, Presto, Other)."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "user-agent.ts",
+							"line": 24,
+							"character": 4,
+							"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/user-agent.ts#L24"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 52,
+					"name": "os",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Operating system (e.g., Windows, macOS, Linux, iOS, Android, Other)."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "user-agent.ts",
+							"line": 16,
+							"character": 4,
+							"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/user-agent.ts#L16"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 51,
+					"name": "version",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Browser version (e.g., 120.0.0.0)."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "user-agent.ts",
+							"line": 12,
+							"character": 4,
+							"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/user-agent.ts#L12"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						50,
+						53,
+						54,
+						52,
+						51
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "user-agent.ts",
+					"line": 4,
+					"character": 17,
+					"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/user-agent.ts#L4"
 				}
 			]
 		},
@@ -657,7 +829,7 @@
 					"fileName": "find.ts",
 					"line": 19,
 					"character": 9,
-					"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L19"
+					"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L19"
 				}
 			],
 			"signatures": [
@@ -680,7 +852,7 @@
 							"fileName": "find.ts",
 							"line": 19,
 							"character": 9,
-							"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L19"
+							"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L19"
 						}
 					],
 					"parameters": [
@@ -692,7 +864,7 @@
 							"flags": {},
 							"type": {
 								"type": "reference",
-								"target": 27,
+								"target": 30,
 								"name": "FileSystemDependencies",
 								"package": "@wtasnorg/node-lib"
 							}
@@ -711,7 +883,7 @@
 									"fileName": "find.ts",
 									"line": 23,
 									"character": 26,
-									"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L23"
+									"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L23"
 								}
 							],
 							"signatures": [
@@ -726,7 +898,7 @@
 											"fileName": "find.ts",
 											"line": 23,
 											"character": 26,
-											"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L23"
+											"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L23"
 										}
 									],
 									"parameters": [
@@ -749,7 +921,7 @@
 											"flags": {},
 											"type": {
 												"type": "reference",
-												"target": 14,
+												"target": 17,
 												"name": "FindDirectoriesOptions",
 												"package": "@wtasnorg/node-lib"
 											},
@@ -793,7 +965,7 @@
 					"fileName": "hello.ts",
 					"line": 6,
 					"character": 15,
-					"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/hello.ts#L6"
+					"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/hello.ts#L6"
 				}
 			],
 			"signatures": [
@@ -827,7 +999,7 @@
 							"fileName": "hello.ts",
 							"line": 6,
 							"character": 15,
-							"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/hello.ts#L6"
+							"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/hello.ts#L6"
 						}
 					],
 					"type": {
@@ -850,6 +1022,106 @@
 			]
 		},
 		{
+			"id": 14,
+			"name": "parseUserAgent",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "user-agent.ts",
+					"line": 48,
+					"character": 16,
+					"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/user-agent.ts#L48"
+				}
+			],
+			"signatures": [
+				{
+					"id": 15,
+					"name": "parseUserAgent",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Parses a user-agent string into a UserAgentInfo object."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "An object containing the extracted information."
+									}
+								]
+							},
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```typescript\n// Success Example (Chrome on Windows)\nconst ua = \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\";\nconst info = parseUserAgent(ua);\n// { browser: \"Chrome\", version: \"120.0.0.0\", os: \"Windows\", device: \"Desktop\", engine: \"Blink\" }\n```"
+									}
+								]
+							},
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "text",
+										"text": "\n\n"
+									},
+									{
+										"kind": "code",
+										"text": "```typescript\n// Error/Fallback Example (Empty string)\nconst info = parseUserAgent(\"\");\n// { browser: \"Other\", version: \"0\", os: \"Other\", device: \"Desktop\", engine: \"Other\" }\n```"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "user-agent.ts",
+							"line": 48,
+							"character": 16,
+							"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/user-agent.ts#L48"
+						}
+					],
+					"parameters": [
+						{
+							"id": 16,
+							"name": "ua",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The user-agent string to parse."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": 49,
+						"name": "UserAgentInfo",
+						"package": "@wtasnorg/node-lib"
+					}
+				}
+			]
+		},
+		{
 			"id": 3,
 			"name": "pojo",
 			"variant": "declaration",
@@ -860,7 +1132,7 @@
 					"fileName": "pojo.ts",
 					"line": 10,
 					"character": 9,
-					"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/pojo.ts#L10"
+					"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/pojo.ts#L10"
 				}
 			],
 			"signatures": [
@@ -894,7 +1166,7 @@
 							"fileName": "pojo.ts",
 							"line": 10,
 							"character": 9,
-							"url": "https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/pojo.ts#L10"
+							"url": "https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/pojo.ts#L10"
 						}
 					],
 					"typeParameters": [
@@ -962,8 +1234,9 @@
 		{
 			"title": "Interfaces",
 			"children": [
-				27,
-				14
+				30,
+				17,
+				49
 			]
 		},
 		{
@@ -971,82 +1244,12 @@
 			"children": [
 				7,
 				1,
+				14,
 				3
 			]
 		}
 	],
 	"packageName": "@wtasnorg/node-lib",
-	"readme": [
-		{
-			"kind": "text",
-			"text": "# @wtasnorg/node-lib\n\nA library project for nodejs. #nodejs #typescript #library\n\n- [npm org](https://www.npmjs.com/org/wtasnorg)\n- [github repo](https://github.com/wtasg/node-lib)\n\n## Functions\n\n1. hello (for debugging)\n2. "
-		},
-		{
-			"kind": "code",
-			"text": "`pojo`"
-		},
-		{
-			"kind": "text",
-			"text": " for converting class objects to Plain Old Javascript Objects.\n3. "
-		},
-		{
-			"kind": "code",
-			"text": "`createFindDirectories`"
-		},
-		{
-			"kind": "text",
-			"text": " as a factory for finding directories; think "
-		},
-		{
-			"kind": "code",
-			"text": "`find path -type d`"
-		},
-		{
-			"kind": "text",
-			"text": ".\n\n## Develop\n\n"
-		},
-		{
-			"kind": "code",
-			"text": "```bash\ngit clone git@github.com:wtasg/node-lib.git\nnpm run build\nnpm run test\n# make changes...\n```"
-		},
-		{
-			"kind": "text",
-			"text": "\n\nWe are using "
-		},
-		{
-			"kind": "code",
-			"text": "`node --test`"
-		},
-		{
-			"kind": "text",
-			"text": " for testing.\n\n## Install and Usage\n\n"
-		},
-		{
-			"kind": "code",
-			"text": "```bash\nnpm install @wtasnorg/node-lib\n```"
-		},
-		{
-			"kind": "text",
-			"text": "\n\n"
-		},
-		{
-			"kind": "code",
-			"text": "```typescript\n# check if you can run code\nimport {hello} from \"@wtasnorg/node-lib\";\n\nawait hello(); \n// \"hello from @wtasnorg/node-lib\"\n```"
-		},
-		{
-			"kind": "text",
-			"text": "\n\n## License: MIT\n\n[MIT License file]("
-		},
-		{
-			"kind": "relative-link",
-			"text": "LICENSE",
-			"target": 2
-		},
-		{
-			"kind": "text",
-			"text": ")"
-		}
-	],
 	"symbolIdMap": {
 		"0": {
 			"packageName": "@wtasnorg/node-lib",
@@ -1120,98 +1323,98 @@
 		},
 		"14": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "FindDirectoriesOptions"
+			"packagePath": "src/user-agent.ts",
+			"qualifiedName": "parseUserAgent"
 		},
 		"15": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "FindDirectoriesOptions.maxDepth"
+			"packagePath": "src/user-agent.ts",
+			"qualifiedName": "parseUserAgent"
 		},
 		"16": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "FindDirectoriesOptions.followSymlinks"
+			"packagePath": "src/user-agent.ts",
+			"qualifiedName": "ua"
 		},
 		"17": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "FindDirectoriesOptions.allowlist"
+			"qualifiedName": "FindDirectoriesOptions"
 		},
 		"18": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "FindDirectoriesOptions.maxDepth"
 		},
 		"19": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "FindDirectoriesOptions.followSymlinks"
 		},
 		"20": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "absPath"
+			"qualifiedName": "FindDirectoriesOptions.allowlist"
 		},
 		"21": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "name"
+			"qualifiedName": "__type"
 		},
 		"22": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "FindDirectoriesOptions.blocklist"
+			"qualifiedName": "__type"
 		},
 		"23": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "_absPath"
 		},
 		"24": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "_name"
 		},
 		"25": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "absPath"
+			"qualifiedName": "FindDirectoriesOptions.blocklist"
 		},
 		"26": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "name"
+			"qualifiedName": "__type"
 		},
 		"27": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "FileSystemDependencies"
+			"qualifiedName": "__type"
 		},
 		"28": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "FileSystemDependencies.readdir"
+			"qualifiedName": "_absPath"
 		},
 		"29": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "_name"
 		},
 		"30": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "FileSystemDependencies"
 		},
 		"31": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "path"
+			"qualifiedName": "FileSystemDependencies.readdir"
 		},
 		"32": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "opts"
+			"qualifiedName": "__type"
 		},
 		"33": {
 			"packageName": "@wtasnorg/node-lib",
@@ -1221,47 +1424,47 @@
 		"34": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "__type.withFileTypes"
+			"qualifiedName": "_path"
 		},
 		"35": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "_opts"
 		},
 		"36": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "__type.name"
+			"qualifiedName": "__type"
 		},
 		"37": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "__type.isDirectory"
+			"qualifiedName": "__type.withFileTypes"
 		},
 		"38": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "__type.isDirectory"
+			"qualifiedName": "__type"
 		},
 		"39": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "FileSystemDependencies.stat"
+			"qualifiedName": "__type.name"
 		},
 		"40": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "__type.isDirectory"
 		},
 		"41": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "__type.isDirectory"
 		},
 		"42": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "path"
+			"qualifiedName": "FileSystemDependencies.stat"
 		},
 		"43": {
 			"packageName": "@wtasnorg/node-lib",
@@ -1271,25 +1474,65 @@
 		"44": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "__type.isDirectory"
+			"qualifiedName": "__type"
 		},
 		"45": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
+			"qualifiedName": "_path"
+		},
+		"46": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type"
+		},
+		"47": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
 			"qualifiedName": "__type.isDirectory"
+		},
+		"48": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type.isDirectory"
+		},
+		"49": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/user-agent.ts",
+			"qualifiedName": "UserAgentInfo"
+		},
+		"50": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/user-agent.ts",
+			"qualifiedName": "UserAgentInfo.browser"
+		},
+		"51": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/user-agent.ts",
+			"qualifiedName": "UserAgentInfo.version"
+		},
+		"52": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/user-agent.ts",
+			"qualifiedName": "UserAgentInfo.os"
+		},
+		"53": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/user-agent.ts",
+			"qualifiedName": "UserAgentInfo.device"
+		},
+		"54": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/user-agent.ts",
+			"qualifiedName": "UserAgentInfo.engine"
 		}
 	},
 	"files": {
 		"entries": {
-			"1": "src/index.ts",
-			"2": "LICENSE",
-			"3": "README.md",
-			"4": ""
+			"1": "src/index.ts"
 		},
 		"reflections": {
-			"1": 0,
-			"3": 0,
-			"4": 0
+			"1": 0
 		}
 	}
 }

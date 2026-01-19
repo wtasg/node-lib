@@ -1,15 +1,15 @@
 import { resolve, join } from "node:path";
 
 interface FileSystemDependencies {
-    readdir: (path: string, opts: { withFileTypes: true }) => Promise<{ name: string; isDirectory(): boolean; }[]>;
-    stat: (path: string) => Promise<{ isDirectory(): boolean }>;
+    readdir: (_path: string, _opts: { withFileTypes: true }) => Promise<{ name: string; isDirectory(): boolean; }[]>;
+    stat: (_path: string) => Promise<{ isDirectory(): boolean }>;
 }
 
 interface FindDirectoriesOptions {
     maxDepth?: number;
     followSymlinks?: boolean;
-    allowlist?: string[] | ((absPath: string, name: string) => boolean);
-    blocklist?: string[] | ((absPath: string, name: string) => boolean);
+    allowlist?: string[] | ((_absPath: string, _name: string) => boolean);
+    blocklist?: string[] | ((_absPath: string, _name: string) => boolean);
 }
 
 /**
@@ -38,7 +38,7 @@ function createFindDirectories(deps: FileSystemDependencies) {
         function isAllowed(absPath: string, name: string): boolean {
             if (allowlist) {
                 if (Array.isArray(allowlist)) {
-                    if (!allowlist.includes(name)) return false;
+                    if (!allowlist.includes(name)) { return false; }
                 } else if (!allowlist(absPath, name)) {
                     return false;
                 }
@@ -49,7 +49,7 @@ function createFindDirectories(deps: FileSystemDependencies) {
         function isBlocked(absPath: string, name: string): boolean {
             if (blocklist) {
                 if (Array.isArray(blocklist)) {
-                    if (blocklist.includes(name)) return true;
+                    if (blocklist.includes(name)) { return true; }
                 } else if (blocklist(absPath, name)) {
                     return true;
                 }
@@ -58,7 +58,7 @@ function createFindDirectories(deps: FileSystemDependencies) {
         }
 
         async function walk(currentPath: string, depth: number): Promise<void> {
-            if (depth > maxDepth) return;
+            if (depth > maxDepth) { return; }
 
             const entries = await readdir(currentPath, { withFileTypes: true });
 
@@ -67,10 +67,10 @@ function createFindDirectories(deps: FileSystemDependencies) {
 
                 const isDirectory = entry.isDirectory();
 
-                if (!isDirectory) continue;
+                if (!isDirectory) { continue; }
 
-                if (isBlocked(childPath, entry.name)) continue;
-                if (!isAllowed(childPath, entry.name)) continue;
+                if (isBlocked(childPath, entry.name)) { continue; }
+                if (!isAllowed(childPath, entry.name)) { continue; }
 
                 results.push(childPath);
 

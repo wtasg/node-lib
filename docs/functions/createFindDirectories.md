@@ -2,13 +2,13 @@
 
 ***
 
-[@wtasnorg/node-lib](../globals.md) / createFindDirectories
+[@wtasnorg/node-lib](../README.md) / createFindDirectories
 
 # Function: createFindDirectories()
 
 > **createFindDirectories**(`deps`): (`root`, `options`) => `Promise`\<`string`[]\>
 
-Defined in: [find.ts:19](https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L19)
+Defined in: [find.ts:19](https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L19)
 
 Factory that produces an async findDirectories function with
 injected filesystem dependencies for full testability.

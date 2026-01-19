@@ -9,7 +9,7 @@
  */
 function pojo<T extends object>(instance: T): Record<string, unknown> {
     return Object.fromEntries(
-        Object.entries(instance).filter(([_, value]) => typeof value !== "function")
+        Object.entries(instance).filter((entry) => typeof entry[1] !== "function")
     );
 }
 

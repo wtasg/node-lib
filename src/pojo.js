@@ -8,7 +8,7 @@
  * @returns {Object<string, unknown>} A plain JavaScript object containing only data fields.
  */
 function pojo(instance) {
-    return Object.fromEntries(Object.entries(instance).filter(([_, value]) => typeof value !== "function"));
+    return Object.fromEntries(Object.entries(instance).filter((entry) => typeof entry[1] !== "function"));
 }
 export { pojo };
 //# sourceMappingURL=pojo.js.map

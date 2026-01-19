@@ -28,9 +28,7 @@ test("pojo() should exclude methods", () => {
 test("pojo() should exclude prototype properties", () => {
     class Product {
         id;
-        constructor(id) {
-            this.id = id;
-        }
+        constructor(id) { this.id = id; }
         get info() {
             return `Product:${this.id}`;
         }

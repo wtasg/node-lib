@@ -1,19 +1,19 @@
 interface FileSystemDependencies {
-    readdir: (path: string, opts: {
+    readdir: (_path: string, _opts: {
         withFileTypes: true;
     }) => Promise<{
         name: string;
         isDirectory(): boolean;
     }[]>;
-    stat: (path: string) => Promise<{
+    stat: (_path: string) => Promise<{
         isDirectory(): boolean;
     }>;
 }
 interface FindDirectoriesOptions {
     maxDepth?: number;
     followSymlinks?: boolean;
-    allowlist?: string[] | ((absPath: string, name: string) => boolean);
-    blocklist?: string[] | ((absPath: string, name: string) => boolean);
+    allowlist?: string[] | ((_absPath: string, _name: string) => boolean);
+    blocklist?: string[] | ((_absPath: string, _name: string) => boolean);
 }
 /**
  * Factory that produces an async findDirectories function with

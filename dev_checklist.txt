@@ -1,0 +1,56 @@
+# Development Checklist
+
+## Constraints
+
+- [ ] Do not delete failing tests. Explain first. Ask second. No delete.
+- [ ] Do not turn off eslint warnings to avoid linting errors.
+
+## Code Quality Guidelines
+
+### Structure & Style
+
+- [ ] Imports/Exports: Imports at the top, exports at the bottom.
+- [ ] Visibility: All primary functions should be exported.
+- [ ] Mutability: Prefer `const` over `let` (`prefer-const`).
+- [ ] Control Blocks: Always use braces `{}` for `if`, `for`, etc. (`curly`).
+- [ ] AI Agent Protocol: AI agents MUST honor the project's ESLint and EditorConfig settings for all modifications. Run `npm run lint` to verify compliance.
+
+### Documentation & Examples
+
+- [ ] JSDoc: Comprehensive JSDoc for all exported functions and types.
+- [ ] Examples:
+  - At least 3 success examples showing different use cases.
+  - At least 1 error/fallback example showing edge cases.
+
+### Consistency
+
+- [ ] Default States: For complex types, provide a factory/function that returns default values.
+- [ ] Cross-Lang Parity: Match default values with Golang zero-value conventions where applicable.
+
+---
+
+## Pre-flight Checklist
+
+- [ ] Linting: Code passes npm run lint without warnings.
+- [ ] Testing:
+  - [ ] Unit tests written for all new functionality.
+  - [ ] All tests pass: npm run test.
+- [ ] Build: Project builds successfully: npm run build.
+- [ ] Documentation:
+  - [ ] readme.txt updated with new features/changes.
+  - [ ] Generated docs refreshed: npm run docs && npm run docs:json.
+- [ ] Version Control:
+  - [ ] changelog.txt updated for the current version.
+  - [ ] Identity verified (git log -n1) to protect PII.
+
+---
+
+## Useful Commands
+
+```bash
+# Full verification suite
+npm run lint \
+&& npm run build \
+&& npm run test \
+&& npm run docs
+```

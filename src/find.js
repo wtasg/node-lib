@@ -12,8 +12,9 @@ function createFindDirectories(deps) {
         function isAllowed(absPath, name) {
             if (allowlist) {
                 if (Array.isArray(allowlist)) {
-                    if (!allowlist.includes(name))
+                    if (!allowlist.includes(name)) {
                         return false;
+                    }
                 }
                 else if (!allowlist(absPath, name)) {
                     return false;
@@ -24,8 +25,9 @@ function createFindDirectories(deps) {
         function isBlocked(absPath, name) {
             if (blocklist) {
                 if (Array.isArray(blocklist)) {
-                    if (blocklist.includes(name))
+                    if (blocklist.includes(name)) {
                         return true;
+                    }
                 }
                 else if (blocklist(absPath, name)) {
                     return true;
@@ -34,18 +36,22 @@ function createFindDirectories(deps) {
             return false;
         }
         async function walk(currentPath, depth) {
-            if (depth > maxDepth)
+            if (depth > maxDepth) {
                 return;
+            }
             const entries = await readdir(currentPath, { withFileTypes: true });
             for (const entry of entries) {
                 const childPath = resolve(join(currentPath, entry.name));
                 const isDirectory = entry.isDirectory();
-                if (!isDirectory)
+                if (!isDirectory) {
                     continue;
-                if (isBlocked(childPath, entry.name))
+                }
+                if (isBlocked(childPath, entry.name)) {
                     continue;
-                if (!isAllowed(childPath, entry.name))
+                }
+                if (!isAllowed(childPath, entry.name)) {
                     continue;
+                }
                 results.push(childPath);
                 if (depth < maxDepth) {
                     await walk(childPath, depth + 1);

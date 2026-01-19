@@ -10,6 +10,7 @@ A library project for nodejs. #nodejs #typescript #library
 1. hello (for debugging)
 2. `pojo` for converting class objects to Plain Old Javascript Objects.
 3. `createFindDirectories` as a factory for finding directories; think `find path -type d`.
+4. `parseUserAgent` for extracting information from user-agent strings.
 
 ## Develop
 
@@ -32,7 +33,7 @@ npm install @wtasnorg/node-lib
 # check if you can run code
 import {hello} from "@wtasnorg/node-lib";
 
-await hello(); 
+await hello();
 // "hello from @wtasnorg/node-lib"
 ```
 

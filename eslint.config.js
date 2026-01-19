@@ -29,9 +29,13 @@ export default defineConfig([
     },
 
     {
+        ignores: ["**/*.d.ts"]
+    },
+
+    {
         rules: {
             "@typescript-eslint/no-unused-vars": [
-                "warn",
+                "error",
                 {
                     argsIgnorePattern: "^_",
                     varsIgnorePattern: "^_",
@@ -40,7 +44,8 @@ export default defineConfig([
             ],
 
             semi: ["error", "always"],
-            // "no-unused-vars": ["error", { varsIgnorePattern: "^[A-Z_]" }],
+            curly: ["error", "all"],
+            "prefer-const": "warn",
             "@stylistic/quotes": ["error", "double"]
         }
     }

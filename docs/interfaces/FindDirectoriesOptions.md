@@ -2,27 +2,27 @@
 
 ***
 
-[@wtasnorg/node-lib](../globals.md) / FindDirectoriesOptions
+[@wtasnorg/node-lib](../README.md) / FindDirectoriesOptions
 
 # Interface: FindDirectoriesOptions
 
-Defined in: [find.ts:8](https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L8)
+Defined in: [find.ts:8](https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L8)
 
 ## Properties
 
 ### allowlist?
 
-> `optional` **allowlist**: `string`[] \| (`absPath`, `name`) => `boolean`
+> `optional` **allowlist**: `string`[] \| (`_absPath`, `_name`) => `boolean`
 
-Defined in: [find.ts:11](https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L11)
+Defined in: [find.ts:11](https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L11)
 
 ***
 
 ### blocklist?
 
-> `optional` **blocklist**: `string`[] \| (`absPath`, `name`) => `boolean`
+> `optional` **blocklist**: `string`[] \| (`_absPath`, `_name`) => `boolean`
 
-Defined in: [find.ts:12](https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L12)
+Defined in: [find.ts:12](https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L12)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [find.ts:12](https://github.com/wtasg/node-lib/blob/5ccb6028429af225
 
 > `optional` **followSymlinks**: `boolean`
 
-Defined in: [find.ts:10](https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L10)
+Defined in: [find.ts:10](https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L10)
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: [find.ts:10](https://github.com/wtasg/node-lib/blob/5ccb6028429af225
 
 > `optional` **maxDepth**: `number`
 
-Defined in: [find.ts:9](https://github.com/wtasg/node-lib/blob/5ccb6028429af225c9ab29e1b6007075025c601f/src/find.ts#L9)
+Defined in: [find.ts:9](https://github.com/wtasg/node-lib/blob/ac07f7b7be8233cfd945908394ac10daf671e6a9/src/find.ts#L9)
