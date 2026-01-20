@@ -1,8 +1,48 @@
 {
   "name": "@wtasnorg/node-lib",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "node library",
   "main": "src/index.js",
+  "module": "src/index.js",
+  "types": "src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js"
+    },
+    "./base64": {
+      "types": "./src/base64.d.ts",
+      "import": "./src/base64.js"
+    },
+    "./base58": {
+      "types": "./src/base58.d.ts",
+      "import": "./src/base58.js"
+    },
+    "./base85": {
+      "types": "./src/base85.d.ts",
+      "import": "./src/base85.js"
+    },
+    "./base32": {
+      "types": "./src/base32.d.ts",
+      "import": "./src/base32.js"
+    },
+    "./find": {
+      "types": "./src/find.d.ts",
+      "import": "./src/find.js"
+    },
+    "./user-agent": {
+      "types": "./src/user-agent.d.ts",
+      "import": "./src/user-agent.js"
+    },
+    "./pojo": {
+      "types": "./src/pojo.d.ts",
+      "import": "./src/pojo.js"
+    },
+    "./hello": {
+      "types": "./src/hello.d.ts",
+      "import": "./src/hello.js"
+    }
+  },
   "scripts": {
     "build": "./node_modules/.bin/tsc --project tsconfig.json",
     "docs": "./node_modules/.bin/typedoc",

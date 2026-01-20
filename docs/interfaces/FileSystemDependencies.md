@@ -6,7 +6,7 @@
 
 # Interface: FileSystemDependencies
 
-Defined in: [find.ts:3](https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L3)
+Defined in: [find.ts:3](https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L3)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [find.ts:3](https://github.com/wtasg/node-lib/blob/7baf8669b7042dca5
 
 > **readdir**: (`_path`, `_opts`) => `Promise`\<`object`[]\>
 
-Defined in: [find.ts:4](https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L4)
+Defined in: [find.ts:4](https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L4)
 
 #### Parameters
 
@@ -38,7 +38,7 @@ Defined in: [find.ts:4](https://github.com/wtasg/node-lib/blob/7baf8669b7042dca5
 
 > **stat**: (`_path`) => `Promise`\<\{ `isDirectory`: `boolean`; \}\>
 
-Defined in: [find.ts:5](https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L5)
+Defined in: [find.ts:5](https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L5)
 
 #### Parameters
 

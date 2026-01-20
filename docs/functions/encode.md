@@ -8,7 +8,7 @@
 
 > **encode**(`input`, `charset`): `string`
 
-Defined in: [base64.ts:79](https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/base64.ts#L79)
+Defined in: [base64.ts:79](https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/base64.ts#L79)
 
 Encode a string to Base64.
 

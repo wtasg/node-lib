@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.0.11] - 2026-01-20
+
+### Added
+- Base58 encoding/decoding in `src/base58.ts` with three charset variants: `bitcoin`, `flickr`, `ripple`.
+- Base85 encoding/decoding in `src/base85.ts` with three charset variants: `ascii85`, `z85`, `rfc1924`.
+- Base32 encoding/decoding in `src/base32.ts` with three charset variants: `rfc4648`, `hex`, `crockford`.
+- Comprehensive unit tests for all new modules.
+- Subpath exports for tree shaking: import individual modules via `@wtasnorg/node-lib/base64`, etc.
+
+## [0.0.10] - 2026-01-20
+
+### Updated
+- Updated `hello` to use konsole.
+
 ## [0.0.9] - 2026-01-19
 
 ### Added

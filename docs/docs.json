@@ -7,14 +7,14 @@
 	"flags": {},
 	"children": [
 		{
-			"id": 40,
+			"id": 67,
 			"name": "FileSystemDependencies",
 			"variant": "declaration",
 			"kind": 256,
 			"flags": {},
 			"children": [
 				{
-					"id": 41,
+					"id": 68,
 					"name": "readdir",
 					"variant": "declaration",
 					"kind": 1024,
@@ -24,13 +24,13 @@
 							"fileName": "find.ts",
 							"line": 4,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L4"
+							"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L4"
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 42,
+							"id": 69,
 							"name": "__type",
 							"variant": "declaration",
 							"kind": 65536,
@@ -40,12 +40,12 @@
 									"fileName": "find.ts",
 									"line": 4,
 									"character": 13,
-									"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L4"
+									"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L4"
 								}
 							],
 							"signatures": [
 								{
-									"id": 43,
+									"id": 70,
 									"name": "__type",
 									"variant": "signature",
 									"kind": 4096,
@@ -55,12 +55,12 @@
 											"fileName": "find.ts",
 											"line": 4,
 											"character": 13,
-											"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L4"
+											"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L4"
 										}
 									],
 									"parameters": [
 										{
-											"id": 44,
+											"id": 71,
 											"name": "_path",
 											"variant": "param",
 											"kind": 32768,
@@ -71,7 +71,7 @@
 											}
 										},
 										{
-											"id": 45,
+											"id": 72,
 											"name": "_opts",
 											"variant": "param",
 											"kind": 32768,
@@ -79,14 +79,14 @@
 											"type": {
 												"type": "reflection",
 												"declaration": {
-													"id": 46,
+													"id": 73,
 													"name": "__type",
 													"variant": "declaration",
 													"kind": 65536,
 													"flags": {},
 													"children": [
 														{
-															"id": 47,
+															"id": 74,
 															"name": "withFileTypes",
 															"variant": "declaration",
 															"kind": 1024,
@@ -96,7 +96,7 @@
 																	"fileName": "find.ts",
 																	"line": 4,
 																	"character": 38,
-																	"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L4"
+																	"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L4"
 																}
 															],
 															"type": {
@@ -109,7 +109,7 @@
 														{
 															"title": "Properties",
 															"children": [
-																47
+																74
 															]
 														}
 													],
@@ -118,7 +118,7 @@
 															"fileName": "find.ts",
 															"line": 4,
 															"character": 36,
-															"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L4"
+															"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L4"
 														}
 													]
 												}
@@ -138,14 +138,14 @@
 												"elementType": {
 													"type": "reflection",
 													"declaration": {
-														"id": 48,
+														"id": 75,
 														"name": "__type",
 														"variant": "declaration",
 														"kind": 65536,
 														"flags": {},
 														"children": [
 															{
-																"id": 49,
+																"id": 76,
 																"name": "name",
 																"variant": "declaration",
 																"kind": 1024,
@@ -155,7 +155,7 @@
 																		"fileName": "find.ts",
 																		"line": 4,
 																		"character": 74,
-																		"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L4"
+																		"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L4"
 																	}
 																],
 																"type": {
@@ -164,7 +164,7 @@
 																}
 															},
 															{
-																"id": 50,
+																"id": 77,
 																"name": "isDirectory",
 																"variant": "declaration",
 																"kind": 2048,
@@ -174,12 +174,12 @@
 																		"fileName": "find.ts",
 																		"line": 4,
 																		"character": 88,
-																		"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L4"
+																		"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L4"
 																	}
 																],
 																"signatures": [
 																	{
-																		"id": 51,
+																		"id": 78,
 																		"name": "isDirectory",
 																		"variant": "signature",
 																		"kind": 4096,
@@ -189,7 +189,7 @@
 																				"fileName": "find.ts",
 																				"line": 4,
 																				"character": 88,
-																				"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L4"
+																				"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L4"
 																			}
 																		],
 																		"type": {
@@ -204,13 +204,13 @@
 															{
 																"title": "Properties",
 																"children": [
-																	49
+																	76
 																]
 															},
 															{
 																"title": "Methods",
 																"children": [
-																	50
+																	77
 																]
 															}
 														],
@@ -219,7 +219,7 @@
 																"fileName": "find.ts",
 																"line": 4,
 																"character": 72,
-																"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L4"
+																"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L4"
 															}
 														]
 													}
@@ -235,7 +235,7 @@
 					}
 				},
 				{
-					"id": 52,
+					"id": 79,
 					"name": "stat",
 					"variant": "declaration",
 					"kind": 1024,
@@ -245,13 +245,13 @@
 							"fileName": "find.ts",
 							"line": 5,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L5"
+							"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L5"
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 53,
+							"id": 80,
 							"name": "__type",
 							"variant": "declaration",
 							"kind": 65536,
@@ -261,12 +261,12 @@
 									"fileName": "find.ts",
 									"line": 5,
 									"character": 10,
-									"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L5"
+									"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L5"
 								}
 							],
 							"signatures": [
 								{
-									"id": 54,
+									"id": 81,
 									"name": "__type",
 									"variant": "signature",
 									"kind": 4096,
@@ -276,12 +276,12 @@
 											"fileName": "find.ts",
 											"line": 5,
 											"character": 10,
-											"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L5"
+											"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L5"
 										}
 									],
 									"parameters": [
 										{
-											"id": 55,
+											"id": 82,
 											"name": "_path",
 											"variant": "param",
 											"kind": 32768,
@@ -303,14 +303,14 @@
 											{
 												"type": "reflection",
 												"declaration": {
-													"id": 56,
+													"id": 83,
 													"name": "__type",
 													"variant": "declaration",
 													"kind": 65536,
 													"flags": {},
 													"children": [
 														{
-															"id": 57,
+															"id": 84,
 															"name": "isDirectory",
 															"variant": "declaration",
 															"kind": 2048,
@@ -320,12 +320,12 @@
 																	"fileName": "find.ts",
 																	"line": 5,
 																	"character": 39,
-																	"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L5"
+																	"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L5"
 																}
 															],
 															"signatures": [
 																{
-																	"id": 58,
+																	"id": 85,
 																	"name": "isDirectory",
 																	"variant": "signature",
 																	"kind": 4096,
@@ -335,7 +335,7 @@
 																			"fileName": "find.ts",
 																			"line": 5,
 																			"character": 39,
-																			"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L5"
+																			"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L5"
 																		}
 																	],
 																	"type": {
@@ -350,7 +350,7 @@
 														{
 															"title": "Methods",
 															"children": [
-																57
+																84
 															]
 														}
 													],
@@ -359,7 +359,7 @@
 															"fileName": "find.ts",
 															"line": 5,
 															"character": 37,
-															"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L5"
+															"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L5"
 														}
 													]
 												}
@@ -378,8 +378,8 @@
 				{
 					"title": "Properties",
 					"children": [
-						41,
-						52
+						68,
+						79
 					]
 				}
 			],
@@ -388,19 +388,19 @@
 					"fileName": "find.ts",
 					"line": 3,
 					"character": 10,
-					"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L3"
+					"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L3"
 				}
 			]
 		},
 		{
-			"id": 27,
+			"id": 54,
 			"name": "FindDirectoriesOptions",
 			"variant": "declaration",
 			"kind": 256,
 			"flags": {},
 			"children": [
 				{
-					"id": 30,
+					"id": 57,
 					"name": "allowlist",
 					"variant": "declaration",
 					"kind": 1024,
@@ -412,7 +412,7 @@
 							"fileName": "find.ts",
 							"line": 11,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L11"
+							"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L11"
 						}
 					],
 					"type": {
@@ -428,7 +428,7 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 31,
+									"id": 58,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
@@ -438,12 +438,12 @@
 											"fileName": "find.ts",
 											"line": 11,
 											"character": 28,
-											"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L11"
+											"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L11"
 										}
 									],
 									"signatures": [
 										{
-											"id": 32,
+											"id": 59,
 											"name": "__type",
 											"variant": "signature",
 											"kind": 4096,
@@ -453,12 +453,12 @@
 													"fileName": "find.ts",
 													"line": 11,
 													"character": 28,
-													"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L11"
+													"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L11"
 												}
 											],
 											"parameters": [
 												{
-													"id": 33,
+													"id": 60,
 													"name": "_absPath",
 													"variant": "param",
 													"kind": 32768,
@@ -469,7 +469,7 @@
 													}
 												},
 												{
-													"id": 34,
+													"id": 61,
 													"name": "_name",
 													"variant": "param",
 													"kind": 32768,
@@ -492,7 +492,7 @@
 					}
 				},
 				{
-					"id": 35,
+					"id": 62,
 					"name": "blocklist",
 					"variant": "declaration",
 					"kind": 1024,
@@ -504,7 +504,7 @@
 							"fileName": "find.ts",
 							"line": 12,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L12"
+							"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L12"
 						}
 					],
 					"type": {
@@ -520,7 +520,7 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 36,
+									"id": 63,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
@@ -530,12 +530,12 @@
 											"fileName": "find.ts",
 											"line": 12,
 											"character": 28,
-											"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L12"
+											"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L12"
 										}
 									],
 									"signatures": [
 										{
-											"id": 37,
+											"id": 64,
 											"name": "__type",
 											"variant": "signature",
 											"kind": 4096,
@@ -545,12 +545,12 @@
 													"fileName": "find.ts",
 													"line": 12,
 													"character": 28,
-													"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L12"
+													"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L12"
 												}
 											],
 											"parameters": [
 												{
-													"id": 38,
+													"id": 65,
 													"name": "_absPath",
 													"variant": "param",
 													"kind": 32768,
@@ -561,7 +561,7 @@
 													}
 												},
 												{
-													"id": 39,
+													"id": 66,
 													"name": "_name",
 													"variant": "param",
 													"kind": 32768,
@@ -584,7 +584,7 @@
 					}
 				},
 				{
-					"id": 29,
+					"id": 56,
 					"name": "followSymlinks",
 					"variant": "declaration",
 					"kind": 1024,
@@ -596,7 +596,7 @@
 							"fileName": "find.ts",
 							"line": 10,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L10"
+							"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L10"
 						}
 					],
 					"type": {
@@ -605,7 +605,7 @@
 					}
 				},
 				{
-					"id": 28,
+					"id": 55,
 					"name": "maxDepth",
 					"variant": "declaration",
 					"kind": 1024,
@@ -617,7 +617,7 @@
 							"fileName": "find.ts",
 							"line": 9,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L9"
+							"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L9"
 						}
 					],
 					"type": {
@@ -630,10 +630,10 @@
 				{
 					"title": "Properties",
 					"children": [
-						30,
-						35,
-						29,
-						28
+						57,
+						62,
+						56,
+						55
 					]
 				}
 			],
@@ -642,12 +642,12 @@
 					"fileName": "find.ts",
 					"line": 8,
 					"character": 10,
-					"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L8"
+					"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L8"
 				}
 			]
 		},
 		{
-			"id": 59,
+			"id": 86,
 			"name": "UserAgentInfo",
 			"variant": "declaration",
 			"kind": 256,
@@ -662,7 +662,7 @@
 			},
 			"children": [
 				{
-					"id": 60,
+					"id": 87,
 					"name": "browser",
 					"variant": "declaration",
 					"kind": 1024,
@@ -680,7 +680,7 @@
 							"fileName": "user-agent.ts",
 							"line": 8,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/user-agent.ts#L8"
+							"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/user-agent.ts#L8"
 						}
 					],
 					"type": {
@@ -689,7 +689,7 @@
 					}
 				},
 				{
-					"id": 63,
+					"id": 90,
 					"name": "device",
 					"variant": "declaration",
 					"kind": 1024,
@@ -707,7 +707,7 @@
 							"fileName": "user-agent.ts",
 							"line": 20,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/user-agent.ts#L20"
+							"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/user-agent.ts#L20"
 						}
 					],
 					"type": {
@@ -716,7 +716,7 @@
 					}
 				},
 				{
-					"id": 64,
+					"id": 91,
 					"name": "engine",
 					"variant": "declaration",
 					"kind": 1024,
@@ -734,7 +734,7 @@
 							"fileName": "user-agent.ts",
 							"line": 24,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/user-agent.ts#L24"
+							"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/user-agent.ts#L24"
 						}
 					],
 					"type": {
@@ -743,7 +743,7 @@
 					}
 				},
 				{
-					"id": 62,
+					"id": 89,
 					"name": "os",
 					"variant": "declaration",
 					"kind": 1024,
@@ -761,7 +761,7 @@
 							"fileName": "user-agent.ts",
 							"line": 16,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/user-agent.ts#L16"
+							"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/user-agent.ts#L16"
 						}
 					],
 					"type": {
@@ -770,7 +770,7 @@
 					}
 				},
 				{
-					"id": 61,
+					"id": 88,
 					"name": "version",
 					"variant": "declaration",
 					"kind": 1024,
@@ -788,7 +788,7 @@
 							"fileName": "user-agent.ts",
 							"line": 12,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/user-agent.ts#L12"
+							"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/user-agent.ts#L12"
 						}
 					],
 					"type": {
@@ -801,11 +801,11 @@
 				{
 					"title": "Properties",
 					"children": [
-						60,
-						63,
-						64,
-						62,
-						61
+						87,
+						90,
+						91,
+						89,
+						88
 					]
 				}
 			],
@@ -814,12 +814,90 @@
 					"fileName": "user-agent.ts",
 					"line": 4,
 					"character": 17,
-					"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/user-agent.ts#L4"
+					"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/user-agent.ts#L4"
 				}
 			]
 		},
 		{
-			"id": 65,
+			"id": 95,
+			"name": "Base32CharsetType",
+			"variant": "declaration",
+			"kind": 2097152,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Base32 charset type."
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "base32.ts",
+					"line": 18,
+					"character": 5,
+					"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/base32.ts#L18"
+				}
+			],
+			"type": {
+				"type": "indexedAccess",
+				"indexType": {
+					"type": "intrinsic",
+					"name": "number"
+				},
+				"objectType": {
+					"type": "query",
+					"queryType": {
+						"type": "reference",
+						"target": 53,
+						"name": "Base32Charset",
+						"package": "@wtasnorg/node-lib"
+					}
+				}
+			}
+		},
+		{
+			"id": 93,
+			"name": "Base58CharsetType",
+			"variant": "declaration",
+			"kind": 2097152,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Base58 charset type."
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "base58.ts",
+					"line": 18,
+					"character": 5,
+					"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/base58.ts#L18"
+				}
+			],
+			"type": {
+				"type": "indexedAccess",
+				"indexType": {
+					"type": "intrinsic",
+					"name": "number"
+				},
+				"objectType": {
+					"type": "query",
+					"queryType": {
+						"type": "reference",
+						"target": 35,
+						"name": "Base58Charset",
+						"package": "@wtasnorg/node-lib"
+					}
+				}
+			}
+		},
+		{
+			"id": 92,
 			"name": "Base64CharsetType",
 			"variant": "declaration",
 			"kind": 2097152,
@@ -837,7 +915,7 @@
 					"fileName": "base64.ts",
 					"line": 18,
 					"character": 5,
-					"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/base64.ts#L18"
+					"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/base64.ts#L18"
 				}
 			],
 			"type": {
@@ -856,6 +934,187 @@
 					}
 				}
 			}
+		},
+		{
+			"id": 94,
+			"name": "Base85CharsetType",
+			"variant": "declaration",
+			"kind": 2097152,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Base85 charset type."
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "base85.ts",
+					"line": 18,
+					"character": 5,
+					"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/base85.ts#L18"
+				}
+			],
+			"type": {
+				"type": "indexedAccess",
+				"indexType": {
+					"type": "intrinsic",
+					"name": "number"
+				},
+				"objectType": {
+					"type": "query",
+					"queryType": {
+						"type": "reference",
+						"target": 44,
+						"name": "Base85Charset",
+						"package": "@wtasnorg/node-lib"
+					}
+				}
+			}
+		},
+		{
+			"id": 53,
+			"name": "Base32Charset",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Available Base32 charset variants.\n- "
+					},
+					{
+						"kind": "code",
+						"text": "`rfc4648`"
+					},
+					{
+						"kind": "text",
+						"text": ": Standard RFC 4648 alphabet (A-Z, 2-7)\n- "
+					},
+					{
+						"kind": "code",
+						"text": "`hex`"
+					},
+					{
+						"kind": "text",
+						"text": ": Extended hex alphabet (0-9, A-V)\n- "
+					},
+					{
+						"kind": "code",
+						"text": "`crockford`"
+					},
+					{
+						"kind": "text",
+						"text": ": Douglas Crockford's alphabet (excludes I, L, O, U)"
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "base32.ts",
+					"line": 13,
+					"character": 6,
+					"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/base32.ts#L13"
+				}
+			],
+			"type": {
+				"type": "typeOperator",
+				"operator": "readonly",
+				"target": {
+					"type": "tuple",
+					"elements": [
+						{
+							"type": "literal",
+							"value": "rfc4648"
+						},
+						{
+							"type": "literal",
+							"value": "hex"
+						},
+						{
+							"type": "literal",
+							"value": "crockford"
+						}
+					]
+				}
+			},
+			"defaultValue": "..."
+		},
+		{
+			"id": 35,
+			"name": "Base58Charset",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Available Base58 charset variants.\n- "
+					},
+					{
+						"kind": "code",
+						"text": "`bitcoin`"
+					},
+					{
+						"kind": "text",
+						"text": ": Bitcoin/IPFS alphabet (default)\n- "
+					},
+					{
+						"kind": "code",
+						"text": "`flickr`"
+					},
+					{
+						"kind": "text",
+						"text": ": Flickr short URLs (swaps case)\n- "
+					},
+					{
+						"kind": "code",
+						"text": "`ripple`"
+					},
+					{
+						"kind": "text",
+						"text": ": Ripple addresses"
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "base58.ts",
+					"line": 13,
+					"character": 6,
+					"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/base58.ts#L13"
+				}
+			],
+			"type": {
+				"type": "typeOperator",
+				"operator": "readonly",
+				"target": {
+					"type": "tuple",
+					"elements": [
+						{
+							"type": "literal",
+							"value": "bitcoin"
+						},
+						{
+							"type": "literal",
+							"value": "flickr"
+						},
+						{
+							"type": "literal",
+							"value": "ripple"
+						}
+					]
+				}
+			},
+			"defaultValue": "..."
 		},
 		{
 			"id": 26,
@@ -910,7 +1169,7 @@
 					"fileName": "base64.ts",
 					"line": 13,
 					"character": 6,
-					"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/base64.ts#L13"
+					"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/base64.ts#L13"
 				}
 			],
 			"type": {
@@ -941,6 +1200,77 @@
 			"defaultValue": "..."
 		},
 		{
+			"id": 44,
+			"name": "Base85Charset",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Available Base85 charset variants.\n- "
+					},
+					{
+						"kind": "code",
+						"text": "`ascii85`"
+					},
+					{
+						"kind": "text",
+						"text": ": Adobe Ascii85 (btoa format)\n- "
+					},
+					{
+						"kind": "code",
+						"text": "`z85`"
+					},
+					{
+						"kind": "text",
+						"text": ": ZeroMQ Base85 (no quotes or backslash)\n- "
+					},
+					{
+						"kind": "code",
+						"text": "`rfc1924`"
+					},
+					{
+						"kind": "text",
+						"text": ": RFC 1924 IPv6 encoding"
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "base85.ts",
+					"line": 13,
+					"character": 6,
+					"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/base85.ts#L13"
+				}
+			],
+			"type": {
+				"type": "typeOperator",
+				"operator": "readonly",
+				"target": {
+					"type": "tuple",
+					"elements": [
+						{
+							"type": "literal",
+							"value": "ascii85"
+						},
+						{
+							"type": "literal",
+							"value": "z85"
+						},
+						{
+							"type": "literal",
+							"value": "rfc1924"
+						}
+					]
+				}
+			},
+			"defaultValue": "..."
+		},
+		{
 			"id": 8,
 			"name": "createFindDirectories",
 			"variant": "declaration",
@@ -951,7 +1281,7 @@
 					"fileName": "find.ts",
 					"line": 19,
 					"character": 9,
-					"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L19"
+					"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L19"
 				}
 			],
 			"signatures": [
@@ -974,7 +1304,7 @@
 							"fileName": "find.ts",
 							"line": 19,
 							"character": 9,
-							"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L19"
+							"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L19"
 						}
 					],
 					"parameters": [
@@ -986,7 +1316,7 @@
 							"flags": {},
 							"type": {
 								"type": "reference",
-								"target": 40,
+								"target": 67,
 								"name": "FileSystemDependencies",
 								"package": "@wtasnorg/node-lib"
 							}
@@ -1005,7 +1335,7 @@
 									"fileName": "find.ts",
 									"line": 23,
 									"character": 26,
-									"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L23"
+									"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L23"
 								}
 							],
 							"signatures": [
@@ -1020,7 +1350,7 @@
 											"fileName": "find.ts",
 											"line": 23,
 											"character": 26,
-											"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/find.ts#L23"
+											"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/find.ts#L23"
 										}
 									],
 									"parameters": [
@@ -1043,7 +1373,7 @@
 											"flags": {},
 											"type": {
 												"type": "reference",
-												"target": 27,
+												"target": 54,
 												"name": "FindDirectoriesOptions",
 												"package": "@wtasnorg/node-lib"
 											},
@@ -1087,7 +1417,7 @@
 					"fileName": "base64.ts",
 					"line": 119,
 					"character": 9,
-					"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/base64.ts#L119"
+					"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/base64.ts#L119"
 				}
 			],
 			"signatures": [
@@ -1139,7 +1469,7 @@
 							"fileName": "base64.ts",
 							"line": 119,
 							"character": 9,
-							"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/base64.ts#L119"
+							"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/base64.ts#L119"
 						}
 					],
 					"parameters": [
@@ -1208,6 +1538,387 @@
 			]
 		},
 		{
+			"id": 49,
+			"name": "decode32",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "base32.ts",
+					"line": 136,
+					"character": 9,
+					"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/base32.ts#L136"
+				}
+			],
+			"signatures": [
+				{
+					"id": 50,
+					"name": "decode32",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Decode a Base32 string."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```typescript\nimport { decode32 } from \"./base32.js\";\n\ndecode32(\"JBSWY3DP\");\n// => \"Hello\"\n\ndecode32(\"EHMP6SS=\", \"hex\");\n// => \"test\"\n```"
+									}
+								]
+							},
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "The decoded string."
+									}
+								]
+							},
+							{
+								"tag": "@throws",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Error if the input contains invalid characters."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "base32.ts",
+							"line": 136,
+							"character": 9,
+							"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/base32.ts#L136"
+						}
+					],
+					"parameters": [
+						{
+							"id": 51,
+							"name": "input",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The Base32 encoded string."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 52,
+							"name": "charset",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The charset variant to use (default: \"rfc4648\")."
+									}
+								]
+							},
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "literal",
+										"value": "rfc4648"
+									},
+									{
+										"type": "literal",
+										"value": "hex"
+									},
+									{
+										"type": "literal",
+										"value": "crockford"
+									}
+								]
+							},
+							"defaultValue": "\"rfc4648\""
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": 31,
+			"name": "decode58",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "base58.ts",
+					"line": 132,
+					"character": 9,
+					"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/base58.ts#L132"
+				}
+			],
+			"signatures": [
+				{
+					"id": 32,
+					"name": "decode58",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Decode a Base58 string."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```typescript\nimport { decode58 } from \"./base58.js\";\n\ndecode58(\"JxF12TrwUP45BMd\");\n// => \"Hello World\"\n\ndecode58(\"jXf12sRWto45bmD\", \"flickr\");\n// => \"Hello World\"\n```"
+									}
+								]
+							},
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "The decoded string."
+									}
+								]
+							},
+							{
+								"tag": "@throws",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Error if the input contains invalid characters."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "base58.ts",
+							"line": 132,
+							"character": 9,
+							"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/base58.ts#L132"
+						}
+					],
+					"parameters": [
+						{
+							"id": 33,
+							"name": "input",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The Base58 encoded string."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 34,
+							"name": "charset",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The charset variant to use (default: \"bitcoin\")."
+									}
+								]
+							},
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "literal",
+										"value": "bitcoin"
+									},
+									{
+										"type": "literal",
+										"value": "flickr"
+									},
+									{
+										"type": "literal",
+										"value": "ripple"
+									}
+								]
+							},
+							"defaultValue": "\"bitcoin\""
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": 40,
+			"name": "decode85",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "base85.ts",
+					"line": 135,
+					"character": 9,
+					"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/base85.ts#L135"
+				}
+			],
+			"signatures": [
+				{
+					"id": 41,
+					"name": "decode85",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Decode a Base85 string."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```typescript\nimport { decode85 } from \"./base85.js\";\n\ndecode85(\"87cURDZ\");\n// => \"Hello\"\n\ndecode85(\"wrx.P\", \"z85\");\n// => \"test\"\n```"
+									}
+								]
+							},
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "The decoded string."
+									}
+								]
+							},
+							{
+								"tag": "@throws",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Error if the input contains invalid characters."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "base85.ts",
+							"line": 135,
+							"character": 9,
+							"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/base85.ts#L135"
+						}
+					],
+					"parameters": [
+						{
+							"id": 42,
+							"name": "input",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The Base85 encoded string."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 43,
+							"name": "charset",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The charset variant to use (default: \"ascii85\")."
+									}
+								]
+							},
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "literal",
+										"value": "ascii85"
+									},
+									{
+										"type": "literal",
+										"value": "z85"
+									},
+									{
+										"type": "literal",
+										"value": "rfc1924"
+									}
+								]
+							},
+							"defaultValue": "\"ascii85\""
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		},
+		{
 			"id": 18,
 			"name": "encode",
 			"variant": "declaration",
@@ -1218,7 +1929,7 @@
 					"fileName": "base64.ts",
 					"line": 79,
 					"character": 9,
-					"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/base64.ts#L79"
+					"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/base64.ts#L79"
 				}
 			],
 			"signatures": [
@@ -1261,7 +1972,7 @@
 							"fileName": "base64.ts",
 							"line": 79,
 							"character": 9,
-							"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/base64.ts#L79"
+							"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/base64.ts#L79"
 						}
 					],
 					"parameters": [
@@ -1330,6 +2041,360 @@
 			]
 		},
 		{
+			"id": 45,
+			"name": "encode32",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "base32.ts",
+					"line": 81,
+					"character": 9,
+					"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/base32.ts#L81"
+				}
+			],
+			"signatures": [
+				{
+					"id": 46,
+					"name": "encode32",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Encode a string to Base32."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```typescript\nimport { encode32 } from \"./base32.js\";\n\nencode32(\"Hello\");\n// => \"JBSWY3DP\"\n\nencode32(\"test\", \"hex\");\n// => \"EHMP6SS=\"\n```"
+									}
+								]
+							},
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "The Base32 encoded string."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "base32.ts",
+							"line": 81,
+							"character": 9,
+							"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/base32.ts#L81"
+						}
+					],
+					"parameters": [
+						{
+							"id": 47,
+							"name": "input",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The string to encode."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 48,
+							"name": "charset",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The charset variant to use (default: \"rfc4648\")."
+									}
+								]
+							},
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "literal",
+										"value": "rfc4648"
+									},
+									{
+										"type": "literal",
+										"value": "hex"
+									},
+									{
+										"type": "literal",
+										"value": "crockford"
+									}
+								]
+							},
+							"defaultValue": "\"rfc4648\""
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": 27,
+			"name": "encode58",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "base58.ts",
+					"line": 72,
+					"character": 9,
+					"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/base58.ts#L72"
+				}
+			],
+			"signatures": [
+				{
+					"id": 28,
+					"name": "encode58",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Encode a string to Base58."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```typescript\nimport { encode58 } from \"./base58.js\";\n\nencode58(\"Hello World\");\n// => \"JxF12TrwUP45BMd\"\n\nencode58(\"Hello World\", \"flickr\");\n// => \"jXf12sRWto45bmD\"\n```"
+									}
+								]
+							},
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "The Base58 encoded string."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "base58.ts",
+							"line": 72,
+							"character": 9,
+							"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/base58.ts#L72"
+						}
+					],
+					"parameters": [
+						{
+							"id": 29,
+							"name": "input",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The string to encode."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 30,
+							"name": "charset",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The charset variant to use (default: \"bitcoin\")."
+									}
+								]
+							},
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "literal",
+										"value": "bitcoin"
+									},
+									{
+										"type": "literal",
+										"value": "flickr"
+									},
+									{
+										"type": "literal",
+										"value": "ripple"
+									}
+								]
+							},
+							"defaultValue": "\"bitcoin\""
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": 36,
+			"name": "encode85",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "base85.ts",
+					"line": 73,
+					"character": 9,
+					"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/base85.ts#L73"
+				}
+			],
+			"signatures": [
+				{
+					"id": 37,
+					"name": "encode85",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Encode a string to Base85."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```typescript\nimport { encode85 } from \"./base85.js\";\n\nencode85(\"Hello\");\n// => \"87cURDZ\"\n\nencode85(\"test\", \"z85\");\n// => \"wrx.P\"\n```"
+									}
+								]
+							},
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "The Base85 encoded string."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "base85.ts",
+							"line": 73,
+							"character": 9,
+							"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/base85.ts#L73"
+						}
+					],
+					"parameters": [
+						{
+							"id": 38,
+							"name": "input",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The string to encode."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 39,
+							"name": "charset",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The charset variant to use (default: \"ascii85\")."
+									}
+								]
+							},
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "literal",
+										"value": "ascii85"
+									},
+									{
+										"type": "literal",
+										"value": "z85"
+									},
+									{
+										"type": "literal",
+										"value": "rfc1924"
+									}
+								]
+							},
+							"defaultValue": "\"ascii85\""
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		},
+		{
 			"id": 1,
 			"name": "hello",
 			"variant": "declaration",
@@ -1340,7 +2405,7 @@
 					"fileName": "hello.ts",
 					"line": 31,
 					"character": 15,
-					"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/hello.ts#L31"
+					"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/hello.ts#L31"
 				}
 			],
 			"signatures": [
@@ -1396,7 +2461,7 @@
 							"fileName": "hello.ts",
 							"line": 31,
 							"character": 15,
-							"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/hello.ts#L31"
+							"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/hello.ts#L31"
 						}
 					],
 					"parameters": [
@@ -1459,7 +2524,7 @@
 					"fileName": "user-agent.ts",
 					"line": 48,
 					"character": 16,
-					"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/user-agent.ts#L48"
+					"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/user-agent.ts#L48"
 				}
 			],
 			"signatures": [
@@ -1515,7 +2580,7 @@
 							"fileName": "user-agent.ts",
 							"line": 48,
 							"character": 16,
-							"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/user-agent.ts#L48"
+							"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/user-agent.ts#L48"
 						}
 					],
 					"parameters": [
@@ -1541,7 +2606,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"target": 59,
+						"target": 86,
 						"name": "UserAgentInfo",
 						"package": "@wtasnorg/node-lib"
 					}
@@ -1559,7 +2624,7 @@
 					"fileName": "pojo.ts",
 					"line": 10,
 					"character": 9,
-					"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/pojo.ts#L10"
+					"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/pojo.ts#L10"
 				}
 			],
 			"signatures": [
@@ -1593,7 +2658,7 @@
 							"fileName": "pojo.ts",
 							"line": 10,
 							"character": 9,
-							"url": "https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/pojo.ts#L10"
+							"url": "https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/pojo.ts#L10"
 						}
 					],
 					"typeParameters": [
@@ -1661,21 +2726,27 @@
 		{
 			"title": "Interfaces",
 			"children": [
-				40,
-				27,
-				59
+				67,
+				54,
+				86
 			]
 		},
 		{
 			"title": "Type Aliases",
 			"children": [
-				65
+				95,
+				93,
+				92,
+				94
 			]
 		},
 		{
 			"title": "Variables",
 			"children": [
-				26
+				53,
+				35,
+				26,
+				44
 			]
 		},
 		{
@@ -1683,7 +2754,13 @@
 			"children": [
 				8,
 				22,
+				49,
+				31,
+				40,
 				18,
+				45,
+				27,
+				36,
 				1,
 				15,
 				4
@@ -1829,198 +2906,348 @@
 		},
 		"27": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "FindDirectoriesOptions"
+			"packagePath": "src/base58.ts",
+			"qualifiedName": "encode58"
 		},
 		"28": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "FindDirectoriesOptions.maxDepth"
+			"packagePath": "src/base58.ts",
+			"qualifiedName": "encode58"
 		},
 		"29": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "FindDirectoriesOptions.followSymlinks"
+			"packagePath": "src/base58.ts",
+			"qualifiedName": "input"
 		},
 		"30": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "FindDirectoriesOptions.allowlist"
+			"packagePath": "src/base58.ts",
+			"qualifiedName": "charset"
 		},
 		"31": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "__type"
+			"packagePath": "src/base58.ts",
+			"qualifiedName": "decode58"
 		},
 		"32": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "__type"
+			"packagePath": "src/base58.ts",
+			"qualifiedName": "decode58"
 		},
 		"33": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "_absPath"
+			"packagePath": "src/base58.ts",
+			"qualifiedName": "input"
 		},
 		"34": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "_name"
+			"packagePath": "src/base58.ts",
+			"qualifiedName": "charset"
 		},
 		"35": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "FindDirectoriesOptions.blocklist"
+			"packagePath": "src/base58.ts",
+			"qualifiedName": "Base58Charset"
 		},
 		"36": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "__type"
+			"packagePath": "src/base85.ts",
+			"qualifiedName": "encode85"
 		},
 		"37": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "__type"
+			"packagePath": "src/base85.ts",
+			"qualifiedName": "encode85"
 		},
 		"38": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "_absPath"
+			"packagePath": "src/base85.ts",
+			"qualifiedName": "input"
 		},
 		"39": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "_name"
+			"packagePath": "src/base85.ts",
+			"qualifiedName": "charset"
 		},
 		"40": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "FileSystemDependencies"
+			"packagePath": "src/base85.ts",
+			"qualifiedName": "decode85"
 		},
 		"41": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "FileSystemDependencies.readdir"
+			"packagePath": "src/base85.ts",
+			"qualifiedName": "decode85"
 		},
 		"42": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "__type"
+			"packagePath": "src/base85.ts",
+			"qualifiedName": "input"
 		},
 		"43": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "__type"
+			"packagePath": "src/base85.ts",
+			"qualifiedName": "charset"
 		},
 		"44": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "_path"
+			"packagePath": "src/base85.ts",
+			"qualifiedName": "Base85Charset"
 		},
 		"45": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "_opts"
+			"packagePath": "src/base32.ts",
+			"qualifiedName": "encode32"
 		},
 		"46": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "__type"
+			"packagePath": "src/base32.ts",
+			"qualifiedName": "encode32"
 		},
 		"47": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "__type.withFileTypes"
+			"packagePath": "src/base32.ts",
+			"qualifiedName": "input"
 		},
 		"48": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "__type"
+			"packagePath": "src/base32.ts",
+			"qualifiedName": "charset"
 		},
 		"49": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "__type.name"
+			"packagePath": "src/base32.ts",
+			"qualifiedName": "decode32"
 		},
 		"50": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "__type.isDirectory"
+			"packagePath": "src/base32.ts",
+			"qualifiedName": "decode32"
 		},
 		"51": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "__type.isDirectory"
+			"packagePath": "src/base32.ts",
+			"qualifiedName": "input"
 		},
 		"52": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "FileSystemDependencies.stat"
+			"packagePath": "src/base32.ts",
+			"qualifiedName": "charset"
 		},
 		"53": {
 			"packageName": "@wtasnorg/node-lib",
-			"packagePath": "src/find.ts",
-			"qualifiedName": "__type"
+			"packagePath": "src/base32.ts",
+			"qualifiedName": "Base32Charset"
 		},
 		"54": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "FindDirectoriesOptions"
 		},
 		"55": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "_path"
+			"qualifiedName": "FindDirectoriesOptions.maxDepth"
 		},
 		"56": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "__type"
+			"qualifiedName": "FindDirectoriesOptions.followSymlinks"
 		},
 		"57": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "__type.isDirectory"
+			"qualifiedName": "FindDirectoriesOptions.allowlist"
 		},
 		"58": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
-			"qualifiedName": "__type.isDirectory"
+			"qualifiedName": "__type"
 		},
 		"59": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type"
+		},
+		"60": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "_absPath"
+		},
+		"61": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "_name"
+		},
+		"62": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "FindDirectoriesOptions.blocklist"
+		},
+		"63": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type"
+		},
+		"64": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type"
+		},
+		"65": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "_absPath"
+		},
+		"66": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "_name"
+		},
+		"67": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "FileSystemDependencies"
+		},
+		"68": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "FileSystemDependencies.readdir"
+		},
+		"69": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type"
+		},
+		"70": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type"
+		},
+		"71": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "_path"
+		},
+		"72": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "_opts"
+		},
+		"73": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type"
+		},
+		"74": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type.withFileTypes"
+		},
+		"75": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type"
+		},
+		"76": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type.name"
+		},
+		"77": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type.isDirectory"
+		},
+		"78": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type.isDirectory"
+		},
+		"79": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "FileSystemDependencies.stat"
+		},
+		"80": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type"
+		},
+		"81": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type"
+		},
+		"82": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "_path"
+		},
+		"83": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type"
+		},
+		"84": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type.isDirectory"
+		},
+		"85": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find.ts",
+			"qualifiedName": "__type.isDirectory"
+		},
+		"86": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/user-agent.ts",
 			"qualifiedName": "UserAgentInfo"
 		},
-		"60": {
+		"87": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/user-agent.ts",
 			"qualifiedName": "UserAgentInfo.browser"
 		},
-		"61": {
+		"88": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/user-agent.ts",
 			"qualifiedName": "UserAgentInfo.version"
 		},
-		"62": {
+		"89": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/user-agent.ts",
 			"qualifiedName": "UserAgentInfo.os"
 		},
-		"63": {
+		"90": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/user-agent.ts",
 			"qualifiedName": "UserAgentInfo.device"
 		},
-		"64": {
+		"91": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/user-agent.ts",
 			"qualifiedName": "UserAgentInfo.engine"
 		},
-		"65": {
+		"92": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/base64.ts",
 			"qualifiedName": "Base64CharsetType"
+		},
+		"93": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/base58.ts",
+			"qualifiedName": "Base58CharsetType"
+		},
+		"94": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/base85.ts",
+			"qualifiedName": "Base85CharsetType"
+		},
+		"95": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/base32.ts",
+			"qualifiedName": "Base32CharsetType"
 		}
 	},
 	"files": {
