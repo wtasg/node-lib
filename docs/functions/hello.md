@@ -6,14 +6,46 @@
 
 # Function: hello()
 
-> **hello**(): `Promise`\<`string`\>
+> **hello**(`konsole?`): `Promise`\<`string`\>
 
-Defined in: [hello.ts:6](https://github.com/wtasg/node-lib/blob/b5efd5c345e8fa1bdc2a6d3ea4dd4b2eb5b9cc62/src/hello.ts#L6)
+Defined in: [hello.ts:31](https://github.com/wtasg/node-lib/blob/7baf8669b7042dca550ec8a4beb26526d3b538b4/src/hello.ts#L31)
 
 A sample function that should work to test if lib is installed correctly.
+
+## Parameters
+
+### konsole?
+
+`Console`
+
+optional console object to log the message
 
 ## Returns
 
 `Promise`\<`string`\>
 
-hello message
+`hello from @wtasnorg/node-lib`
+
+## Examples
+
+```ts
+import { hello } from "@wtasnorg/node-lib";
+
+async function main() {
+    const message = await hello(console);
+    console.log("Received message:", message);
+}
+
+main();
+```
+
+```ts
+import { hello } from "@wtasnorg/node-lib";
+
+async function main() {
+    const message = await hello();
+    // Do something with the message
+}
+
+main();
+```

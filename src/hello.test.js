@@ -12,5 +12,16 @@ describe("hello", () => {
         const actual = await hello();
         strictEqual(actual, expected);
     });
+    it("logs message when console is provided", async () => {
+        const spyConsole = {
+            logCalledWith: "",
+            log(message) {
+                this.logCalledWith = message;
+            }
+        };
+        const expectedMessage = "hello from @wtasnorg/node-lib";
+        await hello(spyConsole);
+        strictEqual(spyConsole.logCalledWith, expectedMessage);
+    });
 });
 //# sourceMappingURL=hello.test.js.map

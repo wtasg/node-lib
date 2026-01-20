@@ -9,10 +9,16 @@
 
 ### Structure & Style
 
-- [ ] Imports/Exports: Imports at the top, exports at the bottom.
+- [ ] Imports/Exports
+  - [ ] Imports at the top, exports at the bottom.
+  - [ ] Export named functions, types, objects.
+  - [ ] Import named functions, types, objects.
 - [ ] Visibility: All primary functions should be exported.
-- [ ] Mutability: Prefer `const` over `let` (`prefer-const`).
-- [ ] Control Blocks: Always use braces `{}` for `if`, `for`, etc. (`curly`).
+- [ ] Immutability: Prefer `const` over `let` (`prefer-const`).
+- [ ] Control Blocks:
+  - [ ] Always use braces `{}` for `if`, `for`, etc. (`curly`).
+  - [ ] Use only `for` loop. Do not use `while`, `do-while`.
+  - [ ] Use `switch` instead of if-else ladder for one variable.
 - [ ] AI Agent Protocol: AI agents MUST honor the project's ESLint and EditorConfig settings for all modifications. Run `npm run lint` to verify compliance.
 
 ### Documentation & Examples

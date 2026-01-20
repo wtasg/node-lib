@@ -1,6 +1,6 @@
 {
   "name": "@wtasnorg/node-lib",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "node library",
   "main": "src/index.js",
   "scripts": {
@@ -38,5 +38,6 @@
     "typedoc-plugin-markdown": "^4.9.0",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.48.1"
-  }
+  },
+  "sideEffects": false
 }
