@@ -33,22 +33,33 @@ We are using `node --test` for testing.
 npm install @wtasnorg/node-lib
 ```
 
-```typescript
-# check if you can run code
-import {hello} from "@wtasnorg/node-lib";
-
-await hello();
-// "hello from @wtasnorg/node-lib"
-```
-
-## Tree Shaking
-
-Import only what you need for smaller bundles:
+**Recommended:** Use subpath imports for maximum efficiency (enables tree shaking):
 
 ```typescript
+import { encode, decode } from "@wtasnorg/node-lib/base64";
 import { encode58 } from "@wtasnorg/node-lib/base58";
 import { encode32 } from "@wtasnorg/node-lib/base32";
+import { parseUserAgent } from "@wtasnorg/node-lib/user-agent";
 ```
+
+Alternatively, import from the main entry point (includes all modules):
+
+```typescript
+import { hello, encode, encode58 } from "@wtasnorg/node-lib";
+```
+
+## Available Subpath Imports
+
+| Module | Import Path |
+|--------|-------------|
+| Base64 | `@wtasnorg/node-lib/base64` |
+| Base58 | `@wtasnorg/node-lib/base58` |
+| Base85 | `@wtasnorg/node-lib/base85` |
+| Base32 | `@wtasnorg/node-lib/base32` |
+| User-Agent | `@wtasnorg/node-lib/user-agent` |
+| Find | `@wtasnorg/node-lib/find` |
+| POJO | `@wtasnorg/node-lib/pojo` |
+| Hello | `@wtasnorg/node-lib/hello` |
 
 ## License: MIT
 
