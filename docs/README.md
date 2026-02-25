@@ -26,6 +26,9 @@
 
 ## Functions
 
+- [countOnes](functions/countOnes.md)
+- [countZeroes](functions/countZeroes.md)
+- [countZeroesWithWidth](functions/countZeroesWithWidth.md)
 - [createFindDirectories](functions/createFindDirectories.md)
 - [decode](functions/decode.md)
 - [decode32](functions/decode32.md)
@@ -38,3 +41,5 @@
 - [hello](functions/hello.md)
 - [parseUserAgent](functions/parseUserAgent.md)
 - [pojo](functions/pojo.md)
+- [popcount32](functions/popcount32.md)
+- [popcount64](functions/popcount64.md)

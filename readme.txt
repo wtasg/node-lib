@@ -15,6 +15,7 @@ A library project for nodejs. #nodejs #typescript #library
 6. `encode58` / `decode58` for Base58 encoding/decoding with charset variants (`bitcoin`, `flickr`, `ripple`).
 7. `encode85` / `decode85` for Base85 encoding/decoding with charset variants (`ascii85`, `z85`, `rfc1924`).
 8. `encode32` / `decode32` for Base32 encoding/decoding with charset variants (`rfc4648`, `hex`, `crockford`).
+9. `popcount32`, `popcount64`, `countOnes`, `countZeroesWithWidth`, `countZeroes` for integer bit counting helpers.
 
 ## Develop
 
@@ -40,6 +41,7 @@ import { encode, decode } from "@wtasnorg/node-lib/base64";
 import { encode58 } from "@wtasnorg/node-lib/base58";
 import { encode32 } from "@wtasnorg/node-lib/base32";
 import { parseUserAgent } from "@wtasnorg/node-lib/user-agent";
+import { popcount32, countZeroes } from "@wtasnorg/node-lib/bits";
 ```
 
 Alternatively, import from the main entry point (includes all modules):
@@ -60,6 +62,7 @@ import { hello, encode, encode58 } from "@wtasnorg/node-lib";
 | Find | `@wtasnorg/node-lib/find` |
 | POJO | `@wtasnorg/node-lib/pojo` |
 | Hello | `@wtasnorg/node-lib/hello` |
+| Bits | `@wtasnorg/node-lib/bits` |
 
 ## License: MIT
 

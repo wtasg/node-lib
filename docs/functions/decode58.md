@@ -6,9 +6,9 @@
 
 # Function: decode58()
 
-> **decode58**(`input`, `charset`): `string`
+> **decode58**(`input`, `charset?`): `string`
 
-Defined in: [base58.ts:132](https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/base58.ts#L132)
+Defined in: [base58.ts:132](https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base58.ts#L132)
 
 Decode a Base58 string.
 
@@ -20,7 +20,7 @@ Decode a Base58 string.
 
 The Base58 encoded string.
 
-### charset
+### charset?
 
 The charset variant to use (default: "bitcoin").
 

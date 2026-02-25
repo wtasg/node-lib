@@ -12,6 +12,7 @@ import type { Base85CharsetType } from "./base85.js";
 import { encode85, decode85, Base85Charset } from "./base85.js";
 import type { Base32CharsetType } from "./base32.js";
 import { encode32, decode32, Base32Charset } from "./base32.js";
+import { popcount32, popcount64, countOnes, countZeroesWithWidth, countZeroes } from "./bits.js";
 
 export {
     hello,
@@ -29,7 +30,12 @@ export {
     Base85Charset,
     encode32,
     decode32,
-    Base32Charset
+    Base32Charset,
+    popcount32,
+    popcount64,
+    countOnes,
+    countZeroesWithWidth,
+    countZeroes
 };
 
 export type {

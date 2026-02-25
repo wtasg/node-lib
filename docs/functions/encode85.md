@@ -6,9 +6,9 @@
 
 # Function: encode85()
 
-> **encode85**(`input`, `charset`): `string`
+> **encode85**(`input`, `charset?`): `string`
 
-Defined in: [base85.ts:73](https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/base85.ts#L73)
+Defined in: [base85.ts:73](https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base85.ts#L73)
 
 Encode a string to Base85.
 
@@ -20,7 +20,7 @@ Encode a string to Base85.
 
 The string to encode.
 
-### charset
+### charset?
 
 The charset variant to use (default: "ascii85").
 

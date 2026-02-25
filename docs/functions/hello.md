@@ -8,7 +8,7 @@
 
 > **hello**(`konsole?`): `Promise`\<`string`\>
 
-Defined in: [hello.ts:31](https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/hello.ts#L31)
+Defined in: [hello.ts:31](https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/hello.ts#L31)
 
 A sample function that should work to test if lib is installed correctly.
 

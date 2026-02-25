@@ -6,9 +6,9 @@
 
 # Function: decode32()
 
-> **decode32**(`input`, `charset`): `string`
+> **decode32**(`input`, `charset?`): `string`
 
-Defined in: [base32.ts:136](https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/base32.ts#L136)
+Defined in: [base32.ts:136](https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base32.ts#L136)
 
 Decode a Base32 string.
 
@@ -20,7 +20,7 @@ Decode a Base32 string.
 
 The Base32 encoded string.
 
-### charset
+### charset?
 
 The charset variant to use (default: "rfc4648").
 

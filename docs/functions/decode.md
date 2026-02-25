@@ -6,9 +6,9 @@
 
 # Function: decode()
 
-> **decode**(`input`, `charset`): `string`
+> **decode**(`input`, `charset?`): `string`
 
-Defined in: [base64.ts:119](https://github.com/wtasg/node-lib/blob/ed0a2138895c2801b9318149a6c6b3580f396289/src/base64.ts#L119)
+Defined in: [base64.ts:119](https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base64.ts#L119)
 
 Decode a Base64 string.
 
@@ -20,7 +20,7 @@ Decode a Base64 string.
 
 The Base64 encoded string.
 
-### charset
+### charset?
 
 The charset variant to use (default: "standard").
 
