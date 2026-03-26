@@ -287,7 +287,7 @@ declare function mapString(mapping: (_r: Rune) => Rune, s: string): string;
  * @returns {string} Repeated string.
  * @throws {RangeError} If count is negative.
  */
-declare function repeat(s: string, count_: number): string;
+declare function repeat(s: string, n: number): string;
 /**
  * Replace returns a copy of the string s with the first n non-overlapping
  * instances of old replaced by newStr.

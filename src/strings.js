@@ -508,11 +508,11 @@ function mapString(mapping, s) {
  * @returns {string} Repeated string.
  * @throws {RangeError} If count is negative.
  */
-function repeat(s, count_) {
-    if (count_ < 0) {
+function repeat(s, n) {
+    if (n < 0) {
         throw new RangeError("strings.repeat: negative count");
     }
-    return s.repeat(count_);
+    return s.repeat(n);
 }
 /**
  * Replace returns a copy of the string s with the first n non-overlapping
@@ -552,15 +552,15 @@ function replace(s, old, newStr, n) {
     }
     let result = "";
     let start = 0;
-    let count_ = 0;
-    while (count_ < n) {
+    let numReplaced = 0;
+    while (numReplaced < n) {
         const idx = s.indexOf(old, start);
         if (idx === -1) {
             break;
         }
         result += s.slice(start, idx) + newStr;
         start = idx + old.length;
-        count_++;
+        numReplaced++;
     }
     result += s.slice(start);
     return result;
@@ -1319,13 +1319,13 @@ class Replacer {
         let i = 0;
         while (i < s.length) {
             let found = false;
-            for (const [old_, new_] of this._pairs) {
-                if (old_ === "") {
+            for (const [oldStr, newStr] of this._pairs) {
+                if (oldStr === "") {
                     continue;
                 }
-                if (s.startsWith(old_, i)) {
-                    output += new_;
-                    i += old_.length;
+                if (s.startsWith(oldStr, i)) {
+                    output += newStr;
+                    i += oldStr.length;
                     found = true;
                     break;
                 }

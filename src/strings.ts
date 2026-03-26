@@ -519,11 +519,11 @@ function mapString(mapping: (_r: Rune) => Rune, s: string): string {
  * @returns {string} Repeated string.
  * @throws {RangeError} If count is negative.
  */
-function repeat(s: string, count_: number): string {
-    if (count_ < 0) {
+function repeat(s: string, n: number): string {
+    if (n < 0) {
         throw new RangeError("strings.repeat: negative count");
     }
-    return s.repeat(count_);
+    return s.repeat(n);
 }
 
 /**
@@ -561,13 +561,13 @@ function replace(s: string, old: string, newStr: string, n: number): string {
 
     let result = "";
     let start = 0;
-    let count_ = 0;
-    while (count_ < n) {
+    let numReplaced = 0;
+    while (numReplaced < n) {
         const idx = s.indexOf(old, start);
         if (idx === -1) { break; }
         result += s.slice(start, idx) + newStr;
         start = idx + old.length;
-        count_++;
+        numReplaced++;
     }
     result += s.slice(start);
     return result;
@@ -1331,11 +1331,11 @@ class Replacer {
         let i = 0;
         while (i < s.length) {
             let found = false;
-            for (const [old_, new_] of this._pairs) {
-                if (old_ === "") { continue; }
-                if (s.startsWith(old_, i)) {
-                    output += new_;
-                    i += old_.length;
+            for (const [oldStr, newStr] of this._pairs) {
+                if (oldStr === "") { continue; }
+                if (s.startsWith(oldStr, i)) {
+                    output += newStr;
+                    i += oldStr.length;
                     found = true;
                     break;
                 }
