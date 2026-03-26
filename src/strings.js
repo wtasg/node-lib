@@ -1,33 +1,104 @@
 // ─── Utility helpers ────────────────────────────────────────────────────────
 /**
  * Decode a UTF-8 byte sequence to its Unicode code point and consumed byte count.
+ *
+ * On any invalid encoding (including truncated sequences or continuation bytes
+ * used as starting bytes), this returns the replacement character U+FFFD and
+ * reports that a single byte was consumed, matching Go's behavior.
  */
 function decodeRuneFromBytes(bytes, pos) {
-    const b0 = bytes[pos] ?? 0;
-    let size;
-    if (b0 < 0x80) {
-        size = 1;
+    const len = bytes.length;
+    if (pos >= len) {
+        return [0xFFFD, 0];
     }
-    else if (b0 < 0xE0) {
+    const b0 = bytes[pos] ?? 0;
+    // ASCII fast path.
+    if (b0 < 0x80) {
+        return [b0, 1];
+    }
+    // Continuation bytes (10xxxxxx) are not valid as a starting byte.
+    if ((b0 & 0xC0) === 0x80) {
+        return [0xFFFD, 1];
+    }
+    let size = 0;
+    let codePoint = 0;
+    if (b0 < 0xE0) {
+        // 2-byte sequence: 110xxxxx 10xxxxxx
         size = 2;
+        if (pos + size > len) {
+            return [0xFFFD, 1];
+        }
+        const b1 = bytes[pos + 1] ?? 0;
+        if ((b1 & 0xC0) !== 0x80) {
+            return [0xFFFD, 1];
+        }
+        codePoint = ((b0 & 0x1F) << 6) | (b1 & 0x3F);
+        // Overlong encoding check: must be >= 0x80.
+        if (codePoint < 0x80) {
+            return [0xFFFD, 1];
+        }
     }
     else if (b0 < 0xF0) {
+        // 3-byte sequence: 1110xxxx 10xxxxxx 10xxxxxx
         size = 3;
+        if (pos + size > len) {
+            return [0xFFFD, 1];
+        }
+        const b1 = bytes[pos + 1] ?? 0;
+        const b2 = bytes[pos + 2] ?? 0;
+        if ((b1 & 0xC0) !== 0x80 || (b2 & 0xC0) !== 0x80) {
+            return [0xFFFD, 1];
+        }
+        codePoint = ((b0 & 0x0F) << 12) | ((b1 & 0x3F) << 6) | (b2 & 0x3F);
+        // Overlong encoding check: must be >= 0x800.
+        if (codePoint < 0x800) {
+            return [0xFFFD, 1];
+        }
+        // Exclude UTF-16 surrogate halves.
+        if (codePoint >= 0xD800 && codePoint <= 0xDFFF) {
+            return [0xFFFD, 1];
+        }
+    }
+    else if (b0 < 0xF8) {
+        // 4-byte sequence: 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
+        size = 4;
+        if (pos + size > len) {
+            return [0xFFFD, 1];
+        }
+        const b1 = bytes[pos + 1] ?? 0;
+        const b2 = bytes[pos + 2] ?? 0;
+        const b3 = bytes[pos + 3] ?? 0;
+        if ((b1 & 0xC0) !== 0x80 ||
+            (b2 & 0xC0) !== 0x80 ||
+            (b3 & 0xC0) !== 0x80) {
+            return [0xFFFD, 1];
+        }
+        codePoint =
+            ((b0 & 0x07) << 18) |
+                ((b1 & 0x3F) << 12) |
+                ((b2 & 0x3F) << 6) |
+                (b3 & 0x3F);
+        // Overlong encoding check: must be >= 0x10000.
+        if (codePoint < 0x10000) {
+            return [0xFFFD, 1];
+        }
+        // Maximum valid Unicode code point is U+10FFFF.
+        if (codePoint > 0x10FFFF) {
+            return [0xFFFD, 1];
+        }
     }
     else {
-        size = 4;
+        // UTF-8 sequences longer than 4 bytes are not valid.
+        return [0xFFFD, 1];
     }
-    const chunk = bytes.subarray(pos, pos + size);
-    const r = new TextDecoder().decode(chunk).codePointAt(0) ?? 0xFFFD;
-    return [r, size];
+    return [codePoint, size];
 }
 // ─── Simple string functions ─────────────────────────────────────────────────
 /**
- * Clone returns a fresh copy of s.
- * It guarantees to make a copy of s into a new allocation.
+ * Clone returns a string with the same contents as s.
  *
  * @param {string} s - Input string.
- * @returns {string} A copy of s.
+ * @returns {string} A string with the same contents as s.
  * @example
  * clone("hello"); // "hello"
  * clone("");      // ""
@@ -219,13 +290,34 @@ function cutSuffix(s, suffix) {
  * @param {string} t - Second string.
  * @returns {boolean} True if s and t are equal ignoring case.
  * @example
- * equalFold("Go", "go");   // true
- * equalFold("Go", "Java"); // false
+ * equalFold("Go", "go");    // true
+ * equalFold("Go", "Java");  // false
  * equalFold("abc", "abcd"); // false — different lengths
  * equalFold("", "");        // true
  */
+function simpleCaseFold(str) {
+    let result = "";
+    for (const ch of str) {
+        switch (ch) {
+            // Greek sigma variants: Σ (U+03A3), σ (U+03C3), ς (U+03C2) are all equivalent.
+            case "\u03A3": // Σ
+            case "\u03C2": // ς
+            case "\u03C3": // σ
+                result += "\u03C3";
+                break;
+            // German sharp s: ß folds to "ss".
+            case "\u00DF": // ß
+                result += "ss";
+                break;
+            default:
+                result += ch.toLowerCase();
+                break;
+        }
+    }
+    return result;
+}
 function equalFold(s, t) {
-    return s.toLowerCase() === t.toLowerCase();
+    return simpleCaseFold(s) === simpleCaseFold(t);
 }
 /**
  * Fields splits the string s around each instance of one or more consecutive
@@ -826,15 +918,36 @@ function toLower(s) {
 function toLowerSpecial(c, s) {
     return s.toLocaleLowerCase(c);
 }
+// Unicode titlecase map for the small set of digraph characters where
+// titlecase differs from uppercase (e.g. ǆ → ǅ, not Ǆ).
+const _unicodeTitleMap = new Map([
+    ["\u01C4", "\u01C5"], // Ǆ → ǅ
+    ["\u01C5", "\u01C5"], // ǅ → ǅ (already titlecase)
+    ["\u01C6", "\u01C5"], // ǆ → ǅ
+    ["\u01C7", "\u01C8"], // Ǉ → ǈ
+    ["\u01C8", "\u01C8"], // ǈ → ǈ
+    ["\u01C9", "\u01C8"], // ǉ → ǈ
+    ["\u01CA", "\u01CB"], // Ǌ → ǋ
+    ["\u01CB", "\u01CB"], // ǋ → ǋ
+    ["\u01CC", "\u01CB"], // ǌ → ǋ
+    ["\u01F1", "\u01F2"], // Ǳ → ǲ
+    ["\u01F2", "\u01F2"], // ǲ → ǲ
+    ["\u01F3", "\u01F2"], // ǳ → ǲ
+]);
 /**
  * ToTitle returns a copy of the string s with all Unicode letters mapped to
  * their Unicode title case.
  *
  * @param {string} s - Input string.
- * @returns {string} Title-cased string (all letters upper-cased for ASCII).
+ * @returns {string} Title-cased string (per-code-point Unicode title case).
  */
 function toTitle(s) {
-    return s.toUpperCase();
+    let result = "";
+    for (const ch of s) {
+        const t = _unicodeTitleMap.get(ch);
+        result += t !== undefined ? t : ch.toUpperCase();
+    }
+    return result;
 }
 /**
  * ToTitleSpecial returns a copy of the string s with all Unicode letters mapped
@@ -842,10 +955,15 @@ function toTitle(s) {
  *
  * @param {SpecialCase} c - Locale identifier (e.g. "tr", "az").
  * @param {string} s - Input string.
- * @returns {string} Locale-upper-cased string.
+ * @returns {string} Locale title-cased string.
  */
 function toTitleSpecial(c, s) {
-    return s.toLocaleUpperCase(c);
+    let result = "";
+    for (const ch of s) {
+        const t = _unicodeTitleMap.get(ch);
+        result += t !== undefined ? t : ch.toLocaleUpperCase(c);
+    }
+    return result;
 }
 /**
  * ToUpper returns s with all Unicode letters mapped to their upper case.
@@ -1211,6 +1329,9 @@ class Reader {
      * @throws {EOFError} When no more bytes are available.
      */
     read(b) {
+        if (b.length === 0) {
+            return 0;
+        }
         if (this._i >= this._encoded.length) {
             throw new EOFError();
         }
@@ -1232,6 +1353,9 @@ class Reader {
     readAt(b, off) {
         if (off < 0) {
             throw new RangeError("strings.Reader.readAt: negative offset");
+        }
+        if (b.length === 0) {
+            return 0;
         }
         if (off >= this._encoded.length) {
             throw new EOFError();
@@ -1319,13 +1443,17 @@ class Reader {
     /**
      * UnreadByte complements ReadByte in implementing io.ByteScanner.
      *
-     * @throws {Error} If the position is at the beginning of the string.
+     * @throws {Error} If the position is at the beginning of the string or the
+     * previous operation was not a byte read.
      */
     unreadByte() {
         if (this._i <= 0) {
             throw new Error("strings.Reader.unreadByte: at beginning of string");
         }
-        this._prevRuneSize = -1;
+        // Disallow unreadByte immediately after a ReadRune.
+        if (this._prevRuneSize >= 0) {
+            throw new Error("strings.Reader.unreadByte: previous operation was not ReadByte");
+        }
         this._i--;
     }
     /**
@@ -1372,7 +1500,8 @@ function newReader(s) {
 // ─── Replacer ────────────────────────────────────────────────────────────────
 /**
  * Replacer replaces a list of strings with replacements.
- * It is safe for concurrent use by multiple goroutines.
+ * Instances are immutable after construction and can be safely reused
+ * across multiple calls and asynchronous tasks.
  *
  * @example
  * const r = newReplacer("<", "&lt;", ">", "&gt;");

@@ -609,12 +609,10 @@ describe("Reader", () => {
         strictEqual(n, 4); // "ello" = 4 bytes
         strictEqual(new TextDecoder().decode(chunks[0]), "ello");
     });
-    it("unreadByte works after operations other than readByte", () => {
-        // unreadByte only requires position > 0; it does not check previous op type
+    it("unreadByte throws when previous operation was readRune", () => {
         const r = newReader("hello");
         r.readRune(); // advances past 'h'
-        r.unreadByte(); // steps back 1 byte — does not throw
-        strictEqual(r.readByte(), 104); // 'h' again
+        throws(() => r.unreadByte(), /previous operation was not ReadByte/);
     });
     it("unreadByte throws when at beginning of string", () => {
         const r = newReader("abc");

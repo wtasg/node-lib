@@ -14,11 +14,10 @@ interface Writer {
     write: (_p: Uint8Array) => number;
 }
 /**
- * Clone returns a fresh copy of s.
- * It guarantees to make a copy of s into a new allocation.
+ * Clone returns a string with the same contents as s.
  *
  * @param {string} s - Input string.
- * @returns {string} A copy of s.
+ * @returns {string} A string with the same contents as s.
  * @example
  * clone("hello"); // "hello"
  * clone("");      // ""
@@ -151,18 +150,6 @@ declare function cutSuffix(s: string, suffix: string): {
     before: string;
     found: boolean;
 };
-/**
- * EqualFold reports whether s and t are equal under simple Unicode case-folding.
- *
- * @param {string} s - First string.
- * @param {string} t - Second string.
- * @returns {boolean} True if s and t are equal ignoring case.
- * @example
- * equalFold("Go", "go");   // true
- * equalFold("Go", "Java"); // false
- * equalFold("abc", "abcd"); // false — different lengths
- * equalFold("", "");        // true
- */
 declare function equalFold(s: string, t: string): boolean;
 /**
  * Fields splits the string s around each instance of one or more consecutive
@@ -476,7 +463,7 @@ declare function toLowerSpecial(c: SpecialCase, s: string): string;
  * their Unicode title case.
  *
  * @param {string} s - Input string.
- * @returns {string} Title-cased string (all letters upper-cased for ASCII).
+ * @returns {string} Title-cased string (per-code-point Unicode title case).
  */
 declare function toTitle(s: string): string;
 /**
@@ -485,7 +472,7 @@ declare function toTitle(s: string): string;
  *
  * @param {SpecialCase} c - Locale identifier (e.g. "tr", "az").
  * @param {string} s - Input string.
- * @returns {string} Locale-upper-cased string.
+ * @returns {string} Locale title-cased string.
  */
 declare function toTitleSpecial(c: SpecialCase, s: string): string;
 /**
@@ -769,7 +756,8 @@ declare class Reader {
     /**
      * UnreadByte complements ReadByte in implementing io.ByteScanner.
      *
-     * @throws {Error} If the position is at the beginning of the string.
+     * @throws {Error} If the position is at the beginning of the string or the
+     * previous operation was not a byte read.
      */
     unreadByte(): void;
     /**
@@ -796,7 +784,8 @@ declare class Reader {
 declare function newReader(s: string): Reader;
 /**
  * Replacer replaces a list of strings with replacements.
- * It is safe for concurrent use by multiple goroutines.
+ * Instances are immutable after construction and can be safely reused
+ * across multiple calls and asynchronous tasks.
  *
  * @example
  * const r = newReplacer("<", "&lt;", ">", "&gt;");
