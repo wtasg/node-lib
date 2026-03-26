@@ -28,6 +28,9 @@ function decodeRuneFromBytes(bytes, pos) {
  *
  * @param {string} s - Input string.
  * @returns {string} A copy of s.
+ * @example
+ * clone("hello"); // "hello"
+ * clone("");      // ""
  */
 function clone(s) {
     return s.slice();
@@ -39,6 +42,10 @@ function clone(s) {
  * @param {string} a - First string.
  * @param {string} b - Second string.
  * @returns {number} -1, 0, or 1.
+ * @example
+ * compare("a", "b"); // -1
+ * compare("b", "a"); // 1
+ * compare("a", "a"); // 0
  */
 function compare(a, b) {
     if (a < b) {
@@ -55,6 +62,11 @@ function compare(a, b) {
  * @param {string} s - Input string.
  * @param {string} substr - Substring to search for.
  * @returns {boolean} True if substr is found in s.
+ * @example
+ * contains("seafood", "foo"); // true
+ * contains("seafood", "bar"); // false
+ * contains("foo", "foobar");  // false — substr longer than s
+ * contains("", "");           // true
  */
 function contains(s, substr) {
     return s.includes(substr);
@@ -65,6 +77,10 @@ function contains(s, substr) {
  * @param {string} s - Input string.
  * @param {string} chars - String of characters to search for.
  * @returns {boolean} True if any character in chars is found in s.
+ * @example
+ * containsAny("failure", "u & i"); // true
+ * containsAny("foo", "");          // false — empty chars always returns false
+ * containsAny("team", "i");        // false
  */
 function containsAny(s, chars) {
     for (const c of chars) {
@@ -80,6 +96,10 @@ function containsAny(s, chars) {
  * @param {string} s - Input string.
  * @param {(ch: string) => boolean} f - Predicate function receiving each character.
  * @returns {boolean} True if any character satisfies f.
+ * @example
+ * containsFunc("hello", ch => ch === "e"); // true
+ * containsFunc("hello", ch => ch === "z"); // false
+ * containsFunc("", () => true);            // false — empty string has no chars
  */
 function containsFunc(s, f) {
     for (const ch of s) {
@@ -95,6 +115,11 @@ function containsFunc(s, f) {
  * @param {string} s - Input string.
  * @param {Rune} r - Unicode code point to search for.
  * @returns {boolean} True if r is found in s.
+ * @example
+ * containsRune("hello", 104); // true  — 'h' (U+0068)
+ * containsRune("hello", 122); // false — 'z' not in "hello"
+ * containsRune("hello", -1);  // false — negative rune always returns false
+ * containsRune("", 97);       // false — empty string
  */
 function containsRune(s, r) {
     if (r < 0) {
@@ -109,6 +134,11 @@ function containsRune(s, r) {
  * @param {string} s - Input string.
  * @param {string} substr - Substring to count.
  * @returns {number} Number of non-overlapping occurrences.
+ * @example
+ * count("cheese", "e"); // 3
+ * count("five", "");    // 5 (empty substr → rune count + 1)
+ * count("", "");        // 1
+ * count("", "foo");     // 0 — substr longer than s
  */
 function count(s, substr) {
     if (substr === "") {
@@ -134,6 +164,10 @@ function count(s, substr) {
  * @param {string} s - Input string.
  * @param {string} sep - Separator string.
  * @returns {{ before: string; after: string; found: boolean }}
+ * @example
+ * cut("Gopher@example.com", "@"); // { before: "Gopher", after: "example.com", found: true }
+ * cut("Gopher", "@");             // { before: "Gopher", after: "", found: false }
+ * cut("ab", "abc");               // { before: "ab", after: "", found: false } — sep longer than s
  */
 function cut(s, sep) {
     const idx = s.indexOf(sep);
@@ -149,6 +183,10 @@ function cut(s, sep) {
  * @param {string} s - Input string.
  * @param {string} prefix - Prefix to remove.
  * @returns {{ after: string; found: boolean }}
+ * @example
+ * cutPrefix("Gopher", "Go"); // { after: "pher", found: true }
+ * cutPrefix("Gopher", "X");  // { after: "Gopher", found: false }
+ * cutPrefix("ab", "abc");    // { after: "ab", found: false } — prefix longer than s
  */
 function cutPrefix(s, prefix) {
     if (!s.startsWith(prefix)) {
@@ -163,6 +201,10 @@ function cutPrefix(s, prefix) {
  * @param {string} s - Input string.
  * @param {string} suffix - Suffix to remove.
  * @returns {{ before: string; found: boolean }}
+ * @example
+ * cutSuffix("Gopher", "er"); // { before: "Goph", found: true }
+ * cutSuffix("Gopher", "X");  // { before: "Gopher", found: false }
+ * cutSuffix("ab", "abc");    // { before: "ab", found: false } — suffix longer than s
  */
 function cutSuffix(s, suffix) {
     if (!s.endsWith(suffix)) {
@@ -176,6 +218,11 @@ function cutSuffix(s, suffix) {
  * @param {string} s - First string.
  * @param {string} t - Second string.
  * @returns {boolean} True if s and t are equal ignoring case.
+ * @example
+ * equalFold("Go", "go");   // true
+ * equalFold("Go", "Java"); // false
+ * equalFold("abc", "abcd"); // false — different lengths
+ * equalFold("", "");        // true
  */
 function equalFold(s, t) {
     return s.toLowerCase() === t.toLowerCase();
@@ -272,6 +319,11 @@ function* fieldsSeq(s) {
  * @param {string} s - Input string.
  * @param {string} prefix - Prefix to check.
  * @returns {boolean} True if s starts with prefix.
+ * @example
+ * hasPrefix("Gopher", "Go"); // true
+ * hasPrefix("Gopher", "");   // true — empty prefix always matches
+ * hasPrefix("Gopher", "X");  // false
+ * hasPrefix("ab", "abc");    // false — prefix longer than s
  */
 function hasPrefix(s, prefix) {
     return s.startsWith(prefix);
@@ -282,6 +334,11 @@ function hasPrefix(s, prefix) {
  * @param {string} s - Input string.
  * @param {string} suffix - Suffix to check.
  * @returns {boolean} True if s ends with suffix.
+ * @example
+ * hasSuffix("Gopher", "er"); // true
+ * hasSuffix("Gopher", "");   // true — empty suffix always matches
+ * hasSuffix("Gopher", "X");  // false
+ * hasSuffix("ab", "abc");    // false — suffix longer than s
  */
 function hasSuffix(s, suffix) {
     return s.endsWith(suffix);
@@ -293,6 +350,11 @@ function hasSuffix(s, suffix) {
  * @param {string} s - Input string.
  * @param {string} substr - Substring to find.
  * @returns {number} Index of first occurrence, or -1.
+ * @example
+ * index("chicken", "ken"); // 4
+ * index("chicken", "dmr"); // -1
+ * index("foo", "foobar");  // -1 — substr longer than s
+ * index("", "");           // 0
  */
 function index(s, substr) {
     return s.indexOf(substr);
@@ -507,6 +569,10 @@ function mapString(mapping, s) {
  * @param {number} count - Number of repetitions (must be non-negative).
  * @returns {string} Repeated string.
  * @throws {RangeError} If count is negative.
+ * @example
+ * repeat("na", 4); // "nananana"
+ * repeat("na", 0); // ""
+ * repeat("x", -1); // throws RangeError
  */
 function repeat(s, n) {
     if (n < 0) {
@@ -526,6 +592,11 @@ function repeat(s, n) {
  * @param {string} newStr - Replacement string.
  * @param {number} n - Maximum replacements; -1 means replace all.
  * @returns {string} String with replacements applied.
+ * @example
+ * replace("oink oink oink", "oink", "moo", 2);  // "moo moo oink"
+ * replace("oink oink oink", "oink", "moo", -1); // "moo moo moo"
+ * replace("abc", "", "X", -1);                  // "XaXbXcX"
+ * replace("abc", "abcd", "x", -1);              // "abc" — old not found
  */
 function replace(s, old, newStr, n) {
     if (n === 0) {
@@ -895,6 +966,11 @@ function trimLeftFunc(s, f) {
  * @param {string} s - Input string.
  * @param {string} prefix - Prefix to remove.
  * @returns {string} String without the prefix.
+ * @example
+ * trimPrefix("Goodbye, world!", "Goodbye, "); // "world!"
+ * trimPrefix("Hello, world!", "Goodbye, ");   // "Hello, world!" — prefix not found
+ * trimPrefix("ab", "abc");                    // "ab" — prefix longer than s
+ * trimPrefix("", "abc");                      // "" — empty string
  */
 function trimPrefix(s, prefix) {
     if (s.startsWith(prefix)) {
@@ -963,6 +1039,11 @@ function trimSpace(s) {
  * @param {string} s - Input string.
  * @param {string} suffix - Suffix to remove.
  * @returns {string} String without the suffix.
+ * @example
+ * trimSuffix("Hello, goodbye!", ", goodbye!"); // "Hello"
+ * trimSuffix("Hello, world!", "Goodbye");      // "Hello, world!" — suffix not found
+ * trimSuffix("ab", "abc");                     // "ab" — suffix longer than s
+ * trimSuffix("", "abc");                       // "" — empty string
  */
 function trimSuffix(s, suffix) {
     if (s.endsWith(suffix)) {

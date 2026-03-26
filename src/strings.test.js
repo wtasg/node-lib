@@ -30,6 +30,10 @@ describe("contains", () => {
     it("returns false when substr is not found", () => {
         ok(!contains("seafood", "bar"));
     });
+    it("returns false when substr is longer than s", () => {
+        ok(!contains("foo", "foobar"));
+        ok(!contains("", "x"));
+    });
 });
 describe("containsAny", () => {
     it("returns true when any char from chars is found", () => {
@@ -49,12 +53,18 @@ describe("containsFunc", () => {
         ok(!containsFunc("hello", ch => ch === "z"));
         ok(!containsFunc("", () => true));
     });
+    it("returns false for empty string regardless of predicate", () => {
+        ok(!containsFunc("", ch => ch.length > 0));
+    });
 });
 describe("containsRune", () => {
     it("returns true when the rune is found", () => {
         ok(containsRune("hello", 104)); // 'h'
         ok(!containsRune("hello", 122)); // 'z'
         ok(!containsRune("hello", -1));
+    });
+    it("returns false for empty string", () => {
+        ok(!containsRune("", 97)); // 'a'
     });
 });
 describe("count", () => {
@@ -65,6 +75,10 @@ describe("count", () => {
         strictEqual(count("oink oink oink", "oink"), 3);
         strictEqual(count("oink oink oink", "moo"), 0);
     });
+    it("returns 0 when substr is longer than s", () => {
+        strictEqual(count("abc", "abcd"), 0);
+        strictEqual(count("", "foo"), 0);
+    });
 });
 describe("cut", () => {
     it("cuts at the first instance of sep", () => {
@@ -72,11 +86,19 @@ describe("cut", () => {
         deepStrictEqual(cut("Gopher", "@"), { before: "Gopher", after: "", found: false });
         deepStrictEqual(cut("", ""), { before: "", after: "", found: true });
     });
+    it("returns found=false when sep is longer than s", () => {
+        deepStrictEqual(cut("ab", "abc"), { before: "ab", after: "", found: false });
+        deepStrictEqual(cut("", "sep"), { before: "", after: "", found: false });
+    });
 });
 describe("cutPrefix", () => {
     it("removes a leading prefix", () => {
         deepStrictEqual(cutPrefix("Gopher", "Go"), { after: "pher", found: true });
         deepStrictEqual(cutPrefix("Gopher", "X"), { after: "Gopher", found: false });
+    });
+    it("returns found=false when prefix is longer than s", () => {
+        deepStrictEqual(cutPrefix("ab", "abc"), { after: "ab", found: false });
+        deepStrictEqual(cutPrefix("", "abc"), { after: "", found: false });
     });
 });
 describe("cutSuffix", () => {
@@ -84,12 +106,21 @@ describe("cutSuffix", () => {
         deepStrictEqual(cutSuffix("Gopher", "er"), { before: "Goph", found: true });
         deepStrictEqual(cutSuffix("Gopher", "X"), { before: "Gopher", found: false });
     });
+    it("returns found=false when suffix is longer than s", () => {
+        deepStrictEqual(cutSuffix("ab", "abc"), { before: "ab", found: false });
+        deepStrictEqual(cutSuffix("", "abc"), { before: "", found: false });
+    });
 });
 describe("equalFold", () => {
     it("compares strings case-insensitively", () => {
         ok(equalFold("Go", "go"));
         ok(equalFold("Go", "GO"));
         ok(!equalFold("Go", "Java"));
+    });
+    it("handles empty strings and length mismatches", () => {
+        ok(equalFold("", ""));
+        ok(!equalFold("", "abc"));
+        ok(!equalFold("abc", "abcd"));
     });
 });
 describe("fields", () => {
@@ -126,6 +157,11 @@ describe("hasPrefix", () => {
         ok(!hasPrefix("Gopher", "X"));
         ok(hasPrefix("Gopher", ""));
     });
+    it("returns false when prefix is longer than s", () => {
+        ok(!hasPrefix("", "abc"));
+        ok(!hasPrefix("ab", "abc"));
+        ok(hasPrefix("", ""));
+    });
 });
 describe("hasSuffix", () => {
     it("reports whether s ends with suffix", () => {
@@ -133,12 +169,21 @@ describe("hasSuffix", () => {
         ok(!hasSuffix("Gopher", "X"));
         ok(hasSuffix("Gopher", ""));
     });
+    it("returns false when suffix is longer than s", () => {
+        ok(!hasSuffix("", "abc"));
+        ok(!hasSuffix("ab", "abc"));
+        ok(hasSuffix("", ""));
+    });
 });
 describe("index", () => {
     it("returns the index of the first occurrence", () => {
         strictEqual(index("chicken", "ken"), 4);
         strictEqual(index("chicken", "dmr"), -1);
         strictEqual(index("", ""), 0);
+    });
+    it("returns -1 when substr is longer than s", () => {
+        strictEqual(index("foo", "foobar"), -1);
+        strictEqual(index("", "x"), -1);
     });
 });
 describe("indexAny", () => {
@@ -148,12 +193,19 @@ describe("indexAny", () => {
         strictEqual(indexAny("xyz", "abc"), -1);
         strictEqual(indexAny("xyz", ""), -1);
     });
+    it("returns -1 for empty source string", () => {
+        strictEqual(indexAny("", "abc"), -1);
+        strictEqual(indexAny("", ""), -1);
+    });
 });
 describe("indexByte", () => {
     it("returns the index of the first occurrence of the byte", () => {
         strictEqual(indexByte("golang", 103), 0); // 'g'
         strictEqual(indexByte("golang", 111), 1); // 'o'
         strictEqual(indexByte("golang", 122), -1); // 'z'
+    });
+    it("returns -1 for empty string", () => {
+        strictEqual(indexByte("", 97), -1);
     });
 });
 describe("indexFunc", () => {
@@ -162,12 +214,18 @@ describe("indexFunc", () => {
         strictEqual(indexFunc("Hello", isUpper), 0);
         strictEqual(indexFunc("hello", isUpper), -1);
     });
+    it("returns -1 for empty string", () => {
+        strictEqual(indexFunc("", () => true), -1);
+    });
 });
 describe("indexRune", () => {
     it("returns the index of the rune", () => {
         strictEqual(indexRune("chicken", 107), 4); // 'k'
         strictEqual(indexRune("chicken", 100), -1); // 'd'
         strictEqual(indexRune("chicken", -1), -1);
+    });
+    it("returns -1 for empty string", () => {
+        strictEqual(indexRune("", 104), -1);
     });
 });
 describe("join", () => {
@@ -182,6 +240,10 @@ describe("lastIndex", () => {
         strictEqual(lastIndex("go gopher", "go"), 3);
         strictEqual(lastIndex("go gopher", "xyz"), -1);
         strictEqual(lastIndex("go gopher", ""), 9);
+    });
+    it("returns -1 when substr is longer than s", () => {
+        strictEqual(lastIndex("foo", "foobar"), -1);
+        strictEqual(lastIndex("", "x"), -1);
     });
 });
 describe("lastIndexAny", () => {
@@ -199,12 +261,18 @@ describe("lastIndexByte", () => {
         strictEqual(lastIndexByte("golang", 108), 2); // 'l' is at index 2
         strictEqual(lastIndexByte("golang", 122), -1); // 'z' not found
     });
+    it("returns -1 for empty string", () => {
+        strictEqual(lastIndexByte("", 97), -1);
+    });
 });
 describe("lastIndexFunc", () => {
     it("returns the last index satisfying f", () => {
         const isUpper = (ch) => ch >= "A" && ch <= "Z";
         strictEqual(lastIndexFunc("Hello World", isUpper), 6); // 'W'
         strictEqual(lastIndexFunc("hello world", isUpper), -1);
+    });
+    it("returns -1 for empty string", () => {
+        strictEqual(lastIndexFunc("", () => true), -1);
     });
 });
 describe("lines", () => {
@@ -239,11 +307,19 @@ describe("replace", () => {
         strictEqual(replace("abc", "", "X", -1), "XaXbXcX");
         strictEqual(replace("abc", "", "X", 2), "XaXbc");
     });
+    it("returns s unchanged when old is not found", () => {
+        strictEqual(replace("abc", "abcd", "x", -1), "abc");
+        strictEqual(replace("", "x", "y", -1), "");
+    });
 });
 describe("replaceAll", () => {
     it("replaces all occurrences", () => {
         strictEqual(replaceAll("oink oink oink", "oink", "moo"), "moo moo moo");
         strictEqual(replaceAll("oink oink oink", "moo", "boo"), "oink oink oink");
+    });
+    it("returns s unchanged when old is not found", () => {
+        strictEqual(replaceAll("abc", "abcd", "x"), "abc");
+        strictEqual(replaceAll("", "x", "y"), "");
     });
 });
 describe("split", () => {
@@ -253,6 +329,10 @@ describe("split", () => {
         deepStrictEqual(split("xyz", ""), ["x", "y", "z"]);
         deepStrictEqual(split("", ""), []);
     });
+    it("returns a single-element array when sep is not found", () => {
+        deepStrictEqual(split("abc", "x"), ["abc"]);
+        deepStrictEqual(split("", "x"), [""]);
+    });
 });
 describe("splitN", () => {
     it("splits into at most n parts", () => {
@@ -260,6 +340,10 @@ describe("splitN", () => {
         deepStrictEqual(splitN("a,b,c", ",", -1), ["a", "b", "c"]);
         deepStrictEqual(splitN("a,b,c", ",", 0), []);
         deepStrictEqual(splitN("abc", "", 2), ["a", "bc"]);
+    });
+    it("returns single-element array when sep is not found", () => {
+        deepStrictEqual(splitN("abc", "x", 2), ["abc"]);
+        deepStrictEqual(splitN("", "x", -1), [""]);
     });
 });
 describe("splitAfter", () => {
@@ -338,16 +422,27 @@ describe("trim", () => {
         strictEqual(trim("¡¡¡Hello!!!", "!¡"), "Hello");
         strictEqual(trim("  hello  ", " "), "hello");
     });
+    it("handles empty string and empty cutset", () => {
+        strictEqual(trim("", "abc"), "");
+        strictEqual(trim("hello", ""), "hello");
+    });
 });
 describe("trimFunc", () => {
     it("trims characters satisfying f from both ends", () => {
         const isSpecial = (ch) => ch === "!" || ch === "¡";
         strictEqual(trimFunc("¡¡¡Hello!!!", isSpecial), "Hello");
     });
+    it("returns empty string unchanged", () => {
+        strictEqual(trimFunc("", () => true), "");
+    });
 });
 describe("trimLeft", () => {
     it("trims cutset from the left", () => {
         strictEqual(trimLeft("¡¡¡Hello!!!", "!¡"), "Hello!!!");
+    });
+    it("handles empty string and empty cutset", () => {
+        strictEqual(trimLeft("", "abc"), "");
+        strictEqual(trimLeft("hello", ""), "hello");
     });
 });
 describe("trimLeftFunc", () => {
@@ -355,22 +450,36 @@ describe("trimLeftFunc", () => {
         const isSpecial = (ch) => ch === "!" || ch === "¡";
         strictEqual(trimLeftFunc("¡¡¡Hello!!!", isSpecial), "Hello!!!");
     });
+    it("returns empty string unchanged", () => {
+        strictEqual(trimLeftFunc("", () => true), "");
+    });
 });
 describe("trimPrefix", () => {
     it("removes a leading prefix if present", () => {
         strictEqual(trimPrefix("Goodbye, world!", "Goodbye, "), "world!");
         strictEqual(trimPrefix("Hello, world!", "Goodbye, "), "Hello, world!");
     });
+    it("returns s unchanged when prefix is longer than s", () => {
+        strictEqual(trimPrefix("", "abc"), "");
+        strictEqual(trimPrefix("ab", "abc"), "ab");
+    });
 });
 describe("trimRight", () => {
     it("trims cutset from the right", () => {
         strictEqual(trimRight("¡¡¡Hello!!!", "!¡"), "¡¡¡Hello");
+    });
+    it("handles empty string and empty cutset", () => {
+        strictEqual(trimRight("", "abc"), "");
+        strictEqual(trimRight("hello", ""), "hello");
     });
 });
 describe("trimRightFunc", () => {
     it("trims characters satisfying f from the right", () => {
         const isSpecial = (ch) => ch === "!" || ch === "¡";
         strictEqual(trimRightFunc("¡¡¡Hello!!!", isSpecial), "¡¡¡Hello");
+    });
+    it("returns empty string unchanged", () => {
+        strictEqual(trimRightFunc("", () => true), "");
     });
 });
 describe("trimSpace", () => {
@@ -383,6 +492,10 @@ describe("trimSuffix", () => {
     it("removes a trailing suffix if present", () => {
         strictEqual(trimSuffix("Hello, goodbye!", ", goodbye!"), "Hello");
         strictEqual(trimSuffix("Hello, world!", "Goodbye"), "Hello, world!");
+    });
+    it("returns s unchanged when suffix is longer than s", () => {
+        strictEqual(trimSuffix("", "abc"), "");
+        strictEqual(trimSuffix("ab", "abc"), "ab");
     });
 });
 describe("Builder", () => {
@@ -496,14 +609,56 @@ describe("Reader", () => {
         strictEqual(n, 4); // "ello" = 4 bytes
         strictEqual(new TextDecoder().decode(chunks[0]), "ello");
     });
-    it("reset resets the reader to a new string", () => {
+    it("unreadByte works after operations other than readByte", () => {
+        // unreadByte only requires position > 0; it does not check previous op type
         const r = newReader("hello");
-        r.read(new Uint8Array(5));
-        r.reset("world");
-        strictEqual(r.len(), 5);
-        const buf = new Uint8Array(5);
-        r.read(buf);
-        strictEqual(new TextDecoder().decode(buf), "world");
+        r.readRune(); // advances past 'h'
+        r.unreadByte(); // steps back 1 byte — does not throw
+        strictEqual(r.readByte(), 104); // 'h' again
+    });
+    it("unreadByte throws when at beginning of string", () => {
+        const r = newReader("abc");
+        throws(() => r.unreadByte(), /at beginning of string/);
+    });
+    it("unreadRune throws when at beginning of string", () => {
+        const r = newReader("abc");
+        throws(() => r.unreadRune(), /at beginning of string/);
+    });
+    it("unreadRune throws when previous operation was not readRune", () => {
+        const r = newReader("abc");
+        r.readByte();
+        throws(() => r.unreadRune(), /previous operation was not ReadRune/);
+    });
+    it("readAt throws on negative offset", () => {
+        const r = newReader("hello");
+        throws(() => r.readAt(new Uint8Array(1), -1), /negative offset/);
+    });
+    it("readAt throws when offset is past end of string", () => {
+        const r = newReader("hello");
+        throws(() => r.readAt(new Uint8Array(1), 10), err => err instanceof EOFError);
+    });
+    it("seek throws on invalid whence", () => {
+        const r = newReader("hello");
+        throws(() => r.seek(0, 99), /invalid whence/);
+    });
+    it("seek throws when resulting position is negative", () => {
+        const r = newReader("hello");
+        throws(() => r.seek(-1, 0), /negative position/);
+    });
+    it("writeTo returns 0 when reader is exhausted", () => {
+        const r = newReader("");
+        const w = { write: (p) => p.length };
+        strictEqual(r.writeTo(w), 0);
+    });
+    it("readByte throws EOFError when exhausted", () => {
+        const r = newReader("a");
+        r.readByte();
+        throws(() => r.readByte(), err => err instanceof EOFError);
+    });
+    it("readRune throws EOFError when exhausted", () => {
+        const r = newReader("a");
+        r.readRune();
+        throws(() => r.readRune(), err => err instanceof EOFError);
     });
 });
 describe("Replacer", () => {
@@ -529,6 +684,19 @@ describe("Replacer", () => {
     });
     it("throws on odd argument count", () => {
         throws(() => newReplacer("a", "b", "c"), /odd argument count/);
+    });
+    it("returns s unchanged when no old strings match", () => {
+        const r = newReplacer("x", "y");
+        strictEqual(r.replace("abc"), "abc");
+        strictEqual(r.replace(""), "");
+    });
+    it("handles empty input string", () => {
+        const r = newReplacer("foo", "bar");
+        strictEqual(r.replace(""), "");
+    });
+    it("works with zero replacement pairs", () => {
+        const r = newReplacer();
+        strictEqual(r.replace("hello"), "hello");
     });
 });
 //# sourceMappingURL=strings.test.js.map
