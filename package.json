@@ -45,6 +45,10 @@
     "./bits": {
       "types": "./src/bits.d.ts",
       "import": "./src/bits.js"
+    },
+    "./strings": {
+      "types": "./src/strings.d.ts",
+      "import": "./src/strings.js"
     }
   },
   "scripts": {
