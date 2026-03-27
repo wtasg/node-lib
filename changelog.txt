@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.0.13] - 2026-03-26
+
+### Added
+- `strings` module in `src/strings.ts`: full port of the Go `strings` standard library to idiomatic TypeScript.
+  - Free functions: `clone`, `compare`, `contains`, `containsAny`, `containsFunc`, `containsRune`, `count`, `cut`, `cutPrefix`, `cutSuffix`, `equalFold`, `fields`, `fieldsFunc`, `fieldsFuncSeq`, `fieldsSeq`, `hasPrefix`, `hasSuffix`, `index`, `indexAny`, `indexByte`, `indexFunc`, `indexRune`, `join`, `lastIndex`, `lastIndexAny`, `lastIndexByte`, `lastIndexFunc`, `lines`, `mapString`, `repeat`, `replace`, `replaceAll`, `split`, `splitAfter`, `splitAfterN`, `splitAfterSeq`, `splitN`, `splitSeq`, `title`, `toLower`, `toLowerSpecial`, `toTitle`, `toTitleSpecial`, `toUpper`, `toUpperSpecial`, `toValidUTF8`, `trim`, `trimFunc`, `trimLeft`, `trimLeftFunc`, `trimPrefix`, `trimRight`, `trimRightFunc`, `trimSpace`, `trimSuffix`.
+  - Iterator variants (`fieldsSeq`, `fieldsFuncSeq`, `splitSeq`, `splitAfterSeq`, `lines`) implemented as TypeScript generators.
+  - Classes: `Builder` (string accumulator), `Reader` (UTF-8 byte stream over a string), `Replacer` (multi-pattern replacement).
+  - Factory functions: `newReader`, `newReplacer`.
+  - Error class: `EOFError` for Reader EOF signalling.
+  - Exported types: `Rune`, `SpecialCase`, `Writer`.
+- Comprehensive unit tests in `src/strings.test.ts` covering success and failure paths, empty-string inputs, and length-mismatch edge cases (e.g. `contains("foo", "foobar")` → false).
+- Subpath export `./strings` in `package.json`.
+- All strings symbols re-exported from the root `src/index.ts`.
+
 ## [0.0.11] - 2026-01-20
 
 ### Added

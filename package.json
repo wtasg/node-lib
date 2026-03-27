@@ -1,6 +1,6 @@
 {
   "name": "@wtasnorg/node-lib",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "node library",
   "main": "src/index.js",
   "module": "src/index.js",
@@ -45,6 +45,10 @@
     "./bits": {
       "types": "./src/bits.d.ts",
       "import": "./src/bits.js"
+    },
+    "./strings": {
+      "types": "./src/strings.d.ts",
+      "import": "./src/strings.js"
     }
   },
   "scripts": {
