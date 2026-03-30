@@ -8,7 +8,7 @@
 
 > `const` **Base32Charset**: readonly \[`"rfc4648"`, `"hex"`, `"crockford"`\]
 
-Defined in: [base32.ts:13](https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base32.ts#L13)
+Defined in: [src/base32.ts:13](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/base32.ts#L13)
 
 Available Base32 charset variants.
 - `rfc4648`: Standard RFC 4648 alphabet (A-Z, 2-7)

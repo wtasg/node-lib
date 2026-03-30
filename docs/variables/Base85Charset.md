@@ -8,7 +8,7 @@
 
 > `const` **Base85Charset**: readonly \[`"ascii85"`, `"z85"`, `"rfc1924"`\]
 
-Defined in: [base85.ts:13](https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base85.ts#L13)
+Defined in: [src/base85.ts:13](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/base85.ts#L13)
 
 Available Base85 charset variants.
 - `ascii85`: Adobe Ascii85 (btoa format)

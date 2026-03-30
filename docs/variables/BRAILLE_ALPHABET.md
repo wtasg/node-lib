@@ -8,6 +8,6 @@
 
 > `const` **BRAILLE\_ALPHABET**: `string`
 
-Defined in: braille.ts:166
+Defined in: [src/braille.ts:166](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/braille.ts#L166)
 
 Pre-computed Braille encoding of [ASCII\_ALPHABET](ASCII_ALPHABET.md).

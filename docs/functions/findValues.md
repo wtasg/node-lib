@@ -8,7 +8,7 @@
 
 > **findValues**(`obj`, `targets`, `compare?`, `whenFound?`): `void`
 
-Defined in: find-value.ts:96
+Defined in: [src/find-value.ts:96](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/find-value.ts#L96)
 
 Search `obj` for multiple target values at once.
 

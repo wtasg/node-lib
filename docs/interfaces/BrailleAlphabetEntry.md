@@ -6,7 +6,7 @@
 
 # Interface: BrailleAlphabetEntry
 
-Defined in: braille.ts:151
+Defined in: [src/braille.ts:151](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/braille.ts#L151)
 
 Entry mapping a single letter to its Braille equivalent.
 
@@ -16,7 +16,7 @@ Entry mapping a single letter to its Braille equivalent.
 
 > **ascii**: `string`
 
-Defined in: braille.ts:153
+Defined in: [src/braille.ts:153](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/braille.ts#L153)
 
 The ASCII letter.
 
@@ -26,6 +26,6 @@ The ASCII letter.
 
 > **braille**: `string`
 
-Defined in: braille.ts:155
+Defined in: [src/braille.ts:155](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/braille.ts#L155)
 
 The Braille letter.

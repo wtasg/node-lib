@@ -8,7 +8,7 @@
 
 > `const` **ASCII\_MAP**: readonly [`BrailleMapEntry`](../interfaces/BrailleMapEntry.md)[]
 
-Defined in: braille.ts:187
+Defined in: [src/braille.ts:187](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/braille.ts#L187)
 
 Pre-computed lookup table mapping printable ASCII codes (32–127)
 to their Braille equivalents.

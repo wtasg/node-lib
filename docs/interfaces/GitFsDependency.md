@@ -6,7 +6,7 @@
 
 # Interface: GitFsDependency
 
-Defined in: git.ts:13
+Defined in: [src/git.ts:13](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/git.ts#L13)
 
 Filesystem dependency for `isGitInit`, allowing test mocking.
 
@@ -16,7 +16,7 @@ Filesystem dependency for `isGitInit`, allowing test mocking.
 
 > **existsSync**: (`path`) => `boolean`
 
-Defined in: git.ts:14
+Defined in: [src/git.ts:14](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/git.ts#L14)
 
 #### Parameters
 

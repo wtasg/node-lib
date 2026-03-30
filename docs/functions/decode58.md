@@ -8,7 +8,7 @@
 
 > **decode58**(`input`, `charset?`): `string`
 
-Defined in: [base58.ts:132](https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base58.ts#L132)
+Defined in: [src/base58.ts:132](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/base58.ts#L132)
 
 Decode a Base58 string.
 

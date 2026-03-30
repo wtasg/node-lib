@@ -8,7 +8,7 @@
 
 > **countOnes**(`value`): `number`
 
-Defined in: [bits.ts:81](https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/bits.ts#L81)
+Defined in: [src/bits.ts:81](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/bits.ts#L81)
 
 Count set bits in a non-negative integer.
 

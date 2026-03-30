@@ -8,7 +8,7 @@
 
 > **countZeroes**(`value`): `number`
 
-Defined in: [bits.ts:118](https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/bits.ts#L118)
+Defined in: [src/bits.ts:118](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/bits.ts#L118)
 
 Count zero bits from LSB up to and including the highest set bit.
 For zero input, returns 0.

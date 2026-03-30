@@ -8,7 +8,7 @@
 
 > **isPrimitiveArray**(`input`): `boolean`
 
-Defined in: primitive.ts:39
+Defined in: [src/primitive.ts:39](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/primitive.ts#L39)
 
 Check whether a value is an array containing only primitive values.
 

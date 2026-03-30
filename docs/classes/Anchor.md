@@ -6,7 +6,7 @@
 
 # Class: Anchor
 
-Defined in: anchor.ts:32
+Defined in: [src/anchor.ts:32](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/anchor.ts#L32)
 
 A simple builder for an HTML `<a>` element.
 
@@ -25,7 +25,7 @@ link.toString(); // '<a href="https://example.com">Example</a>'
 
 > **new Anchor**(`href?`, `text?`): `Anchor`
 
-Defined in: anchor.ts:36
+Defined in: [src/anchor.ts:36](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/anchor.ts#L36)
 
 #### Parameters
 
@@ -47,7 +47,7 @@ Defined in: anchor.ts:36
 
 > **href**: `string`
 
-Defined in: anchor.ts:33
+Defined in: [src/anchor.ts:33](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/anchor.ts#L33)
 
 ***
 
@@ -55,7 +55,7 @@ Defined in: anchor.ts:33
 
 > **text**: `string`
 
-Defined in: anchor.ts:34
+Defined in: [src/anchor.ts:34](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/anchor.ts#L34)
 
 ## Methods
 
@@ -63,7 +63,7 @@ Defined in: anchor.ts:34
 
 > **toString**(): `string`
 
-Defined in: anchor.ts:41
+Defined in: [src/anchor.ts:41](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/anchor.ts#L41)
 
 #### Returns
 

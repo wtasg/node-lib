@@ -8,7 +8,7 @@
 
 > **hashString**(`input`, `salt?`, `size?`): `number`
 
-Defined in: hash.ts:48
+Defined in: [src/hash.ts:48](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/hash.ts#L48)
 
 Compute a simple non-cryptographic hash of a string value.
 

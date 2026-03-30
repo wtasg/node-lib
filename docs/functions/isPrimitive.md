@@ -8,7 +8,7 @@
 
 > **isPrimitive**(`val`): `boolean`
 
-Defined in: primitive.ts:22
+Defined in: [src/primitive.ts:22](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/primitive.ts#L22)
 
 Check whether a value is a JavaScript primitive
 (`null`, `boolean`, `number`, `string`, `symbol`, `bigint`, or `undefined`).

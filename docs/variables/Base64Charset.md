@@ -8,7 +8,7 @@
 
 > `const` **Base64Charset**: readonly \[`"standard"`, `"urlsafe"`, `"imap"`, `"radix64"`\]
 
-Defined in: [base64.ts:13](https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base64.ts#L13)
+Defined in: [src/base64.ts:13](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/base64.ts#L13)
 
 Available Base64 charset variants.
 - `standard`: RFC 4648 standard alphabet (A-Z, a-z, 0-9, +, /)

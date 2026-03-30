@@ -8,7 +8,7 @@
 
 > **encode85**(`input`, `charset?`): `string`
 
-Defined in: [base85.ts:73](https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base85.ts#L73)
+Defined in: [src/base85.ts:73](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/base85.ts#L73)
 
 Encode a string to Base85.
 

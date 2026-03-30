@@ -8,7 +8,7 @@
 
 > **findValue**(`obj`, `target`, `compare?`, `whenFound?`): `void`
 
-Defined in: find-value.ts:66
+Defined in: [src/find-value.ts:66](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/find-value.ts#L66)
 
 Search `obj` recursively for entries whose value satisfies `compare(target, value)`.
 Every match is reported via `whenFound`.

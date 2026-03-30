@@ -8,7 +8,7 @@
 
 > **brailleEncodeChar**(`ch`): `string`
 
-Defined in: braille.ts:47
+Defined in: [src/braille.ts:47](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/braille.ts#L47)
 
 Encode a single ASCII character into its Braille equivalent.
 Non-ASCII characters are returned unchanged.

@@ -8,7 +8,7 @@
 
 > **isGitInit**(`dirPath?`, `fs?`): `boolean`
 
-Defined in: git.ts:32
+Defined in: [src/git.ts:32](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/git.ts#L32)
 
 Check whether a `.git` directory exists at the given path,
 indicating the directory is (or is inside) a Git repository.

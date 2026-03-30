@@ -8,7 +8,7 @@
 
 > **format**(`fmt`, `obj`): `string`
 
-Defined in: format.ts:27
+Defined in: [src/format.ts:27](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/format.ts#L27)
 
 Replace `{key}` placeholders in `fmt` with values from `obj`.
 Keys that do not exist in `obj` are replaced with `undefined`.

@@ -8,7 +8,7 @@
 
 > **brailleDecodeChar**(`ch`): `string`
 
-Defined in: braille.ts:84
+Defined in: [src/braille.ts:84](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/braille.ts#L84)
 
 Decode a single Braille character back to ASCII.
 Non-Braille characters are returned unchanged.

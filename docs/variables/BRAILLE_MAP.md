@@ -8,6 +8,6 @@
 
 > `const` **BRAILLE\_MAP**: readonly [`BrailleMapEntry`](../interfaces/BrailleMapEntry.md)[]
 
-Defined in: braille.ts:204
+Defined in: [src/braille.ts:204](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/braille.ts#L204)
 
 Pre-computed lookup table mapping Braille codes back to ASCII.

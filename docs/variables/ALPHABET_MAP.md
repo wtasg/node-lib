@@ -8,6 +8,6 @@
 
 > `const` **ALPHABET\_MAP**: readonly [`BrailleAlphabetEntry`](../interfaces/BrailleAlphabetEntry.md)[]
 
-Defined in: braille.ts:218
+Defined in: [src/braille.ts:218](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/braille.ts#L218)
 
 Pre-computed letter-by-letter mapping of ASCII alphabet to Braille.

@@ -8,7 +8,7 @@
 
 > **popcount64**(`value`): `number`
 
-Defined in: [bits.ts:69](https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/bits.ts#L69)
+Defined in: [src/bits.ts:69](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/bits.ts#L69)
 
 Count set bits in the low 64 bits of a number or bigint.
 

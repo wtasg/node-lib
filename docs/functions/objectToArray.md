@@ -8,7 +8,7 @@
 
 > **objectToArray**(`obj`, `keyPrefix?`): `unknown`[]
 
-Defined in: otoa.ts:31
+Defined in: [src/otoa.ts:31](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/otoa.ts#L31)
 
 Extract the values of `obj` into an array. When `keyPrefix` is supplied,
 only keys starting with that prefix are included, and the prefix is
