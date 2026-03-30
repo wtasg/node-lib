@@ -8,7 +8,7 @@
 
 > **decode**(`input`, `charset?`): `string`
 
-Defined in: [base64.ts:119](https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base64.ts#L119)
+Defined in: [base64.ts:119](https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base64.ts#L119)
 
 Decode a Base64 string.
 
@@ -22,9 +22,9 @@ The Base64 encoded string.
 
 ### charset?
 
-The charset variant to use (default: "standard").
+`"standard"` \| `"urlsafe"` \| `"imap"` \| `"radix64"`
 
-`"standard"` | `"urlsafe"` | `"imap"` | `"radix64"`
+The charset variant to use (default: "standard").
 
 ## Returns
 

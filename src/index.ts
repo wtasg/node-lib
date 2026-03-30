@@ -13,6 +13,19 @@ import { encode85, decode85, Base85Charset } from "./base85.js";
 import type { Base32CharsetType } from "./base32.js";
 import { encode32, decode32, Base32Charset } from "./base32.js";
 import { popcount32, popcount64, countOnes, countZeroesWithWidth, countZeroes } from "./bits.js";
+import type { BrailleMapEntry, BrailleAlphabetEntry } from "./braille.js";
+import { brailleEncode, brailleDecode, brailleEncodeChar, brailleDecodeChar, brailleEncodeCharCode, brailleDecodeCharCode, isBraille, isAscii, ASCII_ALPHABET, BRAILLE_ALPHABET, ASCII_MAP, BRAILLE_MAP, ALPHABET_MAP } from "./braille.js";
+import type { FindValueMatch, FindValueCompare, FindValueCallback } from "./find-value.js";
+import { findValue, findValues } from "./find-value.js";
+import { format } from "./format.js";
+import { hashString, getAscii } from "./hash.js";
+import { Anchor, escapeHtml } from "./anchor.js";
+import type { GitFsDependency } from "./git.js";
+import { isGitInit } from "./git.js";
+import { isPrimitive, isPrimitiveArray } from "./primitive.js";
+import { objectToArray } from "./otoa.js";
+import type { WcResult } from "./wc.js";
+import { wc } from "./wc.js";
 
 
 export {
@@ -37,6 +50,31 @@ export {
     countOnes,
     countZeroesWithWidth,
     countZeroes,
+    brailleEncode,
+    brailleDecode,
+    brailleEncodeChar,
+    brailleDecodeChar,
+    brailleEncodeCharCode,
+    brailleDecodeCharCode,
+    isBraille,
+    isAscii,
+    ASCII_ALPHABET,
+    BRAILLE_ALPHABET,
+    ASCII_MAP,
+    BRAILLE_MAP,
+    ALPHABET_MAP,
+    findValue,
+    findValues,
+    format,
+    hashString,
+    getAscii,
+    Anchor,
+    escapeHtml,
+    isGitInit,
+    isPrimitive,
+    isPrimitiveArray,
+    objectToArray,
+    wc,
 };
 
 export {
@@ -111,6 +149,13 @@ export type {
     Base58CharsetType,
     Base85CharsetType,
     Base32CharsetType,
+    BrailleMapEntry,
+    BrailleAlphabetEntry,
+    FindValueMatch,
+    FindValueCompare,
+    FindValueCallback,
+    GitFsDependency,
+    WcResult,
 };
 
 export type { Rune as RuneString, SpecialCase as SpecialCaseString, Writer as WriterString } from "./strings.js";

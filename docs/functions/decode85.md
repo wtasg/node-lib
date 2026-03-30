@@ -8,7 +8,7 @@
 
 > **decode85**(`input`, `charset?`): `string`
 
-Defined in: [base85.ts:135](https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base85.ts#L135)
+Defined in: [base85.ts:135](https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base85.ts#L135)
 
 Decode a Base85 string.
 
@@ -22,9 +22,9 @@ The Base85 encoded string.
 
 ### charset?
 
-The charset variant to use (default: "ascii85").
+`"ascii85"` \| `"z85"` \| `"rfc1924"`
 
-`"ascii85"` | `"z85"` | `"rfc1924"`
+The charset variant to use (default: "ascii85").
 
 ## Returns
 

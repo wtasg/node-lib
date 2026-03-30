@@ -8,7 +8,7 @@
 
 > **countZeroesWithWidth**(`value`, `width`): `number`
 
-Defined in: [bits.ts:94](https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/bits.ts#L94)
+Defined in: [bits.ts:94](https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/bits.ts#L94)
 
 Count zero bits within a fixed width, considering only low-order `width` bits.
 
@@ -16,9 +16,9 @@ Count zero bits within a fixed width, considering only low-order `width` bits.
 
 ### value
 
-Input value.
+`number` \| `bigint`
 
-`number` | `bigint`
+Input value.
 
 ### width
 

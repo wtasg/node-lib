@@ -8,6 +8,6 @@
 
 > **Base32CharsetType** = *typeof* [`Base32Charset`](../variables/Base32Charset.md)\[`number`\]
 
-Defined in: [base32.ts:18](https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base32.ts#L18)
+Defined in: [base32.ts:18](https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base32.ts#L18)
 
 Base32 charset type.

@@ -7,14 +7,431 @@
 	"flags": {},
 	"children": [
 		{
-			"id": 83,
+			"id": 125,
+			"name": "Anchor",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "A simple builder for an HTML "
+					},
+					{
+						"kind": "code",
+						"text": "`<a>`"
+					},
+					{
+						"kind": "text",
+						"text": " element.\n\nBoth "
+					},
+					{
+						"kind": "code",
+						"text": "`href`"
+					},
+					{
+						"kind": "text",
+						"text": " and "
+					},
+					{
+						"kind": "code",
+						"text": "`text`"
+					},
+					{
+						"kind": "text",
+						"text": " are HTML-escaped in "
+					},
+					{
+						"kind": "code",
+						"text": "`toString()`"
+					},
+					{
+						"kind": "text",
+						"text": " output."
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@example",
+						"content": [
+							{
+								"kind": "code",
+								"text": "```ts\nconst link = new Anchor(\"https://example.com\", \"Example\");\nlink.toString(); // '<a href=\"https://example.com\">Example</a>'\n```"
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 126,
+					"name": "constructor",
+					"variant": "declaration",
+					"kind": 512,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "anchor.ts",
+							"line": 36,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 127,
+							"name": "Anchor",
+							"variant": "signature",
+							"kind": 16384,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "anchor.ts",
+									"line": 36,
+									"character": 4
+								}
+							],
+							"parameters": [
+								{
+									"id": 128,
+									"name": "href",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"#\""
+								},
+								{
+									"id": 129,
+									"name": "text",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"#\""
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 125,
+								"name": "Anchor",
+								"package": "@wtasnorg/node-lib"
+							}
+						}
+					]
+				},
+				{
+					"id": 130,
+					"name": "href",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "anchor.ts",
+							"line": 33,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 131,
+					"name": "text",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "anchor.ts",
+							"line": 34,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 132,
+					"name": "toString",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "anchor.ts",
+							"line": 41,
+							"character": 4
+						}
+					],
+					"signatures": [
+						{
+							"id": 133,
+							"name": "toString",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "anchor.ts",
+									"line": 41,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"children": [
+						126
+					]
+				},
+				{
+					"title": "Properties",
+					"children": [
+						130,
+						131
+					]
+				},
+				{
+					"title": "Methods",
+					"children": [
+						132
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "anchor.ts",
+					"line": 32,
+					"character": 6
+				}
+			]
+		},
+		{
+			"id": 201,
+			"name": "BrailleAlphabetEntry",
+			"variant": "declaration",
+			"kind": 256,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Entry mapping a single letter to its Braille equivalent."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 202,
+					"name": "ascii",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The ASCII letter."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "braille.ts",
+							"line": 153,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 203,
+					"name": "braille",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The Braille letter."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "braille.ts",
+							"line": 155,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						202,
+						203
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "braille.ts",
+					"line": 151,
+					"character": 10
+				}
+			]
+		},
+		{
+			"id": 197,
+			"name": "BrailleMapEntry",
+			"variant": "declaration",
+			"kind": 256,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Entry in a Braille ↔ ASCII lookup table."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 199,
+					"name": "ascii",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The ASCII character."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "braille.ts",
+							"line": 143,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 200,
+					"name": "braille",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The Braille character."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "braille.ts",
+							"line": 145,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 198,
+					"name": "code",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Numeric character code."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "braille.ts",
+							"line": 141,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						199,
+						200,
+						198
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "braille.ts",
+					"line": 139,
+					"character": 10
+				}
+			]
+		},
+		{
+			"id": 168,
 			"name": "FileSystemDependencies",
 			"variant": "declaration",
 			"kind": 256,
 			"flags": {},
 			"children": [
 				{
-					"id": 84,
+					"id": 169,
 					"name": "readdir",
 					"variant": "declaration",
 					"kind": 1024,
@@ -24,27 +441,27 @@
 							"fileName": "find.ts",
 							"line": 4,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/find.ts#L4"
+							"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/find.ts#L4"
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 85,
+							"id": 170,
 							"name": "__type",
 							"variant": "declaration",
 							"kind": 65536,
 							"flags": {},
 							"signatures": [
 								{
-									"id": 86,
+									"id": 171,
 									"name": "__type",
 									"variant": "signature",
 									"kind": 4096,
 									"flags": {},
 									"parameters": [
 										{
-											"id": 87,
+											"id": 172,
 											"name": "_path",
 											"variant": "param",
 											"kind": 32768,
@@ -55,7 +472,7 @@
 											}
 										},
 										{
-											"id": 88,
+											"id": 173,
 											"name": "_opts",
 											"variant": "param",
 											"kind": 32768,
@@ -63,14 +480,14 @@
 											"type": {
 												"type": "reflection",
 												"declaration": {
-													"id": 89,
+													"id": 174,
 													"name": "__type",
 													"variant": "declaration",
 													"kind": 65536,
 													"flags": {},
 													"children": [
 														{
-															"id": 90,
+															"id": 175,
 															"name": "withFileTypes",
 															"variant": "declaration",
 															"kind": 1024,
@@ -80,7 +497,7 @@
 																	"fileName": "find.ts",
 																	"line": 4,
 																	"character": 38,
-																	"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/find.ts#L4"
+																	"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/find.ts#L4"
 																}
 															],
 															"type": {
@@ -93,7 +510,7 @@
 														{
 															"title": "Properties",
 															"children": [
-																90
+																175
 															]
 														}
 													]
@@ -114,14 +531,14 @@
 												"elementType": {
 													"type": "reflection",
 													"declaration": {
-														"id": 91,
+														"id": 176,
 														"name": "__type",
 														"variant": "declaration",
 														"kind": 65536,
 														"flags": {},
 														"children": [
 															{
-																"id": 92,
+																"id": 177,
 																"name": "name",
 																"variant": "declaration",
 																"kind": 1024,
@@ -131,7 +548,7 @@
 																		"fileName": "find.ts",
 																		"line": 4,
 																		"character": 74,
-																		"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/find.ts#L4"
+																		"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/find.ts#L4"
 																	}
 																],
 																"type": {
@@ -140,7 +557,7 @@
 																}
 															},
 															{
-																"id": 93,
+																"id": 178,
 																"name": "isDirectory",
 																"variant": "declaration",
 																"kind": 2048,
@@ -150,12 +567,12 @@
 																		"fileName": "find.ts",
 																		"line": 4,
 																		"character": 88,
-																		"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/find.ts#L4"
+																		"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/find.ts#L4"
 																	}
 																],
 																"signatures": [
 																	{
-																		"id": 94,
+																		"id": 179,
 																		"name": "isDirectory",
 																		"variant": "signature",
 																		"kind": 4096,
@@ -165,7 +582,7 @@
 																				"fileName": "find.ts",
 																				"line": 4,
 																				"character": 88,
-																				"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/find.ts#L4"
+																				"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/find.ts#L4"
 																			}
 																		],
 																		"type": {
@@ -180,13 +597,13 @@
 															{
 																"title": "Properties",
 																"children": [
-																	92
+																	177
 																]
 															},
 															{
 																"title": "Methods",
 																"children": [
-																	93
+																	178
 																]
 															}
 														]
@@ -203,7 +620,7 @@
 					}
 				},
 				{
-					"id": 95,
+					"id": 180,
 					"name": "stat",
 					"variant": "declaration",
 					"kind": 1024,
@@ -213,27 +630,27 @@
 							"fileName": "find.ts",
 							"line": 5,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/find.ts#L5"
+							"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/find.ts#L5"
 						}
 					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 96,
+							"id": 181,
 							"name": "__type",
 							"variant": "declaration",
 							"kind": 65536,
 							"flags": {},
 							"signatures": [
 								{
-									"id": 97,
+									"id": 182,
 									"name": "__type",
 									"variant": "signature",
 									"kind": 4096,
 									"flags": {},
 									"parameters": [
 										{
-											"id": 98,
+											"id": 183,
 											"name": "_path",
 											"variant": "param",
 											"kind": 32768,
@@ -255,14 +672,14 @@
 											{
 												"type": "reflection",
 												"declaration": {
-													"id": 99,
+													"id": 184,
 													"name": "__type",
 													"variant": "declaration",
 													"kind": 65536,
 													"flags": {},
 													"children": [
 														{
-															"id": 100,
+															"id": 185,
 															"name": "isDirectory",
 															"variant": "declaration",
 															"kind": 2048,
@@ -272,12 +689,12 @@
 																	"fileName": "find.ts",
 																	"line": 5,
 																	"character": 39,
-																	"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/find.ts#L5"
+																	"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/find.ts#L5"
 																}
 															],
 															"signatures": [
 																{
-																	"id": 101,
+																	"id": 186,
 																	"name": "isDirectory",
 																	"variant": "signature",
 																	"kind": 4096,
@@ -287,7 +704,7 @@
 																			"fileName": "find.ts",
 																			"line": 5,
 																			"character": 39,
-																			"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/find.ts#L5"
+																			"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/find.ts#L5"
 																		}
 																	],
 																	"type": {
@@ -302,7 +719,7 @@
 														{
 															"title": "Methods",
 															"children": [
-																100
+																185
 															]
 														}
 													]
@@ -322,8 +739,8 @@
 				{
 					"title": "Properties",
 					"children": [
-						84,
-						95
+						169,
+						180
 					]
 				}
 			],
@@ -332,19 +749,19 @@
 					"fileName": "find.ts",
 					"line": 3,
 					"character": 10,
-					"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/find.ts#L3"
+					"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/find.ts#L3"
 				}
 			]
 		},
 		{
-			"id": 70,
+			"id": 155,
 			"name": "FindDirectoriesOptions",
 			"variant": "declaration",
 			"kind": 256,
 			"flags": {},
 			"children": [
 				{
-					"id": 73,
+					"id": 158,
 					"name": "allowlist",
 					"variant": "declaration",
 					"kind": 1024,
@@ -356,7 +773,7 @@
 							"fileName": "find.ts",
 							"line": 11,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/find.ts#L11"
+							"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/find.ts#L11"
 						}
 					],
 					"type": {
@@ -372,21 +789,21 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 74,
+									"id": 159,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
 									"flags": {},
 									"signatures": [
 										{
-											"id": 75,
+											"id": 160,
 											"name": "__type",
 											"variant": "signature",
 											"kind": 4096,
 											"flags": {},
 											"parameters": [
 												{
-													"id": 76,
+													"id": 161,
 													"name": "_absPath",
 													"variant": "param",
 													"kind": 32768,
@@ -397,7 +814,7 @@
 													}
 												},
 												{
-													"id": 77,
+													"id": 162,
 													"name": "_name",
 													"variant": "param",
 													"kind": 32768,
@@ -420,7 +837,7 @@
 					}
 				},
 				{
-					"id": 78,
+					"id": 163,
 					"name": "blocklist",
 					"variant": "declaration",
 					"kind": 1024,
@@ -432,7 +849,7 @@
 							"fileName": "find.ts",
 							"line": 12,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/find.ts#L12"
+							"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/find.ts#L12"
 						}
 					],
 					"type": {
@@ -448,21 +865,21 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 79,
+									"id": 164,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
 									"flags": {},
 									"signatures": [
 										{
-											"id": 80,
+											"id": 165,
 											"name": "__type",
 											"variant": "signature",
 											"kind": 4096,
 											"flags": {},
 											"parameters": [
 												{
-													"id": 81,
+													"id": 166,
 													"name": "_absPath",
 													"variant": "param",
 													"kind": 32768,
@@ -473,7 +890,7 @@
 													}
 												},
 												{
-													"id": 82,
+													"id": 167,
 													"name": "_name",
 													"variant": "param",
 													"kind": 32768,
@@ -496,7 +913,7 @@
 					}
 				},
 				{
-					"id": 72,
+					"id": 157,
 					"name": "followSymlinks",
 					"variant": "declaration",
 					"kind": 1024,
@@ -508,7 +925,7 @@
 							"fileName": "find.ts",
 							"line": 10,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/find.ts#L10"
+							"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/find.ts#L10"
 						}
 					],
 					"type": {
@@ -517,7 +934,7 @@
 					}
 				},
 				{
-					"id": 71,
+					"id": 156,
 					"name": "maxDepth",
 					"variant": "declaration",
 					"kind": 1024,
@@ -529,7 +946,7 @@
 							"fileName": "find.ts",
 							"line": 9,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/find.ts#L9"
+							"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/find.ts#L9"
 						}
 					],
 					"type": {
@@ -542,10 +959,10 @@
 				{
 					"title": "Properties",
 					"children": [
-						73,
-						78,
-						72,
-						71
+						158,
+						163,
+						157,
+						156
 					]
 				}
 			],
@@ -554,12 +971,187 @@
 					"fileName": "find.ts",
 					"line": 8,
 					"character": 10,
-					"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/find.ts#L8"
+					"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/find.ts#L8"
 				}
 			]
 		},
 		{
-			"id": 102,
+			"id": 204,
+			"name": "FindValueMatch",
+			"variant": "declaration",
+			"kind": 256,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Result produced when a matching value is found."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 205,
+					"name": "loc",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Dot-separated key path to the matched value."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "find-value.ts",
+							"line": 12,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 206,
+					"name": "val",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The value that was matched."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "find-value.ts",
+							"line": 14,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "unknown"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						205,
+						206
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "find-value.ts",
+					"line": 10,
+					"character": 10
+				}
+			]
+		},
+		{
+			"id": 216,
+			"name": "GitFsDependency",
+			"variant": "declaration",
+			"kind": 256,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Filesystem dependency for "
+					},
+					{
+						"kind": "code",
+						"text": "`isGitInit`"
+					},
+					{
+						"kind": "text",
+						"text": ", allowing test mocking."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 217,
+					"name": "existsSync",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "git.ts",
+							"line": 14,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 218,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"signatures": [
+								{
+									"id": 219,
+									"name": "__type",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"parameters": [
+										{
+											"id": 220,
+											"name": "path",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								}
+							]
+						}
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						217
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "git.ts",
+					"line": 13,
+					"character": 10
+				}
+			]
+		},
+		{
+			"id": 187,
 			"name": "UserAgentInfo",
 			"variant": "declaration",
 			"kind": 256,
@@ -574,7 +1166,7 @@
 			},
 			"children": [
 				{
-					"id": 103,
+					"id": 188,
 					"name": "browser",
 					"variant": "declaration",
 					"kind": 1024,
@@ -592,7 +1184,7 @@
 							"fileName": "user-agent.ts",
 							"line": 8,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/user-agent.ts#L8"
+							"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/user-agent.ts#L8"
 						}
 					],
 					"type": {
@@ -601,7 +1193,7 @@
 					}
 				},
 				{
-					"id": 106,
+					"id": 191,
 					"name": "device",
 					"variant": "declaration",
 					"kind": 1024,
@@ -619,7 +1211,7 @@
 							"fileName": "user-agent.ts",
 							"line": 20,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/user-agent.ts#L20"
+							"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/user-agent.ts#L20"
 						}
 					],
 					"type": {
@@ -628,7 +1220,7 @@
 					}
 				},
 				{
-					"id": 107,
+					"id": 192,
 					"name": "engine",
 					"variant": "declaration",
 					"kind": 1024,
@@ -646,7 +1238,7 @@
 							"fileName": "user-agent.ts",
 							"line": 24,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/user-agent.ts#L24"
+							"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/user-agent.ts#L24"
 						}
 					],
 					"type": {
@@ -655,7 +1247,7 @@
 					}
 				},
 				{
-					"id": 105,
+					"id": 190,
 					"name": "os",
 					"variant": "declaration",
 					"kind": 1024,
@@ -673,7 +1265,7 @@
 							"fileName": "user-agent.ts",
 							"line": 16,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/user-agent.ts#L16"
+							"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/user-agent.ts#L16"
 						}
 					],
 					"type": {
@@ -682,7 +1274,7 @@
 					}
 				},
 				{
-					"id": 104,
+					"id": 189,
 					"name": "version",
 					"variant": "declaration",
 					"kind": 1024,
@@ -700,7 +1292,7 @@
 							"fileName": "user-agent.ts",
 							"line": 12,
 							"character": 4,
-							"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/user-agent.ts#L12"
+							"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/user-agent.ts#L12"
 						}
 					],
 					"type": {
@@ -713,11 +1305,11 @@
 				{
 					"title": "Properties",
 					"children": [
-						103,
-						106,
-						107,
-						105,
-						104
+						188,
+						191,
+						192,
+						190,
+						189
 					]
 				}
 			],
@@ -726,12 +1318,134 @@
 					"fileName": "user-agent.ts",
 					"line": 4,
 					"character": 17,
-					"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/user-agent.ts#L4"
+					"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/user-agent.ts#L4"
 				}
 			]
 		},
 		{
-			"id": 111,
+			"id": 221,
+			"name": "WcResult",
+			"variant": "declaration",
+			"kind": 256,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Statistics returned by "
+					},
+					{
+						"kind": "inline-tag",
+						"tag": "@link",
+						"text": "wc",
+						"target": 151
+					},
+					{
+						"kind": "text",
+						"text": "."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 224,
+					"name": "letters",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Total number of characters (including whitespace)."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "wc.ts",
+							"line": 16,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 222,
+					"name": "lines",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Number of lines (rows after splitting)."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "wc.ts",
+							"line": 12,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 223,
+					"name": "words",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Number of words (sequences of alphanumeric characters)."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "wc.ts",
+							"line": 14,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						224,
+						222,
+						223
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "wc.ts",
+					"line": 10,
+					"character": 10
+				}
+			]
+		},
+		{
+			"id": 196,
 			"name": "Base32CharsetType",
 			"variant": "declaration",
 			"kind": 2097152,
@@ -749,7 +1463,7 @@
 					"fileName": "base32.ts",
 					"line": 18,
 					"character": 5,
-					"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base32.ts#L18"
+					"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base32.ts#L18"
 				}
 			],
 			"type": {
@@ -770,7 +1484,7 @@
 			}
 		},
 		{
-			"id": 109,
+			"id": 194,
 			"name": "Base58CharsetType",
 			"variant": "declaration",
 			"kind": 2097152,
@@ -788,7 +1502,7 @@
 					"fileName": "base58.ts",
 					"line": 18,
 					"character": 5,
-					"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base58.ts#L18"
+					"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base58.ts#L18"
 				}
 			],
 			"type": {
@@ -809,7 +1523,7 @@
 			}
 		},
 		{
-			"id": 108,
+			"id": 193,
 			"name": "Base64CharsetType",
 			"variant": "declaration",
 			"kind": 2097152,
@@ -827,7 +1541,7 @@
 					"fileName": "base64.ts",
 					"line": 18,
 					"character": 5,
-					"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base64.ts#L18"
+					"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base64.ts#L18"
 				}
 			],
 			"type": {
@@ -848,7 +1562,7 @@
 			}
 		},
 		{
-			"id": 110,
+			"id": 195,
 			"name": "Base85CharsetType",
 			"variant": "declaration",
 			"kind": 2097152,
@@ -866,7 +1580,7 @@
 					"fileName": "base85.ts",
 					"line": 18,
 					"character": 5,
-					"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base85.ts#L18"
+					"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base85.ts#L18"
 				}
 			],
 			"type": {
@@ -885,6 +1599,240 @@
 					}
 				}
 			}
+		},
+		{
+			"id": 212,
+			"name": "FindValueCallback",
+			"variant": "declaration",
+			"kind": 2097152,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Callback invoked for every match."
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "find-value.ts",
+					"line": 25,
+					"character": 5
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 213,
+					"name": "__type",
+					"variant": "declaration",
+					"kind": 65536,
+					"flags": {},
+					"signatures": [
+						{
+							"id": 214,
+							"name": "__type",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"parameters": [
+								{
+									"id": 215,
+									"name": "match",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": 204,
+										"name": "FindValueMatch",
+										"package": "@wtasnorg/node-lib"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": 207,
+			"name": "FindValueCompare",
+			"variant": "declaration",
+			"kind": 2097152,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Comparator function used to decide whether two values match."
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "find-value.ts",
+					"line": 20,
+					"character": 5
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 208,
+					"name": "__type",
+					"variant": "declaration",
+					"kind": 65536,
+					"flags": {},
+					"signatures": [
+						{
+							"id": 209,
+							"name": "__type",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"parameters": [
+								{
+									"id": 210,
+									"name": "target",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								},
+								{
+									"id": 211,
+									"name": "candidate",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": 100,
+			"name": "ALPHABET_MAP",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Pre-computed letter-by-letter mapping of ASCII alphabet to Braille."
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "braille.ts",
+					"line": 218,
+					"character": 6
+				}
+			],
+			"type": {
+				"type": "typeOperator",
+				"operator": "readonly",
+				"target": {
+					"type": "array",
+					"elementType": {
+						"type": "reference",
+						"target": 201,
+						"name": "BrailleAlphabetEntry",
+						"package": "@wtasnorg/node-lib"
+					}
+				}
+			},
+			"defaultValue": "..."
+		},
+		{
+			"id": 96,
+			"name": "ASCII_ALPHABET",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "The lowercase + uppercase ASCII alphabet."
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "braille.ts",
+					"line": 161,
+					"character": 6
+				}
+			],
+			"type": {
+				"type": "literal",
+				"value": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+			},
+			"defaultValue": "\"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\""
+		},
+		{
+			"id": 98,
+			"name": "ASCII_MAP",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Pre-computed lookup table mapping printable ASCII codes (32–127)\nto their Braille equivalents."
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "braille.ts",
+					"line": 187,
+					"character": 6
+				}
+			],
+			"type": {
+				"type": "typeOperator",
+				"operator": "readonly",
+				"target": {
+					"type": "array",
+					"elementType": {
+						"type": "reference",
+						"target": 197,
+						"name": "BrailleMapEntry",
+						"package": "@wtasnorg/node-lib"
+					}
+				}
+			},
+			"defaultValue": "..."
 		},
 		{
 			"id": 53,
@@ -931,7 +1879,7 @@
 					"fileName": "base32.ts",
 					"line": 13,
 					"character": 6,
-					"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base32.ts#L13"
+					"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base32.ts#L13"
 				}
 			],
 			"type": {
@@ -1002,7 +1950,7 @@
 					"fileName": "base58.ts",
 					"line": 13,
 					"character": 6,
-					"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base58.ts#L13"
+					"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base58.ts#L13"
 				}
 			],
 			"type": {
@@ -1081,7 +2029,7 @@
 					"fileName": "base64.ts",
 					"line": 13,
 					"character": 6,
-					"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base64.ts#L13"
+					"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base64.ts#L13"
 				}
 			],
 			"type": {
@@ -1156,7 +2104,7 @@
 					"fileName": "base85.ts",
 					"line": 13,
 					"character": 6,
-					"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base85.ts#L13"
+					"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base85.ts#L13"
 				}
 			],
 			"type": {
@@ -1183,6 +2131,655 @@
 			"defaultValue": "..."
 		},
 		{
+			"id": 97,
+			"name": "BRAILLE_ALPHABET",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Pre-computed Braille encoding of "
+					},
+					{
+						"kind": "inline-tag",
+						"tag": "@link",
+						"text": "ASCII_ALPHABET",
+						"target": 96
+					},
+					{
+						"kind": "text",
+						"text": "."
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "braille.ts",
+					"line": 166,
+					"character": 6
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "string"
+			},
+			"defaultValue": "..."
+		},
+		{
+			"id": 99,
+			"name": "BRAILLE_MAP",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Pre-computed lookup table mapping Braille codes back to ASCII."
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "braille.ts",
+					"line": 204,
+					"character": 6
+				}
+			],
+			"type": {
+				"type": "typeOperator",
+				"operator": "readonly",
+				"target": {
+					"type": "array",
+					"elementType": {
+						"type": "reference",
+						"target": 197,
+						"name": "BrailleMapEntry",
+						"package": "@wtasnorg/node-lib"
+					}
+				}
+			},
+			"defaultValue": "..."
+		},
+		{
+			"id": 74,
+			"name": "brailleDecode",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "braille.ts",
+					"line": 102,
+					"character": 9
+				}
+			],
+			"signatures": [
+				{
+					"id": 75,
+					"name": "brailleDecode",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Decode a Braille-encoded string back to ASCII."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "The decoded string."
+									}
+								]
+							},
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\nbrailleDecode(\"⡈⡩\"); // \"Hi\"\n```"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "braille.ts",
+							"line": 102,
+							"character": 9
+						}
+					],
+					"parameters": [
+						{
+							"id": 76,
+							"name": "input",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The Braille string to decode."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 77,
+							"name": "separator",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Optional separator used during encoding."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": 81,
+			"name": "brailleDecodeChar",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "braille.ts",
+					"line": 84,
+					"character": 9
+				}
+			],
+			"signatures": [
+				{
+					"id": 82,
+					"name": "brailleDecodeChar",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Decode a single Braille character back to ASCII.\nNon-Braille characters are returned unchanged."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "The decoded ASCII character, or the original if not Braille."
+									}
+								]
+							},
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\nbrailleDecodeChar(\"⡁\"); // \"A\"\n```"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "braille.ts",
+							"line": 84,
+							"character": 9
+						}
+					],
+					"parameters": [
+						{
+							"id": 83,
+							"name": "ch",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "A single character."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": 87,
+			"name": "brailleDecodeCharCode",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "braille.ts",
+					"line": 129,
+					"character": 9
+				}
+			],
+			"signatures": [
+				{
+					"id": 88,
+					"name": "brailleDecodeCharCode",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Decode a Braille character code back to an ASCII character.\nReturns "
+							},
+							{
+								"kind": "code",
+								"text": "`undefined`"
+							},
+							{
+								"kind": "text",
+								"text": " when the code does not map to ASCII 0–127."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "The ASCII character, or "
+									},
+									{
+										"kind": "code",
+										"text": "`undefined`"
+									},
+									{
+										"kind": "text",
+										"text": "."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "braille.ts",
+							"line": 129,
+							"character": 9
+						}
+					],
+					"parameters": [
+						{
+							"id": 89,
+							"name": "charCode",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Braille character code."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "string"
+							},
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": 70,
+			"name": "brailleEncode",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "braille.ts",
+					"line": 65,
+					"character": 9
+				}
+			],
+			"signatures": [
+				{
+					"id": 71,
+					"name": "brailleEncode",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Encode a string by converting every ASCII character to its Braille equivalent.\nNon-ASCII characters are passed through unchanged."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "The Braille-encoded string."
+									}
+								]
+							},
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\nbrailleEncode(\"Hi\"); // \"⡈⡩\"\n```"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "braille.ts",
+							"line": 65,
+							"character": 9
+						}
+					],
+					"parameters": [
+						{
+							"id": 72,
+							"name": "input",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The string to encode."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 73,
+							"name": "separator",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Optional separator inserted between encoded characters."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": 78,
+			"name": "brailleEncodeChar",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "braille.ts",
+					"line": 47,
+					"character": 9
+				}
+			],
+			"signatures": [
+				{
+					"id": 79,
+					"name": "brailleEncodeChar",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Encode a single ASCII character into its Braille equivalent.\nNon-ASCII characters are returned unchanged."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "The Braille-encoded character, or the original if not ASCII."
+									}
+								]
+							},
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\nbrailleEncodeChar(\"A\"); // \"⡁\"\nbrailleEncodeChar(\"€\"); // \"€\"\n```"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "braille.ts",
+							"line": 47,
+							"character": 9
+						}
+					],
+					"parameters": [
+						{
+							"id": 80,
+							"name": "ch",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "A single character."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": 84,
+			"name": "brailleEncodeCharCode",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "braille.ts",
+					"line": 116,
+					"character": 9
+				}
+			],
+			"signatures": [
+				{
+					"id": 85,
+					"name": "brailleEncodeCharCode",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Encode an ASCII character code to its Braille character.\nReturns "
+							},
+							{
+								"kind": "code",
+								"text": "`undefined`"
+							},
+							{
+								"kind": "text",
+								"text": " when the code is outside printable ASCII range 32–127."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "The Braille character, or "
+									},
+									{
+										"kind": "code",
+										"text": "`undefined`"
+									},
+									{
+										"kind": "text",
+										"text": "."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "braille.ts",
+							"line": 116,
+							"character": 9
+						}
+					],
+					"parameters": [
+						{
+							"id": 86,
+							"name": "charCode",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "ASCII character code."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "string"
+							},
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
 			"id": 60,
 			"name": "countOnes",
 			"variant": "declaration",
@@ -1193,7 +2790,7 @@
 					"fileName": "bits.ts",
 					"line": 81,
 					"character": 9,
-					"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/bits.ts#L81"
+					"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/bits.ts#L81"
 				}
 			],
 			"signatures": [
@@ -1244,7 +2841,7 @@
 							"fileName": "bits.ts",
 							"line": 81,
 							"character": 9,
-							"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/bits.ts#L81"
+							"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/bits.ts#L81"
 						}
 					],
 					"parameters": [
@@ -1295,7 +2892,7 @@
 					"fileName": "bits.ts",
 					"line": 118,
 					"character": 9,
-					"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/bits.ts#L118"
+					"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/bits.ts#L118"
 				}
 			],
 			"signatures": [
@@ -1346,7 +2943,7 @@
 							"fileName": "bits.ts",
 							"line": 118,
 							"character": 9,
-							"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/bits.ts#L118"
+							"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/bits.ts#L118"
 						}
 					],
 					"parameters": [
@@ -1397,7 +2994,7 @@
 					"fileName": "bits.ts",
 					"line": 94,
 					"character": 9,
-					"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/bits.ts#L94"
+					"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/bits.ts#L94"
 				}
 			],
 			"signatures": [
@@ -1464,7 +3061,7 @@
 							"fileName": "bits.ts",
 							"line": 94,
 							"character": 9,
-							"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/bits.ts#L94"
+							"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/bits.ts#L94"
 						}
 					],
 					"parameters": [
@@ -1534,7 +3131,7 @@
 					"fileName": "find.ts",
 					"line": 19,
 					"character": 9,
-					"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/find.ts#L19"
+					"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/find.ts#L19"
 				}
 			],
 			"signatures": [
@@ -1557,7 +3154,7 @@
 							"fileName": "find.ts",
 							"line": 19,
 							"character": 9,
-							"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/find.ts#L19"
+							"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/find.ts#L19"
 						}
 					],
 					"parameters": [
@@ -1569,7 +3166,7 @@
 							"flags": {},
 							"type": {
 								"type": "reference",
-								"target": 83,
+								"target": 168,
 								"name": "FileSystemDependencies",
 								"package": "@wtasnorg/node-lib"
 							}
@@ -1610,7 +3207,7 @@
 											"flags": {},
 											"type": {
 												"type": "reference",
-												"target": 70,
+												"target": 155,
 												"name": "FindDirectoriesOptions",
 												"package": "@wtasnorg/node-lib"
 											},
@@ -1654,7 +3251,7 @@
 					"fileName": "base64.ts",
 					"line": 119,
 					"character": 9,
-					"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base64.ts#L119"
+					"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base64.ts#L119"
 				}
 			],
 			"signatures": [
@@ -1706,7 +3303,7 @@
 							"fileName": "base64.ts",
 							"line": 119,
 							"character": 9,
-							"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base64.ts#L119"
+							"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base64.ts#L119"
 						}
 					],
 					"parameters": [
@@ -1785,7 +3382,7 @@
 					"fileName": "base32.ts",
 					"line": 136,
 					"character": 9,
-					"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base32.ts#L136"
+					"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base32.ts#L136"
 				}
 			],
 			"signatures": [
@@ -1837,7 +3434,7 @@
 							"fileName": "base32.ts",
 							"line": 136,
 							"character": 9,
-							"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base32.ts#L136"
+							"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base32.ts#L136"
 						}
 					],
 					"parameters": [
@@ -1912,7 +3509,7 @@
 					"fileName": "base58.ts",
 					"line": 132,
 					"character": 9,
-					"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base58.ts#L132"
+					"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base58.ts#L132"
 				}
 			],
 			"signatures": [
@@ -1964,7 +3561,7 @@
 							"fileName": "base58.ts",
 							"line": 132,
 							"character": 9,
-							"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base58.ts#L132"
+							"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base58.ts#L132"
 						}
 					],
 					"parameters": [
@@ -2039,7 +3636,7 @@
 					"fileName": "base85.ts",
 					"line": 135,
 					"character": 9,
-					"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base85.ts#L135"
+					"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base85.ts#L135"
 				}
 			],
 			"signatures": [
@@ -2091,7 +3688,7 @@
 							"fileName": "base85.ts",
 							"line": 135,
 							"character": 9,
-							"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base85.ts#L135"
+							"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base85.ts#L135"
 						}
 					],
 					"parameters": [
@@ -2166,7 +3763,7 @@
 					"fileName": "base64.ts",
 					"line": 79,
 					"character": 9,
-					"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base64.ts#L79"
+					"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base64.ts#L79"
 				}
 			],
 			"signatures": [
@@ -2209,7 +3806,7 @@
 							"fileName": "base64.ts",
 							"line": 79,
 							"character": 9,
-							"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base64.ts#L79"
+							"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base64.ts#L79"
 						}
 					],
 					"parameters": [
@@ -2288,7 +3885,7 @@
 					"fileName": "base32.ts",
 					"line": 81,
 					"character": 9,
-					"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base32.ts#L81"
+					"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base32.ts#L81"
 				}
 			],
 			"signatures": [
@@ -2331,7 +3928,7 @@
 							"fileName": "base32.ts",
 							"line": 81,
 							"character": 9,
-							"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base32.ts#L81"
+							"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base32.ts#L81"
 						}
 					],
 					"parameters": [
@@ -2406,7 +4003,7 @@
 					"fileName": "base58.ts",
 					"line": 72,
 					"character": 9,
-					"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base58.ts#L72"
+					"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base58.ts#L72"
 				}
 			],
 			"signatures": [
@@ -2449,7 +4046,7 @@
 							"fileName": "base58.ts",
 							"line": 72,
 							"character": 9,
-							"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base58.ts#L72"
+							"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base58.ts#L72"
 						}
 					],
 					"parameters": [
@@ -2524,7 +4121,7 @@
 					"fileName": "base85.ts",
 					"line": 73,
 					"character": 9,
-					"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base85.ts#L73"
+					"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base85.ts#L73"
 				}
 			],
 			"signatures": [
@@ -2567,7 +4164,7 @@
 							"fileName": "base85.ts",
 							"line": 73,
 							"character": 9,
-							"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base85.ts#L73"
+							"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base85.ts#L73"
 						}
 					],
 					"parameters": [
@@ -2632,6 +4229,841 @@
 			]
 		},
 		{
+			"id": 134,
+			"name": "escapeHtml",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "anchor.ts",
+					"line": 13,
+					"character": 9
+				}
+			],
+			"signatures": [
+				{
+					"id": 135,
+					"name": "escapeHtml",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Escape special HTML characters in a string to prevent XSS."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "HTML-safe string."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "anchor.ts",
+							"line": 13,
+							"character": 9
+						}
+					],
+					"parameters": [
+						{
+							"id": 136,
+							"name": "str",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Raw string."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": 101,
+			"name": "findValue",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "find-value.ts",
+					"line": 66,
+					"character": 9
+				}
+			],
+			"signatures": [
+				{
+					"id": 102,
+					"name": "findValue",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Search "
+							},
+							{
+								"kind": "code",
+								"text": "`obj`"
+							},
+							{
+								"kind": "text",
+								"text": " recursively for entries whose value satisfies "
+							},
+							{
+								"kind": "code",
+								"text": "`compare(target, value)`"
+							},
+							{
+								"kind": "text",
+								"text": ".\nEvery match is reported via "
+							},
+							{
+								"kind": "code",
+								"text": "`whenFound`"
+							},
+							{
+								"kind": "text",
+								"text": "."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\nconst results: FindValueMatch[] = [];\nfindValue({ a: { b: 42 } }, 42, undefined, (m) => results.push(m));\n// results → [{ loc: \"a.b\", val: 42 }]\n```"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "find-value.ts",
+							"line": 66,
+							"character": 9
+						}
+					],
+					"parameters": [
+						{
+							"id": 103,
+							"name": "obj",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The object to search."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": {
+									"packageName": "typescript",
+									"packagePath": "lib/lib.es5.d.ts",
+									"qualifiedName": "Record"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								],
+								"name": "Record",
+								"package": "typescript"
+							}
+						},
+						{
+							"id": 104,
+							"name": "target",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The value to look for."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						},
+						{
+							"id": 105,
+							"name": "compare",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Comparator (defaults to strict equality)."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": 207,
+								"name": "FindValueCompare",
+								"package": "@wtasnorg/node-lib"
+							}
+						},
+						{
+							"id": 106,
+							"name": "whenFound",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Callback for each match (defaults to "
+									},
+									{
+										"kind": "code",
+										"text": "`console.log`"
+									},
+									{
+										"kind": "text",
+										"text": ")."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": 212,
+								"name": "FindValueCallback",
+								"package": "@wtasnorg/node-lib"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "void"
+					}
+				}
+			]
+		},
+		{
+			"id": 107,
+			"name": "findValues",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "find-value.ts",
+					"line": 96,
+					"character": 9
+				}
+			],
+			"signatures": [
+				{
+					"id": 108,
+					"name": "findValues",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Search "
+							},
+							{
+								"kind": "code",
+								"text": "`obj`"
+							},
+							{
+								"kind": "text",
+								"text": " for multiple target values at once."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\nconst results: FindValueMatch[] = [];\nfindValues({ a: 1, b: 2, c: 3 }, [1, 3], undefined, (m) => results.push(m));\n// results → [{ loc: \"a\", val: 1 }, { loc: \"c\", val: 3 }]\n```"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "find-value.ts",
+							"line": 96,
+							"character": 9
+						}
+					],
+					"parameters": [
+						{
+							"id": 109,
+							"name": "obj",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The object to search."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": {
+									"packageName": "typescript",
+									"packagePath": "lib/lib.es5.d.ts",
+									"qualifiedName": "Record"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								],
+								"name": "Record",
+								"package": "typescript"
+							}
+						},
+						{
+							"id": 110,
+							"name": "targets",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "A single value or array of values to look for."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						},
+						{
+							"id": 111,
+							"name": "compare",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Comparator (defaults to strict equality)."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": 207,
+								"name": "FindValueCompare",
+								"package": "@wtasnorg/node-lib"
+							}
+						},
+						{
+							"id": 112,
+							"name": "whenFound",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Callback for each match (defaults to "
+									},
+									{
+										"kind": "code",
+										"text": "`console.log`"
+									},
+									{
+										"kind": "text",
+										"text": ")."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": 212,
+								"name": "FindValueCallback",
+								"package": "@wtasnorg/node-lib"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "void"
+					}
+				}
+			]
+		},
+		{
+			"id": 113,
+			"name": "format",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "format.ts",
+					"line": 27,
+					"character": 9
+				}
+			],
+			"signatures": [
+				{
+					"id": 114,
+					"name": "format",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Replace "
+							},
+							{
+								"kind": "code",
+								"text": "`{key}`"
+							},
+							{
+								"kind": "text",
+								"text": " placeholders in "
+							},
+							{
+								"kind": "code",
+								"text": "`fmt`"
+							},
+							{
+								"kind": "text",
+								"text": " with values from "
+							},
+							{
+								"kind": "code",
+								"text": "`obj`"
+							},
+							{
+								"kind": "text",
+								"text": ".\nKeys that do not exist in "
+							},
+							{
+								"kind": "code",
+								"text": "`obj`"
+							},
+							{
+								"kind": "text",
+								"text": " are replaced with "
+							},
+							{
+								"kind": "code",
+								"text": "`undefined`"
+							},
+							{
+								"kind": "text",
+								"text": "."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "The formatted string."
+									}
+								]
+							},
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\nformat(\"Hello, {name}!\", { name: \"World\" });\n// \"Hello, World!\"\n```"
+									}
+								]
+							},
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "text",
+										"text": "\n\n"
+									},
+									{
+										"kind": "code",
+										"text": "```ts\nformat(\"{a} + {b} = {c}\", { a: 1, b: 2, c: 3 });\n// \"1 + 2 = 3\"\n```"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "format.ts",
+							"line": 27,
+							"character": 9
+						}
+					],
+					"parameters": [
+						{
+							"id": 115,
+							"name": "fmt",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Format string containing "
+									},
+									{
+										"kind": "code",
+										"text": "`{key}`"
+									},
+									{
+										"kind": "text",
+										"text": " placeholders."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 116,
+							"name": "obj",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Object whose property values are substituted."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": {
+									"packageName": "typescript",
+									"packagePath": "lib/lib.es5.d.ts",
+									"qualifiedName": "Record"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								],
+								"name": "Record",
+								"package": "typescript"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": 122,
+			"name": "getAscii",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "hash.ts",
+					"line": 23,
+					"character": 9
+				}
+			],
+			"signatures": [
+				{
+					"id": 123,
+					"name": "getAscii",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Convert a string to a string of its ASCII character codes."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "A string of concatenated character codes."
+									}
+								]
+							},
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\ngetAscii(\"AB\"); // \"6566\"\n```"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "hash.ts",
+							"line": 23,
+							"character": 9
+						}
+					],
+					"parameters": [
+						{
+							"id": 124,
+							"name": "input",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The string to convert."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		},
+		{
+			"id": 117,
+			"name": "hashString",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "hash.ts",
+					"line": 48,
+					"character": 9
+				}
+			],
+			"signatures": [
+				{
+					"id": 118,
+					"name": "hashString",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Compute a simple non-cryptographic hash of a string value.\n\nThe algorithm converts the input to its ASCII-code string representation,\npads it to "
+							},
+							{
+								"kind": "code",
+								"text": "`size`"
+							},
+							{
+								"kind": "text",
+								"text": " characters using "
+							},
+							{
+								"kind": "code",
+								"text": "`salt`"
+							},
+							{
+								"kind": "text",
+								"text": ", then reduces it to a single\nnumeric hash via a weighted sum of character codes."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "A numeric hash value."
+									}
+								]
+							},
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\nhashString(\"hello\"); // deterministic numeric result\nhashString(\"hello\", \"xyz\", 10);\n```"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "hash.ts",
+							"line": 48,
+							"character": 9
+						}
+					],
+					"parameters": [
+						{
+							"id": 119,
+							"name": "input",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The value to hash (converted to string)."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						},
+						{
+							"id": 120,
+							"name": "salt",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Padding string (defaults to lowercase alphabet)."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 121,
+							"name": "size",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Target length for the padded intermediate string (defaults to 26)."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				}
+			]
+		},
+		{
 			"id": 1,
 			"name": "hello",
 			"variant": "declaration",
@@ -2642,7 +5074,7 @@
 					"fileName": "hello.ts",
 					"line": 31,
 					"character": 15,
-					"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/hello.ts#L31"
+					"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/hello.ts#L31"
 				}
 			],
 			"signatures": [
@@ -2698,7 +5130,7 @@
 							"fileName": "hello.ts",
 							"line": 31,
 							"character": 15,
-							"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/hello.ts#L31"
+							"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/hello.ts#L31"
 						}
 					],
 					"parameters": [
@@ -2751,6 +5183,735 @@
 			]
 		},
 		{
+			"id": 93,
+			"name": "isAscii",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "braille.ts",
+					"line": 18,
+					"character": 9
+				}
+			],
+			"signatures": [
+				{
+					"id": 94,
+					"name": "isAscii",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Check whether a character code is within printable ASCII range (32–127)."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "code",
+										"text": "`true`"
+									},
+									{
+										"kind": "text",
+										"text": " when the code is in the printable ASCII range."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "braille.ts",
+							"line": 18,
+							"character": 9
+						}
+					],
+					"parameters": [
+						{
+							"id": 95,
+							"name": "charCode",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The character code to check."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				}
+			]
+		},
+		{
+			"id": 90,
+			"name": "isBraille",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "braille.ts",
+					"line": 29,
+					"character": 9
+				}
+			],
+			"signatures": [
+				{
+					"id": 91,
+					"name": "isBraille",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Check whether a single character is a Braille pattern that maps\nback to a printable ASCII character."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "code",
+										"text": "`true`"
+									},
+									{
+										"kind": "text",
+										"text": " when "
+									},
+									{
+										"kind": "code",
+										"text": "`ch`"
+									},
+									{
+										"kind": "text",
+										"text": " is a Braille character mapping to ASCII 0–127."
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "braille.ts",
+							"line": 29,
+							"character": 9
+						}
+					],
+					"parameters": [
+						{
+							"id": 92,
+							"name": "ch",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "A single character to test."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				}
+			]
+		},
+		{
+			"id": 137,
+			"name": "isGitInit",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "git.ts",
+					"line": 32,
+					"character": 9
+				}
+			],
+			"signatures": [
+				{
+					"id": 138,
+					"name": "isGitInit",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Check whether a "
+							},
+							{
+								"kind": "code",
+								"text": "`.git`"
+							},
+							{
+								"kind": "text",
+								"text": " directory exists at the given path,\nindicating the directory is (or is inside) a Git repository."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "code",
+										"text": "`true`"
+									},
+									{
+										"kind": "text",
+										"text": " when a "
+									},
+									{
+										"kind": "code",
+										"text": "`.git`"
+									},
+									{
+										"kind": "text",
+										"text": " entry exists."
+									}
+								]
+							},
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\nimport { isGitInit } from \"@wtasnorg/node-lib/git\";\n\nisGitInit(\"/my/project\"); // true or false\n```"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "git.ts",
+							"line": 32,
+							"character": 9
+						}
+					],
+					"parameters": [
+						{
+							"id": 139,
+							"name": "dirPath",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Directory to check (defaults to "
+									},
+									{
+										"kind": "code",
+										"text": "`process.cwd()`"
+									},
+									{
+										"kind": "text",
+										"text": ")."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 140,
+							"name": "fs",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Injectable filesystem dependency (defaults to Node "
+									},
+									{
+										"kind": "code",
+										"text": "`fs.existsSync`"
+									},
+									{
+										"kind": "text",
+										"text": ")."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": 216,
+								"name": "GitFsDependency",
+								"package": "@wtasnorg/node-lib"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				}
+			]
+		},
+		{
+			"id": 141,
+			"name": "isPrimitive",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "primitive.ts",
+					"line": 22,
+					"character": 9
+				}
+			],
+			"signatures": [
+				{
+					"id": 142,
+					"name": "isPrimitive",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Check whether a value is a JavaScript primitive\n("
+							},
+							{
+								"kind": "code",
+								"text": "`null`"
+							},
+							{
+								"kind": "text",
+								"text": ", "
+							},
+							{
+								"kind": "code",
+								"text": "`boolean`"
+							},
+							{
+								"kind": "text",
+								"text": ", "
+							},
+							{
+								"kind": "code",
+								"text": "`number`"
+							},
+							{
+								"kind": "text",
+								"text": ", "
+							},
+							{
+								"kind": "code",
+								"text": "`string`"
+							},
+							{
+								"kind": "text",
+								"text": ", "
+							},
+							{
+								"kind": "code",
+								"text": "`symbol`"
+							},
+							{
+								"kind": "text",
+								"text": ", "
+							},
+							{
+								"kind": "code",
+								"text": "`bigint`"
+							},
+							{
+								"kind": "text",
+								"text": ", or "
+							},
+							{
+								"kind": "code",
+								"text": "`undefined`"
+							},
+							{
+								"kind": "text",
+								"text": ")."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "code",
+										"text": "`true`"
+									},
+									{
+										"kind": "text",
+										"text": " when "
+									},
+									{
+										"kind": "code",
+										"text": "`val`"
+									},
+									{
+										"kind": "text",
+										"text": " is a primitive."
+									}
+								]
+							},
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\nisPrimitive(42);        // true\nisPrimitive(\"hello\");   // true\nisPrimitive({});         // false\nisPrimitive(null);       // true\n```"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "primitive.ts",
+							"line": 22,
+							"character": 9
+						}
+					],
+					"parameters": [
+						{
+							"id": 143,
+							"name": "val",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The value to test."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				}
+			]
+		},
+		{
+			"id": 144,
+			"name": "isPrimitiveArray",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "primitive.ts",
+					"line": 39,
+					"character": 9
+				}
+			],
+			"signatures": [
+				{
+					"id": 145,
+					"name": "isPrimitiveArray",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Check whether a value is an array containing only primitive values."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "code",
+										"text": "`true`"
+									},
+									{
+										"kind": "text",
+										"text": " when "
+									},
+									{
+										"kind": "code",
+										"text": "`input`"
+									},
+									{
+										"kind": "text",
+										"text": " is an array and every element is a primitive."
+									}
+								]
+							},
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\nisPrimitiveArray([1, \"two\", null]); // true\nisPrimitiveArray([1, { a: 2 }]);    // false\nisPrimitiveArray(\"not-array\");      // false\n```"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "primitive.ts",
+							"line": 39,
+							"character": 9
+						}
+					],
+					"parameters": [
+						{
+							"id": 146,
+							"name": "input",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The value to test."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "unknown"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				}
+			]
+		},
+		{
+			"id": 147,
+			"name": "objectToArray",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "otoa.ts",
+					"line": 31,
+					"character": 9
+				}
+			],
+			"signatures": [
+				{
+					"id": 148,
+					"name": "objectToArray",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Extract the values of "
+							},
+							{
+								"kind": "code",
+								"text": "`obj`"
+							},
+							{
+								"kind": "text",
+								"text": " into an array. When "
+							},
+							{
+								"kind": "code",
+								"text": "`keyPrefix`"
+							},
+							{
+								"kind": "text",
+								"text": " is supplied,\nonly keys starting with that prefix are included, and the prefix is\nstripped from matched keys during processing.\n\nReturns an empty array when "
+							},
+							{
+								"kind": "code",
+								"text": "`obj`"
+							},
+							{
+								"kind": "text",
+								"text": " is not a non-null object\nor "
+							},
+							{
+								"kind": "code",
+								"text": "`keyPrefix`"
+							},
+							{
+								"kind": "text",
+								"text": " is not a string."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "Array of values."
+									}
+								]
+							},
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\nobjectToArray({ a: 1, b: 2, c: 3 });\n// [1, 2, 3]\n```"
+									}
+								]
+							},
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "text",
+										"text": "\n\n"
+									},
+									{
+										"kind": "code",
+										"text": "```ts\nobjectToArray({ col_name: \"Alice\", col_age: 30, id: 1 }, \"col_\");\n// [\"Alice\", 30]\n```"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "otoa.ts",
+							"line": 31,
+							"character": 9
+						}
+					],
+					"parameters": [
+						{
+							"id": 149,
+							"name": "obj",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The source object."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": {
+									"packageName": "typescript",
+									"packagePath": "lib/lib.es5.d.ts",
+									"qualifiedName": "Record"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								],
+								"name": "Record",
+								"package": "typescript"
+							}
+						},
+						{
+							"id": 150,
+							"name": "keyPrefix",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Optional prefix to filter/strip from keys (default "
+									},
+									{
+										"kind": "code",
+										"text": "`\"\"`"
+									},
+									{
+										"kind": "text",
+										"text": ")."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"defaultValue": "\"\""
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "unknown"
+						}
+					}
+				}
+			]
+		},
+		{
 			"id": 15,
 			"name": "parseUserAgent",
 			"variant": "declaration",
@@ -2761,7 +5922,7 @@
 					"fileName": "user-agent.ts",
 					"line": 48,
 					"character": 16,
-					"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/user-agent.ts#L48"
+					"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/user-agent.ts#L48"
 				}
 			],
 			"signatures": [
@@ -2817,7 +5978,7 @@
 							"fileName": "user-agent.ts",
 							"line": 48,
 							"character": 16,
-							"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/user-agent.ts#L48"
+							"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/user-agent.ts#L48"
 						}
 					],
 					"parameters": [
@@ -2843,7 +6004,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"target": 102,
+						"target": 187,
 						"name": "UserAgentInfo",
 						"package": "@wtasnorg/node-lib"
 					}
@@ -2861,7 +6022,7 @@
 					"fileName": "pojo.ts",
 					"line": 10,
 					"character": 9,
-					"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/pojo.ts#L10"
+					"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/pojo.ts#L10"
 				}
 			],
 			"signatures": [
@@ -2895,7 +6056,7 @@
 							"fileName": "pojo.ts",
 							"line": 10,
 							"character": 9,
-							"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/pojo.ts#L10"
+							"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/pojo.ts#L10"
 						}
 					],
 					"typeParameters": [
@@ -2969,7 +6130,7 @@
 					"fileName": "bits.ts",
 					"line": 52,
 					"character": 9,
-					"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/bits.ts#L52"
+					"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/bits.ts#L52"
 				}
 			],
 			"signatures": [
@@ -3003,7 +6164,7 @@
 							"fileName": "bits.ts",
 							"line": 52,
 							"character": 9,
-							"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/bits.ts#L52"
+							"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/bits.ts#L52"
 						}
 					],
 					"parameters": [
@@ -3045,7 +6206,7 @@
 					"fileName": "bits.ts",
 					"line": 69,
 					"character": 9,
-					"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/bits.ts#L69"
+					"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/bits.ts#L69"
 				}
 			],
 			"signatures": [
@@ -3096,7 +6257,7 @@
 							"fileName": "bits.ts",
 							"line": 69,
 							"character": 9,
-							"url": "https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/bits.ts#L69"
+							"url": "https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/bits.ts#L69"
 						}
 					],
 					"parameters": [
@@ -3143,38 +6304,215 @@
 					}
 				}
 			]
+		},
+		{
+			"id": 151,
+			"name": "wc",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "wc.ts",
+					"line": 36,
+					"character": 9
+				}
+			],
+			"signatures": [
+				{
+					"id": 152,
+					"name": "wc",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Count lines, words, and letters in a string, similar to the Unix "
+							},
+							{
+								"kind": "code",
+								"text": "`wc`"
+							},
+							{
+								"kind": "text",
+								"text": " utility.\n\nWords are defined as sequences of alphanumeric characters ("
+							},
+							{
+								"kind": "code",
+								"text": "`[a-zA-Z0-9]+`"
+							},
+							{
+								"kind": "text",
+								"text": ")."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "An object with "
+									},
+									{
+										"kind": "code",
+										"text": "`lines`"
+									},
+									{
+										"kind": "text",
+										"text": ", "
+									},
+									{
+										"kind": "code",
+										"text": "`words`"
+									},
+									{
+										"kind": "text",
+										"text": ", and "
+									},
+									{
+										"kind": "code",
+										"text": "`letters`"
+									},
+									{
+										"kind": "text",
+										"text": " counts."
+									}
+								]
+							},
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\nwc(\"hello world\\ngoodbye\");\n// { lines: 2, words: 3, letters: 19 }\n```"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "wc.ts",
+							"line": 36,
+							"character": 9
+						}
+					],
+					"parameters": [
+						{
+							"id": 153,
+							"name": "data",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The text to analyse."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 154,
+							"name": "rowSplitter",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Delimiter used to split lines (default "
+									},
+									{
+										"kind": "code",
+										"text": "`\"\\n\"`"
+									},
+									{
+										"kind": "text",
+										"text": ")."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"defaultValue": "\"\\n\""
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": 221,
+						"name": "WcResult",
+						"package": "@wtasnorg/node-lib"
+					}
+				}
+			]
 		}
 	],
 	"groups": [
 		{
+			"title": "Classes",
+			"children": [
+				125
+			]
+		},
+		{
 			"title": "Interfaces",
 			"children": [
-				83,
-				70,
-				102
+				201,
+				197,
+				168,
+				155,
+				204,
+				216,
+				187,
+				221
 			]
 		},
 		{
 			"title": "Type Aliases",
 			"children": [
-				111,
-				109,
-				108,
-				110
+				196,
+				194,
+				193,
+				195,
+				212,
+				207
 			]
 		},
 		{
 			"title": "Variables",
 			"children": [
+				100,
+				96,
+				98,
 				53,
 				35,
 				26,
-				44
+				44,
+				97,
+				99
 			]
 		},
 		{
 			"title": "Functions",
 			"children": [
+				74,
+				81,
+				87,
+				70,
+				78,
+				84,
 				60,
 				67,
 				63,
@@ -3187,11 +6525,24 @@
 				45,
 				27,
 				36,
+				134,
+				101,
+				107,
+				113,
+				122,
+				117,
 				1,
+				93,
+				90,
+				137,
+				141,
+				144,
+				147,
 				15,
 				4,
 				54,
-				57
+				57,
+				151
 			]
 		}
 	],
@@ -3549,213 +6900,778 @@
 		},
 		"70": {
 			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "brailleEncode"
+		},
+		"71": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "brailleEncode"
+		},
+		"72": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "input"
+		},
+		"73": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "separator"
+		},
+		"74": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "brailleDecode"
+		},
+		"75": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "brailleDecode"
+		},
+		"76": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "input"
+		},
+		"77": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "separator"
+		},
+		"78": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "brailleEncodeChar"
+		},
+		"79": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "brailleEncodeChar"
+		},
+		"80": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "ch"
+		},
+		"81": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "brailleDecodeChar"
+		},
+		"82": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "brailleDecodeChar"
+		},
+		"83": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "ch"
+		},
+		"84": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "brailleEncodeCharCode"
+		},
+		"85": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "brailleEncodeCharCode"
+		},
+		"86": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "charCode"
+		},
+		"87": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "brailleDecodeCharCode"
+		},
+		"88": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "brailleDecodeCharCode"
+		},
+		"89": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "charCode"
+		},
+		"90": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "isBraille"
+		},
+		"91": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "isBraille"
+		},
+		"92": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "ch"
+		},
+		"93": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "isAscii"
+		},
+		"94": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "isAscii"
+		},
+		"95": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "charCode"
+		},
+		"96": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "ASCII_ALPHABET"
+		},
+		"97": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "BRAILLE_ALPHABET"
+		},
+		"98": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "ASCII_MAP"
+		},
+		"99": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "BRAILLE_MAP"
+		},
+		"100": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "ALPHABET_MAP"
+		},
+		"101": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find-value.ts",
+			"qualifiedName": "findValue"
+		},
+		"102": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find-value.ts",
+			"qualifiedName": "findValue"
+		},
+		"103": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find-value.ts",
+			"qualifiedName": "obj"
+		},
+		"104": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find-value.ts",
+			"qualifiedName": "target"
+		},
+		"105": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find-value.ts",
+			"qualifiedName": "compare"
+		},
+		"106": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find-value.ts",
+			"qualifiedName": "whenFound"
+		},
+		"107": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find-value.ts",
+			"qualifiedName": "findValues"
+		},
+		"108": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find-value.ts",
+			"qualifiedName": "findValues"
+		},
+		"109": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find-value.ts",
+			"qualifiedName": "obj"
+		},
+		"110": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find-value.ts",
+			"qualifiedName": "targets"
+		},
+		"111": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find-value.ts",
+			"qualifiedName": "compare"
+		},
+		"112": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find-value.ts",
+			"qualifiedName": "whenFound"
+		},
+		"113": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/format.ts",
+			"qualifiedName": "format"
+		},
+		"114": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/format.ts",
+			"qualifiedName": "format"
+		},
+		"115": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/format.ts",
+			"qualifiedName": "fmt"
+		},
+		"116": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/format.ts",
+			"qualifiedName": "obj"
+		},
+		"117": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/hash.ts",
+			"qualifiedName": "hashString"
+		},
+		"118": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/hash.ts",
+			"qualifiedName": "hashString"
+		},
+		"119": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/hash.ts",
+			"qualifiedName": "input"
+		},
+		"120": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/hash.ts",
+			"qualifiedName": "salt"
+		},
+		"121": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/hash.ts",
+			"qualifiedName": "size"
+		},
+		"122": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/hash.ts",
+			"qualifiedName": "getAscii"
+		},
+		"123": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/hash.ts",
+			"qualifiedName": "getAscii"
+		},
+		"124": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/hash.ts",
+			"qualifiedName": "input"
+		},
+		"125": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/anchor.ts",
+			"qualifiedName": "Anchor"
+		},
+		"126": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/anchor.ts",
+			"qualifiedName": "Anchor.__constructor"
+		},
+		"127": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/anchor.ts",
+			"qualifiedName": "Anchor"
+		},
+		"128": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/anchor.ts",
+			"qualifiedName": "href"
+		},
+		"129": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/anchor.ts",
+			"qualifiedName": "text"
+		},
+		"130": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/anchor.ts",
+			"qualifiedName": "Anchor.href"
+		},
+		"131": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/anchor.ts",
+			"qualifiedName": "Anchor.text"
+		},
+		"132": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/anchor.ts",
+			"qualifiedName": "Anchor.toString"
+		},
+		"133": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/anchor.ts",
+			"qualifiedName": "Anchor.toString"
+		},
+		"134": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/anchor.ts",
+			"qualifiedName": "escapeHtml"
+		},
+		"135": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/anchor.ts",
+			"qualifiedName": "escapeHtml"
+		},
+		"136": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/anchor.ts",
+			"qualifiedName": "str"
+		},
+		"137": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/git.ts",
+			"qualifiedName": "isGitInit"
+		},
+		"138": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/git.ts",
+			"qualifiedName": "isGitInit"
+		},
+		"139": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/git.ts",
+			"qualifiedName": "dirPath"
+		},
+		"140": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/git.ts",
+			"qualifiedName": "fs"
+		},
+		"141": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/primitive.ts",
+			"qualifiedName": "isPrimitive"
+		},
+		"142": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/primitive.ts",
+			"qualifiedName": "isPrimitive"
+		},
+		"143": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/primitive.ts",
+			"qualifiedName": "val"
+		},
+		"144": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/primitive.ts",
+			"qualifiedName": "isPrimitiveArray"
+		},
+		"145": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/primitive.ts",
+			"qualifiedName": "isPrimitiveArray"
+		},
+		"146": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/primitive.ts",
+			"qualifiedName": "input"
+		},
+		"147": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/otoa.ts",
+			"qualifiedName": "objectToArray"
+		},
+		"148": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/otoa.ts",
+			"qualifiedName": "objectToArray"
+		},
+		"149": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/otoa.ts",
+			"qualifiedName": "obj"
+		},
+		"150": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/otoa.ts",
+			"qualifiedName": "keyPrefix"
+		},
+		"151": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/wc.ts",
+			"qualifiedName": "wc"
+		},
+		"152": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/wc.ts",
+			"qualifiedName": "wc"
+		},
+		"153": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/wc.ts",
+			"qualifiedName": "data"
+		},
+		"154": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/wc.ts",
+			"qualifiedName": "rowSplitter"
+		},
+		"155": {
+			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "FindDirectoriesOptions"
 		},
-		"71": {
+		"156": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "FindDirectoriesOptions.maxDepth"
 		},
-		"72": {
+		"157": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "FindDirectoriesOptions.followSymlinks"
 		},
-		"73": {
+		"158": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "FindDirectoriesOptions.allowlist"
 		},
-		"74": {
+		"159": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "__type"
 		},
-		"75": {
+		"160": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "__type"
 		},
-		"76": {
+		"161": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "_absPath"
 		},
-		"77": {
+		"162": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "_name"
 		},
-		"78": {
+		"163": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "FindDirectoriesOptions.blocklist"
 		},
-		"79": {
+		"164": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "__type"
 		},
-		"80": {
+		"165": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "__type"
 		},
-		"81": {
+		"166": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "_absPath"
 		},
-		"82": {
+		"167": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "_name"
 		},
-		"83": {
+		"168": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "FileSystemDependencies"
 		},
-		"84": {
+		"169": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "FileSystemDependencies.readdir"
 		},
-		"85": {
+		"170": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "__type"
 		},
-		"86": {
+		"171": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "__type"
 		},
-		"87": {
+		"172": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "_path"
 		},
-		"88": {
+		"173": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "_opts"
 		},
-		"89": {
+		"174": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "__type"
 		},
-		"90": {
+		"175": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "__type.withFileTypes"
 		},
-		"91": {
+		"176": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "__type"
 		},
-		"92": {
+		"177": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "__type.name"
 		},
-		"93": {
+		"178": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "__type.isDirectory"
 		},
-		"94": {
+		"179": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "__type.isDirectory"
 		},
-		"95": {
+		"180": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "FileSystemDependencies.stat"
 		},
-		"96": {
+		"181": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "__type"
 		},
-		"97": {
+		"182": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "__type"
 		},
-		"98": {
+		"183": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "_path"
 		},
-		"99": {
+		"184": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "__type"
 		},
-		"100": {
+		"185": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "__type.isDirectory"
 		},
-		"101": {
+		"186": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/find.ts",
 			"qualifiedName": "__type.isDirectory"
 		},
-		"102": {
+		"187": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/user-agent.ts",
 			"qualifiedName": "UserAgentInfo"
 		},
-		"103": {
+		"188": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/user-agent.ts",
 			"qualifiedName": "UserAgentInfo.browser"
 		},
-		"104": {
+		"189": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/user-agent.ts",
 			"qualifiedName": "UserAgentInfo.version"
 		},
-		"105": {
+		"190": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/user-agent.ts",
 			"qualifiedName": "UserAgentInfo.os"
 		},
-		"106": {
+		"191": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/user-agent.ts",
 			"qualifiedName": "UserAgentInfo.device"
 		},
-		"107": {
+		"192": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/user-agent.ts",
 			"qualifiedName": "UserAgentInfo.engine"
 		},
-		"108": {
+		"193": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/base64.ts",
 			"qualifiedName": "Base64CharsetType"
 		},
-		"109": {
+		"194": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/base58.ts",
 			"qualifiedName": "Base58CharsetType"
 		},
-		"110": {
+		"195": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/base85.ts",
 			"qualifiedName": "Base85CharsetType"
 		},
-		"111": {
+		"196": {
 			"packageName": "@wtasnorg/node-lib",
 			"packagePath": "src/base32.ts",
 			"qualifiedName": "Base32CharsetType"
+		},
+		"197": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "BrailleMapEntry"
+		},
+		"198": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "BrailleMapEntry.code"
+		},
+		"199": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "BrailleMapEntry.ascii"
+		},
+		"200": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "BrailleMapEntry.braille"
+		},
+		"201": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "BrailleAlphabetEntry"
+		},
+		"202": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "BrailleAlphabetEntry.ascii"
+		},
+		"203": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/braille.ts",
+			"qualifiedName": "BrailleAlphabetEntry.braille"
+		},
+		"204": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find-value.ts",
+			"qualifiedName": "FindValueMatch"
+		},
+		"205": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find-value.ts",
+			"qualifiedName": "FindValueMatch.loc"
+		},
+		"206": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find-value.ts",
+			"qualifiedName": "FindValueMatch.val"
+		},
+		"207": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find-value.ts",
+			"qualifiedName": "FindValueCompare"
+		},
+		"208": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find-value.ts",
+			"qualifiedName": "__type"
+		},
+		"209": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find-value.ts",
+			"qualifiedName": "__type"
+		},
+		"210": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find-value.ts",
+			"qualifiedName": "target"
+		},
+		"211": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find-value.ts",
+			"qualifiedName": "candidate"
+		},
+		"212": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find-value.ts",
+			"qualifiedName": "FindValueCallback"
+		},
+		"213": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find-value.ts",
+			"qualifiedName": "__type"
+		},
+		"214": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find-value.ts",
+			"qualifiedName": "__type"
+		},
+		"215": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/find-value.ts",
+			"qualifiedName": "match"
+		},
+		"216": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/git.ts",
+			"qualifiedName": "GitFsDependency"
+		},
+		"217": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/git.ts",
+			"qualifiedName": "GitFsDependency.existsSync"
+		},
+		"218": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/git.ts",
+			"qualifiedName": "__type"
+		},
+		"219": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/git.ts",
+			"qualifiedName": "__type"
+		},
+		"220": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/git.ts",
+			"qualifiedName": "path"
+		},
+		"221": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/wc.ts",
+			"qualifiedName": "WcResult"
+		},
+		"222": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/wc.ts",
+			"qualifiedName": "WcResult.lines"
+		},
+		"223": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/wc.ts",
+			"qualifiedName": "WcResult.words"
+		},
+		"224": {
+			"packageName": "@wtasnorg/node-lib",
+			"packagePath": "src/wc.ts",
+			"qualifiedName": "WcResult.letters"
 		}
 	},
 	"files": {

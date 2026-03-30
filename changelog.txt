@@ -1,5 +1,32 @@
 # Changelog
 
+## [0.0.14] - 2026-03-30
+
+### Added
+- Braille encoding/decoding in `src/braille.ts`: ASCII ↔ Unicode Braille character mapping.
+- Pre-computed Braille lookup table constants: `ASCII_MAP`, `BRAILLE_MAP`, `ALPHABET_MAP`, `ASCII_ALPHABET`, `BRAILLE_ALPHABET`.
+- Recursive object value search in `src/find-value.ts`: `findValue` and `findValues` with custom comparators.
+- String template formatting in `src/format.ts`: `{key}` placeholder replacement.
+- Non-cryptographic string hashing in `src/hash.ts`: `hashString` and `getAscii`.
+- HTML anchor builder in `src/anchor.ts`: `Anchor` class with XSS-safe HTML escaping.
+- Git repository detection in `src/git.ts`: `isGitInit` with injectable filesystem dependency.
+- Primitive type detection in `src/primitive.ts`: `isPrimitive` and `isPrimitiveArray`.
+- Object-to-array conversion in `src/otoa.ts`: `objectToArray` with optional key prefix filtering.
+- Word/line/letter counting in `src/wc.ts`: `wc` function similar to Unix `wc`.
+- Comprehensive unit tests for all new modules.
+- Subpath exports for all new modules.
+
+### Updated
+- `@stylistic/eslint-plugin` ^5.9.0 → ^5.10.0
+- `@types/node` ^24.10.13 → ^24.12.0
+- `eslint` ^9.39.3 → ^9.39.4
+- `typedoc` ^0.28.17 → ^0.28.18
+- `typedoc-plugin-markdown` ^4.10.0 → ^4.11.0
+- `typescript-eslint` ^8.56.1 → ^8.57.2
+
+### Removed
+- `tmp/` directory (all files ported to TypeScript in `src/`).
+
 ## [0.0.13] - 2026-03-26
 
 ### Added
@@ -13,6 +40,22 @@
 - Comprehensive unit tests in `src/strings.test.ts` covering success and failure paths, empty-string inputs, and length-mismatch edge cases (e.g. `contains("foo", "foobar")` → false).
 - Subpath export `./strings` in `package.json`.
 - All strings symbols re-exported from the root `src/index.ts`.
+
+## [0.0.12] - 2026-02-25
+
+### Added
+- Integer bit counting helpers in `src/bits.ts`: `popcount32`, `popcount64`, `countOnes`, `countZeroesWithWidth`, `countZeroes`.
+- Comprehensive unit tests in `src/bits.test.ts`.
+- Subpath export for bits module (`@wtasnorg/node-lib/bits`).
+- Rewrote readme with subpath import examples and available modules table.
+
+### Updated
+- `@stylistic/eslint-plugin` ^5.6.1 → ^5.9.0
+- `@types/node` ^24.10.1 → ^24.10.13
+- `eslint` ^9.39.1 → ^9.39.3
+- `typedoc` ^0.28.15 → ^0.28.17
+- `typedoc-plugin-markdown` ^4.9.0 → ^4.10.0
+- `typescript-eslint` ^8.48.1 → ^8.56.1
 
 ## [0.0.11] - 2026-01-20
 

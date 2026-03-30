@@ -1,6 +1,6 @@
 {
   "name": "@wtasnorg/node-lib",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "node library",
   "main": "src/index.js",
   "module": "src/index.js",
@@ -49,6 +49,42 @@
     "./strings": {
       "types": "./src/strings.d.ts",
       "import": "./src/strings.js"
+    },
+    "./braille": {
+      "types": "./src/braille.d.ts",
+      "import": "./src/braille.js"
+    },
+    "./find-value": {
+      "types": "./src/find-value.d.ts",
+      "import": "./src/find-value.js"
+    },
+    "./format": {
+      "types": "./src/format.d.ts",
+      "import": "./src/format.js"
+    },
+    "./hash": {
+      "types": "./src/hash.d.ts",
+      "import": "./src/hash.js"
+    },
+    "./anchor": {
+      "types": "./src/anchor.d.ts",
+      "import": "./src/anchor.js"
+    },
+    "./git": {
+      "types": "./src/git.d.ts",
+      "import": "./src/git.js"
+    },
+    "./primitive": {
+      "types": "./src/primitive.d.ts",
+      "import": "./src/primitive.js"
+    },
+    "./otoa": {
+      "types": "./src/otoa.d.ts",
+      "import": "./src/otoa.js"
+    },
+    "./wc": {
+      "types": "./src/wc.d.ts",
+      "import": "./src/wc.js"
     }
   },
   "scripts": {
@@ -77,15 +113,15 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
-    "@stylistic/eslint-plugin": "^5.9.0",
-    "@types/node": "^24.10.13",
-    "eslint": "^9.39.3",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "@types/node": "^24.12.0",
+    "eslint": "^9.39.4",
     "eslint-config-prettier": "^10.1.8",
     "globals": "^16.5.0",
-    "typedoc": "^0.28.17",
-    "typedoc-plugin-markdown": "^4.10.0",
+    "typedoc": "^0.28.18",
+    "typedoc-plugin-markdown": "^4.11.0",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.56.1"
+    "typescript-eslint": "^8.57.2"
   },
   "sideEffects": false
 }

@@ -8,7 +8,7 @@
 
 > **decode32**(`input`, `charset?`): `string`
 
-Defined in: [base32.ts:136](https://github.com/wtasg/node-lib/blob/e8728afafd1c71a23332e0e226c750c68ec8ae80/src/base32.ts#L136)
+Defined in: [base32.ts:136](https://github.com/wtasg/node-lib/blob/3cefbb81ea65751f3fad11167c77d0350ba3156d/src/base32.ts#L136)
 
 Decode a Base32 string.
 
@@ -22,9 +22,9 @@ The Base32 encoded string.
 
 ### charset?
 
-The charset variant to use (default: "rfc4648").
+`"rfc4648"` \| `"hex"` \| `"crockford"`
 
-`"rfc4648"` | `"hex"` | `"crockford"`
+The charset variant to use (default: "rfc4648").
 
 ## Returns
 
