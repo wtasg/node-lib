@@ -8,7 +8,7 @@
 
 > **indexAnyString**(`s`, `chars`): `number`
 
-Defined in: [src/strings.ts:493](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/strings.ts#L493)
+Defined in: [src/strings.ts:493](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/strings.ts#L493)
 
 IndexAny returns the index of the first instance of any Unicode code point
 from chars in s, or -1 if no Unicode code point from chars is present in s.

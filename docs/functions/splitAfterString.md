@@ -8,7 +8,7 @@
 
 > **splitAfterString**(`s`, `sep`): `string`[]
 
-Defined in: [src/strings.ts:828](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/strings.ts#L828)
+Defined in: [src/strings.ts:828](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/strings.ts#L828)
 
 SplitAfter slices s into all substrings after each instance of sep and
 returns a slice of those substrings.

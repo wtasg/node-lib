@@ -6,7 +6,7 @@
 
 # Class: BuilderString
 
-Defined in: [src/strings.ts:1201](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/strings.ts#L1201)
+Defined in: [src/strings.ts:1201](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/strings.ts#L1201)
 
 Builder is used to efficiently build a string using Write methods.
 It minimizes memory copying.
@@ -37,7 +37,7 @@ console.log(b.string()); // "hello, world"
 
 > **cap**(): `number`
 
-Defined in: [src/strings.ts:1212](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/strings.ts#L1212)
+Defined in: [src/strings.ts:1212](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/strings.ts#L1212)
 
 Cap returns the capacity of the builder's underlying byte slice.
 It is the total space allocated for the string being built and includes
@@ -55,7 +55,7 @@ Current capacity (equals current length in this implementation).
 
 > **grow**(`_n`): `void`
 
-Defined in: [src/strings.ts:1223](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/strings.ts#L1223)
+Defined in: [src/strings.ts:1223](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/strings.ts#L1223)
 
 Grow grows the builder's capacity, if necessary, to guarantee space for
 another n bytes. After Grow(n), at least n bytes can be written to the
@@ -79,7 +79,7 @@ Number of bytes to ensure capacity for.
 
 > **len**(): `number`
 
-Defined in: [src/strings.ts:1232](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/strings.ts#L1232)
+Defined in: [src/strings.ts:1232](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/strings.ts#L1232)
 
 Len returns the number of accumulated bytes (UTF-16 code units).
 
@@ -95,7 +95,7 @@ Number of bytes written so far.
 
 > **reset**(): `void`
 
-Defined in: [src/strings.ts:1239](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/strings.ts#L1239)
+Defined in: [src/strings.ts:1239](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/strings.ts#L1239)
 
 Reset resets the builder to be empty.
 
@@ -109,7 +109,7 @@ Reset resets the builder to be empty.
 
 > **string**(): `string`
 
-Defined in: [src/strings.ts:1249](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/strings.ts#L1249)
+Defined in: [src/strings.ts:1249](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/strings.ts#L1249)
 
 String returns the accumulated string.
 
@@ -125,7 +125,7 @@ The built string.
 
 > **write**(`p`): `number`
 
-Defined in: [src/strings.ts:1260](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/strings.ts#L1260)
+Defined in: [src/strings.ts:1260](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/strings.ts#L1260)
 
 Write appends the contents of p to the builder's buffer.
 Write always returns len(p), nil.
@@ -150,7 +150,7 @@ Number of bytes written.
 
 > **writeByte**(`c`): `void`
 
-Defined in: [src/strings.ts:1273](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/strings.ts#L1273)
+Defined in: [src/strings.ts:1273](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/strings.ts#L1273)
 
 WriteByte appends the byte c to the builder's buffer.
 The returned error is always nil.
@@ -173,7 +173,7 @@ Byte value (0–255) to write.
 
 > **writeRune**(`r`): `number`
 
-Defined in: [src/strings.ts:1286](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/strings.ts#L1286)
+Defined in: [src/strings.ts:1286](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/strings.ts#L1286)
 
 WriteRune appends the UTF-8 encoding of Unicode code point r to the builder's buffer.
 It returns the length added and a nil error.
@@ -198,7 +198,7 @@ Number of UTF-16 code units added.
 
 > **writeString**(`s`): `number`
 
-Defined in: [src/strings.ts:1300](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/strings.ts#L1300)
+Defined in: [src/strings.ts:1300](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/strings.ts#L1300)
 
 WriteString appends the contents of s to the builder's buffer.
 It returns the length of s and a nil error.

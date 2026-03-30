@@ -6,7 +6,7 @@
 
 # Interface: UserAgentInfo
 
-Defined in: [src/user-agent.ts:4](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/user-agent.ts#L4)
+Defined in: [src/user-agent.ts:4](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/user-agent.ts#L4)
 
 Information extracted from a user-agent string.
 
@@ -16,7 +16,7 @@ Information extracted from a user-agent string.
 
 > **browser**: `string`
 
-Defined in: [src/user-agent.ts:8](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/user-agent.ts#L8)
+Defined in: [src/user-agent.ts:8](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/user-agent.ts#L8)
 
 Browser name (e.g., Chrome, Firefox, Safari, Edge, Opera, Other).
 
@@ -26,7 +26,7 @@ Browser name (e.g., Chrome, Firefox, Safari, Edge, Opera, Other).
 
 > **device**: `string`
 
-Defined in: [src/user-agent.ts:20](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/user-agent.ts#L20)
+Defined in: [src/user-agent.ts:20](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/user-agent.ts#L20)
 
 Device type (e.g., Mobile, Tablet, Desktop, Other).
 
@@ -36,7 +36,7 @@ Device type (e.g., Mobile, Tablet, Desktop, Other).
 
 > **engine**: `string`
 
-Defined in: [src/user-agent.ts:24](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/user-agent.ts#L24)
+Defined in: [src/user-agent.ts:24](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/user-agent.ts#L24)
 
 Rendering engine (e.g., Blink, WebKit, Gecko, Presto, Other).
 
@@ -46,7 +46,7 @@ Rendering engine (e.g., Blink, WebKit, Gecko, Presto, Other).
 
 > **os**: `string`
 
-Defined in: [src/user-agent.ts:16](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/user-agent.ts#L16)
+Defined in: [src/user-agent.ts:16](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/user-agent.ts#L16)
 
 Operating system (e.g., Windows, macOS, Linux, iOS, Android, Other).
 
@@ -56,6 +56,6 @@ Operating system (e.g., Windows, macOS, Linux, iOS, Android, Other).
 
 > **version**: `string`
 
-Defined in: [src/user-agent.ts:12](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/user-agent.ts#L12)
+Defined in: [src/user-agent.ts:12](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/user-agent.ts#L12)
 
 Browser version (e.g., 120.0.0.0).

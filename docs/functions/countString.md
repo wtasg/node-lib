@@ -8,7 +8,7 @@
 
 > **countString**(`s`, `substr`): `number`
 
-Defined in: [src/strings.ts:236](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/strings.ts#L236)
+Defined in: [src/strings.ts:236](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/strings.ts#L236)
 
 Count counts the number of non-overlapping instances of substr in s.
 If substr is an empty string, Count returns 1 + the number of Unicode code points in s.

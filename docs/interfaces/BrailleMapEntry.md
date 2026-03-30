@@ -6,7 +6,7 @@
 
 # Interface: BrailleMapEntry
 
-Defined in: [src/braille.ts:139](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/braille.ts#L139)
+Defined in: [src/braille.ts:139](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/braille.ts#L139)
 
 Entry in a Braille ↔ ASCII lookup table.
 
@@ -16,7 +16,7 @@ Entry in a Braille ↔ ASCII lookup table.
 
 > **ascii**: `string`
 
-Defined in: [src/braille.ts:143](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/braille.ts#L143)
+Defined in: [src/braille.ts:143](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/braille.ts#L143)
 
 The ASCII character.
 
@@ -26,7 +26,7 @@ The ASCII character.
 
 > **braille**: `string`
 
-Defined in: [src/braille.ts:145](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/braille.ts#L145)
+Defined in: [src/braille.ts:145](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/braille.ts#L145)
 
 The Braille character.
 
@@ -36,6 +36,6 @@ The Braille character.
 
 > **code**: `number`
 
-Defined in: [src/braille.ts:141](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/braille.ts#L141)
+Defined in: [src/braille.ts:141](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/braille.ts#L141)
 
 Numeric character code.

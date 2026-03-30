@@ -8,7 +8,7 @@
 
 > **popcount32**(`value`): `number`
 
-Defined in: [src/bits.ts:52](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/bits.ts#L52)
+Defined in: [src/bits.ts:52](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/bits.ts#L52)
 
 Count set bits in an unsigned 32-bit representation of a number.
 

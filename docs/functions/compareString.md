@@ -8,7 +8,7 @@
 
 > **compareString**(`a`, `b`): `number`
 
-Defined in: [src/strings.ts:148](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/strings.ts#L148)
+Defined in: [src/strings.ts:148](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/strings.ts#L148)
 
 Compare returns an integer comparing two strings lexicographically.
 The result will be 0 if a === b, -1 if a < b, and +1 if a > b.

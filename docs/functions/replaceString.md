@@ -8,7 +8,7 @@
 
 > **replaceString**(`s`, `old`, `newStr`, `n`): `string`
 
-Defined in: [src/strings.ts:714](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/strings.ts#L714)
+Defined in: [src/strings.ts:714](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/strings.ts#L714)
 
 Replace returns a copy of the string s with the first n non-overlapping
 instances of old replaced by newStr.

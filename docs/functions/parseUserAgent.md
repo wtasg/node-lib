@@ -8,7 +8,7 @@
 
 > **parseUserAgent**(`ua`): [`UserAgentInfo`](../interfaces/UserAgentInfo.md)
 
-Defined in: [src/user-agent.ts:48](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/user-agent.ts#L48)
+Defined in: [src/user-agent.ts:48](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/user-agent.ts#L48)
 
 Parses a user-agent string into a UserAgentInfo object.
 

@@ -8,7 +8,7 @@
 
 > **wc**(`data`, `rowSplitter?`): [`WcResult`](../interfaces/WcResult.md)
 
-Defined in: [src/wc.ts:36](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/wc.ts#L36)
+Defined in: [src/wc.ts:36](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/wc.ts#L36)
 
 Count lines, words, and letters in a string, similar to the Unix `wc` utility.
 

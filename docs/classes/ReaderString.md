@@ -6,7 +6,7 @@
 
 # Class: ReaderString
 
-Defined in: [src/strings.ts:1329](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/strings.ts#L1329)
+Defined in: [src/strings.ts:1329](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/strings.ts#L1329)
 
 Reader implements reading from a string.
 It implements io.Reader, io.ReaderAt, io.ByteReader, io.ByteScanner,
@@ -26,7 +26,7 @@ r.read(b); // b = [104, 101, 108]
 
 > **new ReaderString**(`s`): `Reader`
 
-Defined in: [src/strings.ts:1334](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/strings.ts#L1334)
+Defined in: [src/strings.ts:1334](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/strings.ts#L1334)
 
 #### Parameters
 
@@ -44,7 +44,7 @@ Defined in: [src/strings.ts:1334](https://github.com/wtasg/node-lib/blob/d6487e9
 
 > **len**(): `number`
 
-Defined in: [src/strings.ts:1343](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/strings.ts#L1343)
+Defined in: [src/strings.ts:1343](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/strings.ts#L1343)
 
 Len returns the number of bytes of the unread portion of the string.
 
@@ -60,7 +60,7 @@ Number of unread bytes.
 
 > **read**(`b`): `number`
 
-Defined in: [src/strings.ts:1364](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/strings.ts#L1364)
+Defined in: [src/strings.ts:1364](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/strings.ts#L1364)
 
 Read implements io.Reader. It reads from the string into b.
 
@@ -88,7 +88,7 @@ When no more bytes are available.
 
 > **readAt**(`b`, `off`): `number`
 
-Defined in: [src/strings.ts:1385](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/strings.ts#L1385)
+Defined in: [src/strings.ts:1385](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/strings.ts#L1385)
 
 ReadAt implements io.ReaderAt. It reads from the string starting at byte offset off.
 
@@ -126,7 +126,7 @@ If off is past the end or fewer bytes than b are available.
 
 > **readByte**(): `number`
 
-Defined in: [src/strings.ts:1401](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/strings.ts#L1401)
+Defined in: [src/strings.ts:1401](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/strings.ts#L1401)
 
 ReadByte implements io.ByteReader. It reads and returns the next byte from the string.
 
@@ -146,7 +146,7 @@ When no more bytes are available.
 
 > **readRune**(): \[`number`, `number`\]
 
-Defined in: [src/strings.ts:1416](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/strings.ts#L1416)
+Defined in: [src/strings.ts:1416](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/strings.ts#L1416)
 
 ReadRune implements io.RuneReader. It reads and returns the next UTF-8-encoded
 Unicode code point from the string.
@@ -167,7 +167,7 @@ When no more runes are available.
 
 > **reset**(`s`): `void`
 
-Defined in: [src/strings.ts:1432](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/strings.ts#L1432)
+Defined in: [src/strings.ts:1432](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/strings.ts#L1432)
 
 Reset resets the Reader to be reading from s.
 
@@ -189,7 +189,7 @@ New string to read from.
 
 > **seek**(`offset`, `whence`): `number`
 
-Defined in: [src/strings.ts:1448](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/strings.ts#L1448)
+Defined in: [src/strings.ts:1448](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/strings.ts#L1448)
 
 Seek implements io.Seeker. It sets the offset for the next Read or ReadAt,
 interpreted according to whence: 0 (start), 1 (current), 2 (end).
@@ -228,7 +228,7 @@ If resulting offset is negative.
 
 > **size**(): `number`
 
-Defined in: [src/strings.ts:1353](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/strings.ts#L1353)
+Defined in: [src/strings.ts:1353](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/strings.ts#L1353)
 
 Size returns the original length of the underlying string.
 Size is the number of bytes available for reading via ReadAt.
@@ -245,7 +245,7 @@ Original byte length of the string.
 
 > **unreadByte**(): `void`
 
-Defined in: [src/strings.ts:1468](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/strings.ts#L1468)
+Defined in: [src/strings.ts:1468](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/strings.ts#L1468)
 
 UnreadByte complements ReadByte in implementing io.ByteScanner.
 
@@ -264,7 +264,7 @@ previous operation was not a byte read.
 
 > **unreadRune**(): `void`
 
-Defined in: [src/strings.ts:1482](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/strings.ts#L1482)
+Defined in: [src/strings.ts:1482](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/strings.ts#L1482)
 
 UnreadRune complements ReadRune in implementing io.RuneScanner.
 
@@ -282,7 +282,7 @@ If the previous operation was not ReadRune or position is at start.
 
 > **writeTo**(`w`): `number`
 
-Defined in: [src/strings.ts:1496](https://github.com/wtasg/node-lib/blob/d6487e974b07d162482ad183cdbfca4fbd7ee9f5/src/strings.ts#L1496)
+Defined in: [src/strings.ts:1496](https://github.com/wtasg/node-lib/blob/1ee11d15e0962dff67357405c5de56cb28136fb5/src/strings.ts#L1496)
 
 WriteTo implements io.WriterTo. It writes data to w until there's no more
 data to write or when an error occurs.
